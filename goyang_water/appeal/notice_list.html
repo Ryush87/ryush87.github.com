@@ -1,0 +1,140 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_appeal.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_notice_list">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">고양시 상하수도사업소에서 알려드리는 소식입니다. <br />상하수도와 관련된 다양한 글을 많이 올라와 있으니 읽어보시고 참고하시기 바랍니다.</span>
+							</div>
+							<!-- contents s -->
+
+							<div class="listSearchBox">
+								<div class="select open" id="slct_item">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">전체</button>
+									<ul class="aList">
+										<li><a href="#1">제목</a></li>
+										<li><a href="#2">내용</a></li>
+										<li><a href="#3">제목+내용</a></li>
+									</ul>
+								</div>
+								<div class="searchWrap">
+									<label for="list_search_input" class="blind">검색어 입력</label>
+									<input type="text" id="list_search_input" placeholder="검색어를 입력하세요"/>
+								</div>
+								<a href="#none" class="listSearchBtn"><img src="<?=$root?>/skin/images/common/btn_list_search.png" alt="검색" /></a>
+							</div>
+							<table id="noticeTable" class="listTable bdt2sblue" summary="번호,제목,작성자,등록일,조회수">
+								<caption>글목록</caption>
+								<colgroup><col width="60px"/><col width="490px"/><col width="115px"/><col width="155px"/><col width="80px"/></colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">제목</th>
+										<th scope="col">작성자</th>
+										<th scope="col">날짜</th>
+										<th scope="col">조회수</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2 td_tal"><a href="notice_view.html" class="listSubject">공지사항 제목입니다. 공지사항 제목입니다. 공지사항 제목입니다.</a></td>
+										<td class="col3">관리자</td>
+										<td class="col4">2016-12-31</td>
+										<td class="col5">123</td>
+									</tr>
+								</tbody>
+							</table>
+							<? include '../include/paging_box.php' ?>
+
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(6,1);
+		changeTitle();
+		currentTab(0);
+	</script>
+</body>
+</html>

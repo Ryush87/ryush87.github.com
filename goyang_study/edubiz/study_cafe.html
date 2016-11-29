@@ -1,0 +1,82 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_edubiz.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_study_cafe">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<div class="study_cafeImg"><img src="<?=$root?>/skin/images/sub/pc_study_cafe_01.jpg" alt="평생학습카페 현장 사진" /></div>
+							<ul class="study_cafeTxt">
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">01</span>평생학습카페란?</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">시민들의 학습결과물을 전시·판매 시설</li>
+												<li class="hyphen">평생학습 체험·홍보 이벤트 진행 가능한 서점, 카페, 갤러리 등의 시설</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">02</span>평생학습카페 기능</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">고양시 평생학습의 가치를 공유·확산 중심</li>
+												<li class="hyphen">오프라인 홍보거점으로 활용</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">03</span>시설사항</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">평생학습 결과물을 상시 전시</li>
+												<li class="hyphen">평생학습 홍보·체험 이벤트 진행</li>
+												<li class="hyphen">지역 평생학습 활성화 사업에 적극 참여의 장소</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">04</span>운영기관</dt>
+										<dd style="height:130px;">
+											<ul>
+												<li class="hyphen">고양시 평생교육과 ( 031 - 8075 - 2277 )</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,3,0);
+		changeTitle();
+	</script>
+</body>
+</html>

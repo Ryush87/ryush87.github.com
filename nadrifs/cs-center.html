@@ -1,0 +1,97 @@
+<?php include "./include/header.php"; ?>
+			<div class="sub-content">
+				<section class="board">
+					<header class="sub-hd fadeEff slide-up">
+						<h2 class="sub-tit">고객센터</h2>
+						<p><strong class="btxt">나드리김밥에 무엇이든 물어보세요.</strong>
+						문의하신 내용에 대한 답변은 <em class="point-y">업무일 기준으로 2~3일</em> 정도 소요될 수 있습니다.</p>
+					</header>
+					<form class="board-write">
+						<!-- 문의하기 -->
+						<div class="post-hd">
+							<h3 class="tit">문의하기</h3>
+							<em class="add-info"><span class="point-o">(필수)</span> 항목은 반드시 입력해주셔야 문의접수가 가능합니다.</em>
+						</div>
+						<table class="write-frm">
+							<caption>문의내용 입력</caption>
+							<colgroup>
+								<col style="width:22%">
+								<col style="width:*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="name">이 름</label> <em>(필수)</em></th>
+									<td><input type="text" id="name" class="short"></td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="tel">휴대전화</label> <em>(필수)</em></th>
+									<td class="tel">
+										<select id="tel" title="통신사 선택">
+											<option value="010">010</option>
+										</select> <span class="dash">-</span>
+										<input type="text" title="휴대전화 중간자리 입력"> <span class="dash">-</span>
+										<input type="text" title="휴대전화 마지막자리 입력">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="opt"><label for="email">이 메 일</label></th>
+									<td class="email">
+										<input type="text" id="email"><span class="at">@</span><input type="text" title="도메인 입력">
+										<select title="도메인 선택">
+											<option>직접입력</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="subject">제 목</label> <em>(필수)</em></th>
+									<td>
+										<input type="text" id="subject">
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="cont">내 용</label> <em>(필수)</em></th>
+									<td>
+										<textarea id="cont" title="문의 내용 입력"></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="agree-bx">
+							<ul>
+								<li>1. 개인 정보의 이용 목적
+									<p>여러분이 제공해주신 개인정보는 보다 정확한 서비스를 제공하기 위해 이용되며, 이용약관에 명시된 목적 이외에 다른 용도로 이용하거나 본인의 승낙 없이 제3자에게 개인정보를 제공하지 않습니다. 다만, 다음 각 사항에 해당하는 경우에는 예외로 제3자와 공유될 수 있습니다.</p>
+									<ol>
+										<li>1) 관계법령에 의하여 수사상의 목적으로 관계기관으로부터 요구가 있을 경우</li>
+										<li>2) 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우</li>
+									</ol>
+									<p>개인정보를 새로이 제3자에게 제공하는 경우에는 제공받는 자, 제공목적 및 제공할 정보의 내용을 이메일 등을 통해 당사자에게 미리 고지하여 동의를 얻으며, 당사자의 동의 없이 어떠한 정보도 제공하지 않습니다.</p>
+								</li>
+							</ul>
+						</div>
+						<input type="checkbox" id="agree"> <label for="agree">개인정보 취급방침에 동의합니다.</label>
+						<div class="btn-wrap">
+							<a href="#" class="btn-basic">문의하기</a>
+						</div>
+						<!-- //문의하기 -->
+					</form>
+				</section>
+			</div>
+			<!-- Layer Popup -->
+			<div class="pop-wrap">
+				<div class="popup">
+					<div class="pop-hd">
+						<strong><span class="btxt">문의등록</span>이 정상적으로 <span class="point-o">완료</span>되었습니다.</strong>
+					</div>
+					<div class="pop-body">
+						<p><strong>문의하신 내용에 대한 답변은 업무일 기준 <em class="point-y">2~3일 정도 소요</em>될 수 있습니다.</strong></p>
+						<p>항상 나드리김밥에 관심과 사랑을 보여주시는 고객님께 진심으로 감사드리며,<br>
+						앞으로 더 나은 서비스를 제공할 수 있도록 최선을 다하겠습니다.<br>
+						감사합니다.
+					</div>
+					<div class="btn-wrap">
+						<button type="button" class="btn-basic">확 인</button>
+					</div>
+				</div>
+			</div>
+			<!-- //Layer Popup -->
+<?php include "./include/footer.php"; ?>

@@ -1,0 +1,99 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="market_second_view" class="conWrap">
+					<div class="subPage_title">
+						<h2>주민장터</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="viewWrap bdt2s333">
+						<div class="goodsInfoBox">
+							<table class="viewTable3" summary="이미지,상품명,작성자명,등록일,연락처,지역정보,간략설명(50자내외)">
+								<caption>동호회 상세정보</caption>
+								<colgroup><col width="35%"/><col width="20%"/><col width="45%"/></colgroup>
+								<tr>
+									<td rowspan="6"><img src="<?=$root?>/skin/images/sub/no_image.jpg" alt="이미지없음" /></td>
+									<th scope="row">상품명</th>
+									<td><span class="tdGoodsName">나이키 운동화</span></td>
+								</tr>
+								<tr>
+									<th scope="row">작성자명</th>
+									<td>홍**</td>
+								</tr>
+								<tr>
+									<th scope="row">등록일</th>
+									<td>2016-05-01</td>
+								</tr>
+								<tr>
+									<th scope="row">연락처</th>
+									<td>010-9999-9999</td>
+								</tr>
+								<tr>
+									<th scope="row">지역정보</th>
+									<td>덕양구 > 토당동 > SK뷰 아파트</td>
+								</tr>
+								<tr>
+									<th scope="row">간략설명(50자내외)</th>
+									<td>한번도 사용하지 않은 동동화입니다.한번도 사용하지 않은 동동화입니다.한번도 사용하지 않은 동동화입니다.</td>
+								</tr>
+							</table>
+						</div>
+						<div class="goodsIntroBox">
+							<h6>상세내용</h6>
+							<div class="goodsIntroCon">
+								<pre>
+									<p style="text-align:center;"><img src="<?=$root?>/skin/images/temp/main_img8.png" alt="단체사진" style="width:700px;"/></p>
+									<p style="font-size:1em;text-align:center;">한번도 사용하지 않은 운동화입니다.<br/>정품이 확실하며, 인증서도 가지고 있습니다.</p>
+								</pre>
+							</div>
+							<table class="viewTable2 goodsIntroAttach" summary="첨부파일">
+								<caption>첨부파일 다운로드</caption>
+								<colgroup><col width="30%"/><col width="70%"/></colgroup>
+								<tr>
+									<th scope="row">첨부파일</th>
+									<td><a href="#none">adds_23423.jpg(650,00 KB)</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="pageBtnBox mt20">
+						<div class="grid50 taL">&nbsp;</div>
+						<div class="grid50 taR">
+							<a href="#none" id="editBtn" class="btnS blackBtn">수정</a>
+							<a href="javascript:history.back();" class="btnS blackBtn">목록</a>
+						</div>
+					</div>
+					<div class="pw_popupBox">
+						<div class="popHead">
+							<a href="#none" class="popCloseBtn">X<span class="blind">닫기</span></a>
+							<span class="pointC">정확한 비밀번호를 입력하셔야<br />수정이 가능합니다.</span>
+						</div>
+						<div class="popFoot">
+							<input type="text" placeholder="비밀번호 입력" />
+							<a href="#none" class="btnS popConfilmBtn">확인</a>
+						</div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(5);
+		changeLocation();
+		currentTab(0);
+	</script>
+</body>
+</html>

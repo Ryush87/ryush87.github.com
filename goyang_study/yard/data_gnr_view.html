@@ -1,0 +1,82 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_yard.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_data_gnr_view">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<? include 'data_tab_box.php' ?>
+							<table class="viewTable2 mt20" summary="제목,작성자,등록일,글내용,첨부파일">
+								<caption>글보기</caption>
+								<colgroup><col width="190px"/><col /><col width="190px"/><col /></colgroup>
+								<tr>
+									<th scope="row">제목</th>
+									<td colspan="3"><span class="bT">미술 심리상담사 무료수강생 모집</span></td>
+								</tr>
+								<tr>
+									<th scope="row">작성자</th>
+									<td>홍길동</td>
+									<th scope="row">등록일</th>
+									<td>2015-12-12 15:26</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<div class="viewCon">
+											<p>지역 평생교육 활성화 사업의 일환으로 지역 내 평생교육관계자 간의 교류를 확대하고 협력 네트워크 및 파트너십을 형성하기 위한 연수프로그램 줏대잡이 학교를 운영합니다. 평생학습도시로 지정된 고양시 지역의 평생학습네트워크가 더욱 공고히 다져질 수 있도록 하기 위한 본 연수프로그램에 학습 동아리, 평생교육 강사, 평생교육기관 및 단체의 많은 관심과 참여를 바랍니다.</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">첨부파일</th>
+									<td colspan="3">
+										<ul class="viewAttachList">
+											<li><a href="#none">123123.hwp</a> <span>(122kb)</span></li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<a href="#none" class="btnS1 blueBtn">프린터</a>
+								<a href="javascript:history.back();" class="btnS1 blueBtn">목록</a>
+							</div>
+							<table class="viewTable relatedBox mt30" summary="이전글,다음글">
+								<caption>이전,다음글보기</caption>
+								<colgroup><col width="190px"/><col /></colgroup>
+								<tr>
+									<th scope="row">이전 글</th>
+									<td><a href="#none">[국가인정 민간자격증 무료수강] 30여가지 이상 자격증 선착순 무료!!</a></td>
+								</tr>
+								<tr>
+									<th scope="row">다음 글</th>
+									<td><a href="#none">[3월무료교육]2015 심리상담사/미술/노인심리,인성지도사,방과후지도사 18과정</a></td>
+								</tr>
+							</table>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(3,2);
+		changeTitle();
+		currentTab(2);
+	</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_info.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_group_view">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<table class="viewTable" summary="소속기관,대표자,창립일,대표자연락처,동아리명,활동지역,회원수,홈페이지,분야,이메일,모임배경과활동목적,동아리활동내역,키웓,사진">
+								<caption>학습동아리 상세정보</caption>
+								<colgroup><col width="190px"/><col /><col width="190px"/><col /></colgroup>
+								<tr>
+									<th scope="row">소속기관</th>
+									<td>포대기</td>
+									<th scope="row">대표자</th>
+									<td>김지나</td>
+								</tr>
+								<tr>
+									<th scope="row">창립일</th>
+									<td>2015-01-01</td>
+									<th scope="row">대표자 연락처</th>
+									<td>010-8888-****</td>
+								</tr>
+								<tr>
+									<th scope="row">동아리 명</th>
+									<td>포대기</td>
+									<th scope="row">활동지역</th>
+									<td>고양시</td>
+								</tr>
+								<tr>
+									<th scope="row">회원수</th>
+									<td>5명</td>
+									<th scope="row">홈페이지</th>
+									<td><a href="http://www.naver.com" target="_blank" title="새창열림">http://www.naver.com</a></td>
+								</tr>
+								<tr>
+									<th scope="row">분야</th>
+									<td>부모교육, 육아상담, 집단상담</td>
+									<th scope="row">이메일</th>
+									<td>asdfasdf@asdf.asdf</td>
+								</tr>
+								<tr>
+									<th scope="row">모임배경과 활동목적</th>
+									<td colspan="3">풍동 마을숲 카페에서 부모교육을 진행한 후 팀원들이 지속적인 모임을 갖기를 원해서 동아리를 시작하게 되었습니다. 매주 만나서 육아에 관련한 스터디와 집단상담 형식의 모임을 지속하며 부모의 자아를 성장시키며 이로 인해 가정과 아이들의 건강한 행복을 도모하는 것이 모임의 활동 목적입니다.</td>
+								</tr>
+								<tr>
+									<th scope="row">동아리 활동내역</th>
+									<td colspan="3">주 1회 독서토론과 부모교육 - 집단 상담을 통한 나를 찾아가는 여행 - 아이와 의사소통 기술 습득</td>
+								</tr>
+								<tr>
+									<th scope="row">키워드</th>
+									<td colspan="3">부모교육. 육아상담. 자아성찰. 부모 집단상담</td>
+								</tr>
+								<tr>
+									<th scope="row">사진</th>
+									<td colspan="3">
+										<ul class="groupPicBox">
+											<li><img src="http://ifeeltong.org/data/cheditor4/1504/40ea809bbd26f9b0e1ded718ec916c84_1429855828.92912.jpg" alt="동아리사진" /></li>
+											<li>&nbsp;</li>
+											<li>&nbsp;</li>
+											<li>&nbsp;</li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<a href="#none" class="btnS1 blueBtn">프린터</a>
+								<a href="javascript:history.back();" class="btnS1 blueBtn">목록</a>
+							</div>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(2,2,2);
+		changeTitle();
+		changeSubtitle(' 상세페이지');
+	</script>
+</body>
+</html>

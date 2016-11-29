@@ -1,0 +1,133 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_communi.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="proud_write" class="conWrap">
+					<div class="subPage_title">
+						<h2>단지 자랑하기</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="writeGuideT">
+						<div class="star"><span class="blind">필수입력</span></div> 표시는 필수 입력 사항입니다.
+					</div>
+					<table class="writeTable bdt2s333" summary="동호회명,작성자명,비밀번호,회원수,연락처,지역/분야선택,대표이미지,첨부파일">
+						<caption>글쓰기</caption>
+						<colgroup><col width="18%"/><col width="32%"/><col width="18%"/><col width="32%"/></colgroup>
+						<tr>
+							<th scope="row"><label for="club_name">제목</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3"><input type="text" id="club_name" style="width:90%;"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="writer_name">작성자 명</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3">
+								<input type="text" id="writer_name" class="mr10" style="width:30%;"/>
+								<input type="checkbox" name="" id="name_secret" /><label for="name_secret" class="inputGuide">이름 비공개로 글쓰기</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="writer_pw">비밀번호</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3">
+								<input type="text" id="writer_pw" class="mr10" style="width:30%;"/>
+								<input type="radio" id="pw_show" name="pw_visible"/><label for="pw_show" class="inputGuide mr20">공개</label>
+								<input type="radio" id="pw_hide" name="pw_visible"/><label for="pw_hide" class="inputGuide">비공개</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">연락처<div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3">
+								<div class="select open mr5" id="phone1" style="width:8%;">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">010</button>
+									<ul class="aList">
+										<li><a href="#1">010</a></li>
+										<li><a href="#2">010</a></li>
+										<li><a href="#3">010</a></li>
+									</ul>
+								</div>
+								<span class="mr5">-</span>
+								<label for="phone2" class="blind">가운데 휴대번호</label>
+								<input type="text" id="phone2" class="mr10 taC" style="width:8%;"/>
+								<span class="mr5">-</span>
+								<label for="phone3" class="blind">마지막 휴대번호</label>
+								<input type="text" id="phone3" class="mr10 taC" style="width:8%;"/>
+								<span class="inputGuide">※ 연락처는 관리자만 확인 가능함</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="goods_name">지역선택</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3">
+								<div class="select open mr10" id="slct_gu" style="width:100px;">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">구 선택</button>
+									<ul class="aList">
+										<li><a href="#1">덕양구</a></li>
+										<li><a href="#2">일산동구</a></li>
+										<li><a href="#3">일산서구</a></li>
+									</ul>
+								</div>
+								<div class="select open mr10" id="slct_gu" style="width:100px;">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">동 선택</button>
+									<ul class="aList">
+										<li><a href="#1">백석동</a></li>
+										<li><a href="#2">마두동</a></li>
+										<li><a href="#3">주엽동</a></li>
+									</ul>
+								</div>
+								<div class="select open mr10" id="slct_apt" style="width:130px;">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">아파트 선택</button>
+									<ul class="aList">
+										<li><a href="#1">백석동</a></li>
+										<li><a href="#2">마두동</a></li>
+										<li><a href="#3">주엽동</a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="td_child">
+								<img src="<?=$root?>/skin/images/temp/web_editer.jpg" alt="웹에디터영역" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="write_attach">첨부파일</label></th>
+							<td colspan="3">
+								<div class="attach_line">
+									<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음">
+									<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div class="pageBtnBox mt20">
+						<div class="grid50 taL">
+							<a href="javascript:history.back();" class="btnS blackBtn">목록</a>
+						</div>
+						<div class="grid50 taR">
+							<a href="#none" class="btnS blackBtn">등록하기</a>
+							<a href="#none" class="btnS grayBtn">취소</a>
+						</div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(2);
+		currentSnb(0);
+		changeLocation();
+	</script>
+</body>
+</html>

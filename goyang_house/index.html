@@ -1,0 +1,228 @@
+<? include 'include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/main.css">
+<style type="text/css">
+	#footer {margin-top:0;}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<? include 'include/header.php' ?>
+		<div id="mainBgArea">
+			<div class="blind">100만 행복도시, 고양시 공동주택 정보마당, 우리 아파트 정보를 이제 이곳에서 한 눈에 볼수 있습니다.</div>
+		</div>
+		<div id="contents" class="mainContents">
+			<!-- contents s -->
+			<div class="wWrap ">
+				<div id="main_leftBox">
+					<div id="mSearchBox">
+						<div class="mSrchHead">
+							<h4 class="grid30 boxTitle">우리아파트 한 눈에 보기</h4>
+							<div class="grid65 srch_val">
+								<div class="select open mr10" id="slct_gu" style="width:110px;">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">구 선택</button>
+									<ul class="aList">
+										<li><a href="#1">덕양구</a></li>
+										<li><a href="#2">일산동구</a></li>
+										<li><a href="#3">일산서구</a></li>
+									</ul>
+								</div>
+								<div class="select open mr10" id="slct_gu" style="width:110px;">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">동 선택</button>
+									<ul class="aList">
+										<li><a href="#1">백석동</a></li>
+										<li><a href="#2">마두동</a></li>
+										<li><a href="#3">주엽동</a></li>
+									</ul>
+								</div>
+								<div class="searchWrap">
+									<label for="search_input" class="blind">검색어 입력</label>
+									<input type="text" id="search_input" placeholder="검색어 입력"/>
+									<a href="#none" class="searchBtn"><img src="<?=$root?>/skin/images/common/blt_search.png" alt="검색버튼" /></a>
+								</div>
+							</div>
+						</div>
+						<div class="mSrchBody">
+							<img src="<?=$root?>/skin/images/temp/main_map.jpg" alt="홈페이지만들기" />
+							<!-- popup s -->
+							<div class="map_popupBox">
+								<div class="popupTop"></div>
+								<div class="popupMid">
+									<div class="popupCon">
+										<h6>아람누리 도서관</h6>
+										<ul>
+											<li>
+												<div class="pcH">주소</div>
+												<div class="pcB">고양시 덕양구 원흥동 85</div>
+											</li>
+											<li>
+												<div class="pcH">홈페이지</div>
+												<div class="pcB"><a href="http://apt.goyang.go.kr/blue" target="_blank" title="새창열림">http://apt.goyang.go.kr/blue</a></div>
+											</li>
+											<li>
+												<div class="pcH">세대수</div>
+												<div class="pcB">100세대</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popupBottom">
+									<a href="#none" class="popDetailBtn"><span class="blind">자세히보기</span></a>
+									<a href="#none" class="popCloseBtn"><span class="blind">닫기</span></a>
+								</div>
+							</div>
+							<!-- popup e -->
+						</div>
+					</div>
+					<div class="cardBox">
+						<img src="<?=$root?>/skin/images/temp/main_img1.png" alt="홈페이지만들기" />
+						<h6>홈페이지만들기</h6>
+						<a href="#none" class="cardBtn">바로가기</a>
+					</div>
+					<div class="cardBox">
+						<img src="<?=$root?>/skin/images/temp/main_img2.png" alt="단지 동호회" />
+						<h6>단지 동호회</h6>
+						<a href="<?=$root?>/apt/complex_club.html" class="cardBtn">바로가기</a>
+					</div>
+					<div class="cardBox">
+						<img src="<?=$root?>/skin/images/temp/main_img3.png" alt="단지행사" />
+						<h6>단지행사</h6>
+						<a href="<?=$root?>/apt/complex_event.html" class="cardBtn">바로가기</a>
+					</div>
+					<div class="cardBox">
+						<img src="<?=$root?>/skin/images/temp/main_img4.png" alt="법률정보" />
+						<h6>법률정보</h6>
+						<a href="#none" class="cardBtn">바로가기</a>
+					</div>
+					<div class="cardBox">
+						<img src="<?=$root?>/skin/images/temp/main_img5.png" alt="공사영역 표준기준" />
+						<h6>공사영역 표준기준</h6>
+						<a href="#none" class="cardBtn">바로가기</a>
+					</div>
+					<div class="cardBox">
+						<img src="<?=$root?>/skin/images/temp/main_img6.png" alt="질의사례" />
+						<h6>질의사례</h6>
+						<a href="#none" class="cardBtn">바로가기</a>
+					</div>
+					<div class="cardBox2">
+						<h6>갤러리</h6>
+						<div class="controlBtns">
+							<a href="#none" class="galBtn1"><span class="blind">이전</span></a>
+							<a href="#none" class="galBtn2"><span class="blind">다음</span></a>
+							<a href="#none" class="galBtn3"><span class="blind">더보기</span></a>
+						</div>
+						<img src="<?=$root?>/skin/images/temp/main_img7.png" alt="갤러리" />
+						<div class="galInfo">
+							<a href="#none">
+								<span class="galS">고양시 공동주택 정보마당 이미지고양시 공동주택 정보마당 이미지</span>
+								<span class="galD">2016.05.10</span>
+							</a>
+						</div>
+					</div>
+					<div class="cardBox2">
+						<h6>동영상</h6>
+						<div class="controlBtns">
+							<a href="#none" class="mvBtn1"><span class="blind">재생</span></a>
+							<a href="#none" class="mvBtn2"><span class="blind">일시정지</span></a>
+						</div>
+						<img src="<?=$root?>/skin/images/temp/main_img8.png" alt="동영상" />
+						<div class="mvCover"></div>
+					</div>
+				</div>
+				<div id="main_rightBox">
+					<div id="mNoticeBox">
+						<h4 class="boxTitle">공지사항</h4>
+						<a href="#none" class="moreBtn"><span class="blind">더보기</span></a>
+						<ul>
+							<li class="new"><a href="#none">공동주택 내 복리시설(부대시설 포함) 용도</a></li>
+							<li><a href="#none">공동주택 보수 개량 비용의 주택도시 기금 마련</a></li>
+							<li><a href="#none">공동주택 관리비 점검 작성 서식</a></li>
+							<li><a href="#none">2016년도 공동주택 방법, 소방안전교육 안내</a></li>
+							<li><a href="#none">공동주택 관리비 점검 작성서식</a></li>
+							<li><a href="#none">2016년도 공동주택 바업 소방안정 교육이 필요함</a></li>
+						</ul>
+					</div>
+					<div id="mQuestBox">
+						<h4 class="boxTitle">고양시 주민 의견 수렴의 장</h4>
+						<a href="#none" class="moreBtn"><span class="blind">더보기</span></a>
+						<div class="mQ"><img src="<?=$root?>/skin/images/main/blt_q.png" alt="아이콘" class="mQ_icon"/>귀하가 고양시 주민자치 사업 중 가장 관심이 있는 것은 무엇인가요?</div>
+						<ul class="mA">
+							<li><input type="radio" id="mAv1" name="mAv"/><label for="mAv1">주민자치 교육</label></li>
+							<li><input type="radio" id="mAv2" name="mAv"/><label for="mAv2">마을공동체 사업</label></li>
+							<li><input type="radio" id="mAv3" name="mAv"/><label for="mAv3">주민자치 박람회</label></li>
+							<li><input type="radio" id="mAv4" name="mAv"/><label for="mAv4">시정주민 참여위원회, 주민 참여단</label></li>
+							<li><input type="radio" id="mAv5" name="mAv"/><label for="mAv5">주민참여 예산위원회</label></li>
+							<li><input type="radio" id="mAv6" name="mAv"/><label for="mAv6">마을자원 조사</label></li>
+							<li><input type="radio" id="mAv7" name="mAv"/><label for="mAv7">관심없음</label></li>
+						</ul>
+						<div class="pageBtnBox">
+							<a href="#none" class="mVoteBtn">투표하기</a>
+							<a href="#none" class="mResultBtn">결과보기</a>
+						</div>
+					</div>
+					<div id="mFacebookBox">
+						<h4 class="blind">Facebook Timeline</h4>
+						<ul class="timeLineBox">
+							<li>
+								<div class="mfProfile">
+									<img src="<?=$root?>/skin/images/temp/main_facebook_profile.png" alt="페이스북 프로필사진" />
+								</div>
+								<div class="mfProfile_info">
+									<span class="mfId">고양시청</span>
+									<span class="mfDate">2020.12.31</span>
+								</div>
+								<div class="mfText">
+									고양국제 꽃박람회도 5일 뒤면 끝~! 조세호씨 어서 오시고양~ 2016 고양국제꽃박람회의 성공을 축하드립니다.
+									<div class="mfMore"><a href="#none">더 보기</a></div>
+								</div>
+								<div class="mfImg"><img src="<?=$root?>/skin/images/temp/main_facebook_pic.png" alt="타임라인사진" /></div>
+							</li>
+							<li>
+								<div class="mfProfile">
+									<img src="<?=$root?>/skin/images/temp/main_facebook_profile.png" alt="페이스북 프로필사진" />
+								</div>
+								<div class="mfProfile_info">
+									<span class="mfId">고양시청</span>
+									<span class="mfDate">2020.12.31</span>
+								</div>
+								<div class="mfText">
+									고양국제 꽃박람회도 5일 뒤면 끝~! 조세호씨 어서 오시고양~ 2016 고양국제꽃박람회의 성공을 축하드립니다.
+									<div class="mfMore"><a href="#none">더 보기</a></div>
+								</div>
+								<div class="mfImg"><img src="<?=$root?>/skin/images/temp/main_facebook_pic.png" alt="타임라인사진" /></div>
+							</li>
+							<li>
+								<div class="mfProfile">
+									<img src="<?=$root?>/skin/images/temp/main_facebook_profile.png" alt="페이스북 프로필사진" />
+								</div>
+								<div class="mfProfile_info">
+									<span class="mfId">고양시청</span>
+									<span class="mfDate">2020.12.31</span>
+								</div>
+								<div class="mfText">
+									고양국제 꽃박람회도 5일 뒤면 끝~! 조세호씨 어서 오시고양~ 2016 고양국제꽃박람회의 성공을 축하드립니다.
+									<div class="mfMore"><a href="#none">더 보기</a></div>
+								</div>
+								<div class="mfImg"><img src="<?=$root?>/skin/images/temp/main_facebook_pic.png" alt="타임라인사진" /></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="BannerBox">
+				<div class="wWrap ">
+					<a href="#none" class="arrowBtn_l"><span class="blind">이전</span></a>
+					<ul class="bannerList">
+						<li><a href="#none"><img src="<?=$root?>/skin/images/temp/main_banner.png" alt="배너" /></a></li>
+					</ul>
+					<a href="#none" class="arrowBtn_r"><span class="blind">다음</span></a>
+				</div>
+			</div>
+			<!-- contents e -->
+		</div>
+		<? include 'include/footer.php' ?>
+		
+	</div>
+</body>
+</html>

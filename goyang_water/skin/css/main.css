@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*
+===============================================================================================
+1.	버    전 : main.css
+2.	작 성 자 : Ryu
+3.	참    고 : Main
+===============================================================================================
+*/
+#mainBgArea {float:left;width:100%;height:440px;background:url('../images/main/main_visual.jpg') no-repeat 50%;border-bottom:1px solid #e2e8ed;}
+
+.menuBox_fee,
+.boardBox,
+.bannerBox,
+.menuBox_quick,
+.facebookApiBox,
+.feeGuideBox {box-shadow:0.1em 0.1em 0.1em 0.01em #ccc;border-radius:5px;}
+
+.boardBox {float:left;margin-right:40px;margin-bottom:40px;margin-left:40px;width:380px;height:250px;background:url(../images/main/menu_box_bg2.png) no-repeat;}
+	.boardB1 {width:100%;}
+		.mListWrap {position:relative;margin:35px;}
+			.mListWrap h5 {float:left;margin-bottom:25px;font-size:2em;letter-spacing:-0.025em;color:#222;font-weight:400;}
+			.mlistBox {float:left;width:100%;}
+				.mlistBox li {float:left;margin-bottom:10px;width:100%;padding-left:15px;background:url(../images/common/blt_bot_gray.png) no-repeat 0 50%;}
+				.mlistBox li a {float:left;width:90%;font-size:1.4em;letter-spacing:-0.025em;color:#555;font-weight:300;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+				.mlistBox li a:hover {color:#d71f1f;font-weight:400;}
+					.icon_new {float:right;display:inline-block;margin-top:5px;width:13px;height:11px;background:url(../images/common/blt_new.png) no-repeat;}
+			.listPlus {position:absolute;display:inline-block;top:0;right:0;width:18px;height:18px;background:url(../images/common/btn_plus_2.png) no-repeat;}
+
+.bannerBox {position:relative;float:left;width:300px;height:250px;overflow:hidden;border:1px solid #d7e0e6;}
+	.bannerControl {position:absolute;display:block;top:0;left:0;padding:0 5px;width:100%;height:30px;background:#fff;border-bottom:1px solid #ebeff2;}
+		.bannerControl li {float:left;}
+			.bc_stat {margin-left:10px;line-height:30px;font-family:'nanum gothic';font-size:1.1em;letter-spacing:-0.025em;color:#898989;}
+			li.bc_btns {float:right;}
+			.bc_prev, .bc_stop, .bc_next {margin-top:4px;}
+			.bc_stop {margin-right:2px;margin-left:2px;}
+	.bannerPreview {display:block;}
+		.bannerPreview li {float:left;}
+
+.menuBox_fee {float:left;width:440px;height:250px;background:url(../images/main/menu_box_bg1.png) no-repeat;}
+	.mbHead {float:left;width:168px;font-size:2.4em;letter-spacing:-0.025em;font-weight:400;text-align:center;color:#2f2f2f;}
+	.mbHead img {width:18px;}
+	.menuBox_fee .mbHead {padding-top:80px;}
+	.menuBox_fee ul {float:left;width:272px;padding:20px 20px 20px 0;}
+		.menuBox_fee ul li {float:left;width:126px;height:105px;}
+		.menuBox_fee .menuItem01 {background:url(../images/main/menu_fee_1.gif) no-repeat;}
+		.menuBox_fee .menuItem02 {background:url(../images/main/menu_fee_2.gif) no-repeat;}
+		.menuBox_fee .menuItem03 {background:url(../images/main/menu_fee_3.gif) no-repeat;}
+		.menuBox_fee .menuItem04 {background:url(../images/main/menu_fee_4.gif) no-repeat;}
+			.menuBox_fee ul li a {display:block;padding-top:75px;font-size:1.4em;letter-spacing:-0.025em;font-weight:400;text-align:center;color:#444;}
+			.menuBox_fee ul li a:hover {color:#4d64d6;}
+				.mTitle {}
+
+.menuBox_quick {float:left;margin-bottom:40px;width:860px;height:170px;background:url(../images/main/menu_box_bg3.png) no-repeat;}
+	.menuBox_quick .mbHead {padding-top:45px;}
+	.menuBox_quick ul {float:left;width:692px;}
+		.menuBox_quick ul li {float:left;width:173px;height:170px;}
+		.menuBox_quick .menuItem01 {background:url(../images/main/menu_quick_1.gif) no-repeat;}	
+		.menuBox_quick .menuItem02 {background:url(../images/main/menu_quick_2.gif) no-repeat;}	
+		.menuBox_quick .menuItem03 {background:url(../images/main/menu_quick_3.gif) no-repeat;}	
+		.menuBox_quick .menuItem04 {background:url(../images/main/menu_quick_4.gif) no-repeat;}	
+			.menuBox_quick ul li a {display:block;padding-top:110px;padding-right:10px;font-size:1.7em;letter-spacing:-0.025em;font-weight:400;text-align:center;color:#444;}
+			.menuBox_quick ul li a:hover {color:#d71f1f;}
+
+.feeGuideBox {float:left;width:860px;height:280px;background:#fff;}
+	.fgbCon {float:left;width:100%;padding:20px 0 20px 40px;}
+	.fgbCon li {position:relative;float:left;width:100%;line-height:60px;background:url(../images/common/blt_list_off.png) no-repeat 0 50%;cursor:pointer;}
+		.fgbCon_tit {padding-left:50px;font-size:1.8em;letter-spacing:-0.025em;font-weight:400;text-align:left;color:#555;background:url(../images/common/list_btm_dot_bg.png) no-repeat 0 100%;}
+		.fgbCon li:last-child .fgbCon_tit {background:none;}
+		.fgbCon_tit a {float:right;margin-right:410px;display:none;}
+		.fgbCon_desc {position:absolute;top:0;right:0;display:none;}
+		.fgbCon li:nth-child(1) .fgbCon_desc {top:-20px;}
+		.fgbCon li:nth-child(2) .fgbCon_desc {top:-80px;}
+		.fgbCon li:nth-child(3) .fgbCon_desc {top:-140px;}
+		.fgbCon li:nth-child(4) .fgbCon_desc {top:-200px;}
+			.fgbCon_desc img {width:383px;}
+		.fgbCon li.actOn {background:url(../images/common/blt_list_on.png) no-repeat 0 50%;}
+		.fgbCon li.actOn .fgbCon_tit {color:#3976b7;}
+		.fgbCon li.actOn .fgbCon_tit a {display:block;}
+		.fgbCon li.actOn .fgbCon_desc {display:block;}
+
+.facebookApiBox {float:left;padding:20px;width:300px;height:490px;background:#fff;}
+	.fbab_preview {width:260px;}

@@ -1,0 +1,98 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="complex_club_view" class="conWrap">
+					<div class="subPage_title">
+						<h2>단지동호회</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="viewWrap bdt2s333">
+						<div class="clubImgBox">
+							<img src="<?=$root?>/skin/images/temp/club01.jpg" alt="단지 동호회" />
+						</div>
+						<div class="clubInfoBox">
+							<div class="clubName">탁구 동호회</div>
+							<table class="viewTable5" summary="작성자명,등록일,회원수,분야,지역">
+								<caption>동호회 상세정보</caption>
+								<colgroup><col width="25%"/><col width="75%"/></colgroup>
+								<tr>
+									<th scope="row">작성자명</th>
+									<td>: 홍**</td>
+								</tr>
+								<tr>
+									<th scope="row">등록일</th>
+									<td>: 2016-05-01</td>
+								</tr>
+								<tr>
+									<th scope="row">회원수</th>
+									<td>: 128 명</td>
+								</tr>
+								<tr>
+									<th scope="row">분야</th>
+									<td>: 스포츠 > 생활체육</td>
+								</tr>
+								<tr>
+									<th scope="row">지역</th>
+									<td>: 덕양구 > 토당동 > SK뷰 아파트</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clubIntroBox">
+							<h6>동호회 소개 및 안내</h6>
+							<div class="clubIntroCon">
+								<pre>
+									<p style="text-align:center;"><img src="<?=$root?>/skin/images/temp/main_img2.png" alt="단체사진" style="width:700px;"/></p>
+									<p style="font-size:30px;text-align:center;">이제는 운동이 생활을 바꾼다!</p><p style="font-size:1em;text-align:center;">우리 동호회는 일산을 거주하는 분들을 중심으로 모인 모임 단체입니다.<br/>참석을 원하시는 분들은 아래 양식을 다운 받으셔서 test@naver.com 메일로 신청해 주세요.<br/>그럼 많은 성원과 관심을 바랍니다.</p>
+								</pre>
+							</div>
+							<table class="viewTable2 clubIntroAttach" summary="첨부파일">
+								<caption>첨부파일 다운로드</caption>
+								<colgroup><col width="30%"/><col width="70%"/></colgroup>
+								<tr>
+									<th scope="row">첨부파일</th>
+									<td><a href="#none">adds_23423.jpg(650,00 KB)</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="pageBtnBox mt20">
+						<div class="grid50 taL">&nbsp;</div>
+						<div class="grid50 taR">
+							<a href="#none" id="editBtn" class="btnS blackBtn">수정</a>
+							<a href="javascript:history.back();" class="btnS blackBtn">목록</a>
+						</div>
+					</div>
+					<div class="pw_popupBox">
+						<div class="popHead">
+							<a href="#none" class="popCloseBtn">X<span class="blind">닫기</span></a>
+							<span class="pointC">정확한 비밀번호를 입력하셔야<br />수정이 가능합니다.</span>
+						</div>
+						<div class="popFoot">
+							<input type="text" placeholder="비밀번호 입력" />
+							<a href="#none" class="btnS popConfilmBtn">확인</a>
+						</div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(6);
+		changeLocation();
+		currentTab(0);
+	</script>
+</body>
+</html>

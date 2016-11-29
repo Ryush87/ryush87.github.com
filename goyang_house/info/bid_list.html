@@ -1,0 +1,166 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_info.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="bid_list" class="conWrap">
+					<div class="subPage_title">
+						<h2>입찰정보</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="info_searchBox sub_searchBox bdt2s333">
+						<div class="srch_title">조회기간<br/>입찰정보 검색하기</div>
+						<div class="srch_val">
+							<ul class="setTerm srch_val_item mr20">
+								<li><a href="#none">1주일</a></li>
+								<li><a href="#none">1개월</a></li>
+								<li><a href="#none">3개월</a></li>
+								<li><a href="#none">6개월</a></li>
+								<li><a href="#none">1년</a></li>
+								<li><a href="#none">기간설정</a></li>
+							</ul>
+							<div class="srch_val_item srch_val_date">
+								<input type="text" id="startDate" class="dateInput" name="startDate"/>
+								<div class="blt_calendar"><img src="<?=$root?>/skin/images/sub/blt_cal.png" alt="달력아이콘" /></div>
+								<script type="text/javascript">setDatePick("startDate");</script>
+							</div>
+							<div class="srch_val_item" style="margin:0 5px;line-height:30px;">~</div>
+							<div class="srch_val_item srch_val_date">
+								<input type="text" id="endDate" class="dateInput" name="endDate"/>
+								<div class="blt_calendar"><img src="<?=$root?>/skin/images/sub/blt_cal.png" alt="달력아이콘" /></div>
+								<script type="text/javascript">setDatePick("endDate");</script>
+							</div>
+							<div class="srch_val_item mt10 mr20">
+								<div class="select open mr10" id="slct_cate">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">선택</button>
+									<ul class="aList">
+										<li><a href="#1">덕양구</a></li>
+										<li><a href="#2">일산동구</a></li>
+										<li><a href="#3">일산서구</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="srch_val_item mt10">
+								<label for="search_input" class="blind">검색어 입력</label>
+								<input type="text" id="search_input" placeholder="검색어 입력" style="border:1px solid #777;"/>
+							</div>
+						</div>
+						<div class="srch_submit">
+							<a href="#none" class="btnS searchBtn">검색하기</a>
+						</div>
+					</div>
+					<table class="listTable1 listTable1_b mt20" summary="번호,아파트명,입찰제목,입찰마감,입찰방법,상태">
+						<caption>입찰목록</caption>
+						<colgroup><col width="5%"/><col width="24%"/><col width="40%"/><col width="15%"/><col width="8%"/><col width="8%"/></colgroup>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">아파트명</th>
+							<th scope="col">입찰제목</th>
+							<th scope="col">입찰마감</th>
+							<th scope="col">입찰방법</th>
+							<th scope="col">상태</th>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_NewBtn">신규공고</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_EndBtn">입찰마감</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_EndBtn">입찰마감</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_NullBtn"><span class="blind">-</span></a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_NewBtn">신규공고</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_EndBtn">입찰마감</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_NewBtn">신규공고</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_NewBtn">신규공고</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_EndBtn">입찰마감</a></td>
+						</tr>
+						<tr>
+							<td><span class="tdNum">55</span></td>
+							<td><span class="subTitle">신원마을 4단지 삼송 우림필 유브로 힐</span></td>
+							<td class="listSubject"><a href="bid_view.html" class="tableSubject">통합관제시스템구축 및 CCTV 보강공사 업체선정 공고</a></td>
+							<td><span class="tdDate">2015-11-21 17:00:00</span></td>
+							<td><span class="fs12x clr88">전자입찰</span></td>
+							<td><a href="#none" class="btnS bid_EndBtn">입찰마감</a></td>
+						</tr>
+					</table>
+					<? include '../include/paging_box.php' ?>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(1);
+		currentSnb(1);
+		changeLocation();
+	</script>
+</body>
+</html>

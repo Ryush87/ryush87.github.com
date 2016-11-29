@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi" />
+<title>국민생활체육회</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../common/css/sub_common.css">
+<script type="text/javascript" src="../../common/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../../common/js/skin_common.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript">
+		document.createElement("header");
+		document.createElement("nav");
+		document.createElement("section");
+		document.createElement("article");
+		document.createElement("aside");
+		document.createElement("footer");
+	</script>
+<![endif]-->
+</head>
+
+<body>
+	
+	<!-- wrap start -->
+	<div id="wrap">
+		
+		<!-- header start -->
+		<header class="mainBgColor">
+			<div class="widthWrap">
+				<ul>
+					<li class="backBtn backMoveBtn"><img src="../../common/image/common/arrow_l_w.png" alt="뒤로가기" /></li>
+					<li class="pageTitle">대회 참가신청</li>
+					<li class="menuBtn"><a href="../menu.html"><img src="../../common/image/common/lnb_btn_b.png" alt="메뉴" /></a></li>
+				</ul>
+			</div>
+		</header>
+		<!-- // header end // -->
+
+		<!-- container start -->
+		<section id="container">
+
+			<!-- 대회참가신청 start -->
+			<div class="contents applicationBox">
+				<div class="eventNameTitle">
+					<div id="eventName" class="widthWrap btnTcMain">2015전국생활체육대축전</div>
+				</div>
+				<div class="tListTitle">
+					<div class="grid100 widthWrap appReInL1"><p>[123]겨루기 B그룹 라이트급 개인전 초등부(3~4학년)</p></div>
+				</div>
+				<div class="widthWrap middleSubTitle btnTcMain">신청자 정보</div>
+				<table id="applicationTable" class="tableStyle2" summary="신청자명,출전단위,소속시도,소속클럽,첨부파일">
+					<caption>신청자정보</caption>
+					<tr>
+						<th scope="row">신청자명</th>
+						<td>홍길동 (010-1234-5678)</td>
+					</tr>
+					<tr>
+						<th scope="row">출전단위</th>
+						<td>클럽</td>
+					</tr>
+					<tr>
+						<th scope="row">소속시도</th>
+						<td>
+							<div class="grid50 borderColor_g1">
+								<select name="" id="">
+									<option value="">서울</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">소속군구</th>
+						<td>
+							<div class="grid50 borderColor_g1">
+								<select name="" id="">
+									<option value="">송파구</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">소속클럽</th>
+						<td><div class="grid100 borderColor_g1"><input type="text" style="border:0;" placeholder="클럽명을 입력해주세요"/></div></td>
+					</tr>
+				</table>
+				<div class="widthWrap middleSubTitle btnTcMain">
+					첨부파일<div class="countBox">99</div>
+					<!-- L-010 s -->
+					<!-- <a href="application_write2.html"><div class="addFileBtn">추가</div></a> -->
+					<a href="#" onclick="callPopup('#popAddWrite2');return false;"><div class="addFileBtn">추가</div></a>
+					<!-- L-010 e -->
+				</div>
+				<div class="appAttachL">
+					<ul>
+						<li><div class="widthWrap">honggildong.jpg<a href="#"><div class="xBtn"></div></a></div></li>
+						<li>
+							<div class="widthWrap">
+								<div class="grid90">
+									[1팀] 홍길동 2003-10-12 (남) 1010-1234-5678 라이트급 OO초 1학년 B그룹 aaa.jpg
+								</div>
+								<div class="grid10"><a href="#"><div class="xBtn"></div></a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btnBoxSmall">
+					<a href="#">
+						<div class="popBtn2small btnTcFFF pointC1Bg pointC1Border">신청</div>
+					</a>
+				</div>
+				<!-- L-011 s -->
+				<div class="pageBtnBox">
+					<a href="#">
+						<div class="pageBtnFull1">모집요강 상세화면으로 돌아가기</div>
+					</a>
+					<a href="#">
+						<div class="pageBtnFull2">모집요강 조회화면으로 돌아가기</div>
+					</a>
+					<a href="#">
+						<div class="pageBtnFull3">대회행사 상세화면으로 돌아가기</div>
+					</a>
+					<a href="#">
+						<div class="pageBtnFull4">조회화면으로 돌아가기</div>
+					</a>
+				</div>
+				<!-- L-011 e -->
+			</div>
+			<!-- // 대회참가신청 end //-->
+
+		</section>
+		<!-- // container end // -->
+
+	</div>
+	<!-- // wrap end // -->
+
+	<!-- L-010 s -->
+	<!-- divPopup start -->
+	<div class="divPopupBg"></div>
+	
+	<div id="popAddWrite2" class="divPopupBox">
+		<div class="popHeader mainBgColor">
+			<div class="widthWrap">
+				<ul>
+					<li class="popTitle">참가자추가등록</li>
+					<li class="closePopBtn"><img src="../../common/image/common/menu_xbtn.png" alt="닫기" class="closeIcon"/></li>
+				</ul>
+			</div>
+		</div>
+		<div class="popContent">
+			<div class="widthWrap">
+				<div class="tableInputBox">
+					<table id="applicationTable" class="tableStyle1" summary="신청자명,출전단위,소속시도,소속클럽,첨부파일">
+					<caption>참가자 추가 등록</caption>
+					<tr>
+						<th scope="row">팀명</th>
+						<td><div class="grid70 borderColor_g1"><input type="text" id=""/></div></td>
+					</tr>
+					<tr>
+						<th scope="row">성명</th>
+						<td><div class="grid70 borderColor_g1"><input type="text" id=""/></div></td>
+					</tr>
+					<tr>
+						<th scope="row">생년월일</th>
+						<td>
+							<div class="grid70 borderColor_g1">
+								<input type="text" id="dateBirth" class="dateInput" name="dateBirth" style="width:70%;"/>
+								<img src="../../common/image/common/calendar_icon.png" alt="달력아이콘" class="fa-calendar"/>
+								<script type="text/javascript">setDatePick("dateBirth");</script>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">성별</th>
+						<td>
+							<div class="grid50 borderColor_g1">
+								<select name="" id="">
+									<option value="">남</option>
+									<option value="">여</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">휴대번호</th>
+						<td class="telBox">
+							<div class="grid40">
+								<select name="" id="" class="borderColor_g1">
+									<option value="010">010</option>
+									<option value="010">010</option>
+									<option value="010">010</option>
+									<option value="010">010</option>
+								</select>
+							</div>
+							<div class="grid30">
+								<input type="text" id="" class="borderColor_g1"/><label for="" class="hidden">중간번호</label>
+							</div>
+							<div class="grid30">
+								<input type="text" id="" class="borderColor_g1"/><label for="" class="hidden">마지막번호</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">필수품새/체급</th>
+						<td><div class="grid100 borderColor_g1"><input type="text" /></div></td>
+					</tr>
+					<tr>
+						<th scope="row">학교명</th>
+						<td><div class="grid100 borderColor_g1"><input type="text" /></div></td>
+					</tr>
+					<tr>
+						<th scope="row">학년</th>
+						<td>
+							<div class="grid50 borderColor_g1">
+								<select name="" id="">
+									<option value="">1학년</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">겨루기그룹</th>
+						<td>
+							<div class="grid50 borderColor_g1">
+								<select name="" id="">
+									<option value="">B그룹</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">재학증명서</th>
+						<td><div class="grid100 borderColor_g1"><input type="text" /></div></td>
+					</tr>
+				</table>
+				
+				</div>
+			</div>
+			<div class="popBtnBox">
+				<div class="widthWrap">
+					<a href="#">
+						<div class="popBtn2small btnTcFFF pointC1Bg pointC1Border">저장</div>
+					</a>
+					<div class="popBtn2small btnTcG bgColor_w borderColor_w closePopBtn">취소</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // divPopup end // -->
+	<!-- L-010 e -->
+
+</body>
+</html>

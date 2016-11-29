@@ -1,0 +1,108 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_fee.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_fee_calcul">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">상하수도 요금 계산 방법을 안내해드립니다.</span>
+							</div>
+							<!-- contents s -->
+
+							<div class="guideBox">
+								<ul class="guideBox_white">
+									<li>상수도요금은 구경별 정액 요금과 사용요금(사용량에 따른 단계별 누진 요금적용)을 합하여 계산하고, 하수도(지하수) 사용량에 따른 하수도(지하수) 사용요금을 부과하며 또한 물 이용 부담금은 상수도사용량에 따라서 부과하고 있습니다</li>
+								</ul>
+							</div>
+							<ul class="calculBox mt30">
+								<li>
+									<div class="calculLine">
+										<div class="calculQ">( 예시1. )  수량계량기 13㎜를 사용하는 가정용 수용가의 한달 사용량이 20㎡인 경우 총 요금은 21,150원입니다.</div>
+										<div class="calculA">
+											<dl>
+												<dt>상수도요금은 10,990원입니다.</dt>
+												<dd>· 구경별 정액요금 13㎜ : 1,090원</dd>
+												<dd>· 사용요금 : ( 20㎥ × 495원 ) = 9,900원</dd>
+												<dt>하수도요금은 6,760원입니다. ( ※분류식 요율 적용시 )</dt>
+												<dd>· 사용요금 : ( 20㎥ × 338원) = 6,760원</dd>
+												<dt>물 이용 부담금은 3,400원입니다.</dt>
+												<dd>· 사용요금 : ( 170원 × 20㎥ ) = 3,400원</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="calculLine">
+										<div class="calculQ">( 예시2. )  수량계량기 13㎜를 사용하는 가정용 수용가의 한달 사용량이 40㎡인 경우 총 요금은 50,800원입니다.</div>
+										<div class="calculA">
+											<dl>
+												<dt>상수도요금은 24,800원입니다.</dt>
+												<dd>· 구경별 정액요금 13㎜ : 1,090원</dd>
+												<dd>· 사용요금 : ( 20㎥ × 495원 ) +  ( 초과10㎥ × 587원 ) ＋ ( 초과10㎥ × 794원 )  =  23,710원 </dd>
+												<dt>하수도요금은 19,200원입니다. ( ※분류식 요율 적용시 )</dt>
+												<dd>· 사용요금 : ( 20㎥ × 338원 ) + ( 초과10㎥ × 565원 ) + ( 초과10㎥ × 679원 )  =  19,200원</dd>
+												<dt>물 이용 부담금은 6,800원입니다.</dt>
+												<dd>· 사용요금 : ( 170원 × 40㎥ )  =  6,800</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="calculLine">
+										<div class="calculQ">( 예시3. )  수량계량기 13㎜를 사용하는 가정용 3가구 한달 사용량이 94㎡인 경우 총 요금은 107,490원입니다.</div>
+										<div class="calculA">
+											<dl>
+												<dt>상수도요금은 51,570원입니다.</dt>
+												<dd>· 구경별 정액요금 13㎜ : 1,090원</dd>
+												<dd>· 사용요금 : ( 3 × 20㎥ × 495원 ) ＋ ( 3 × 초과10㎥ × 587원 ) ＋ ( 초과4㎥ × 794원 )  =  50,480원 </dd>
+												<dt>하수도요금은 39,940원입니다. ( ※분류식 요율 적용시 )</dt>
+												<dd>· 사용요금 : ( 3 × 20㎥ × 338원 ) ＋ ( 3 × 초과10㎥ × 565원 ) ＋ ( 초과4㎥ × 679원 )  =  39,940원 ( 원단위 절사 ) </dd>
+												<dt>물 이용 부담금은 15,980원입니다.</dt>
+												<dd>· 사용요금 : ( 170원 × 94㎥ )  =  15,980원</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="calculLine">
+										<div class="calculQ">( 예시4. )  수량계량기 20㎜를 사용하는 일반용 수용가의 한달 사용량이 120㎡인 경우 총 요금은 191,270원입니다.</div>
+										<div class="calculA">
+											<dl>
+												<dt>상수도요금은 75,530원입니다.</dt>
+												<dd>· 구경별 정액요금 20㎜ : 1,470원</dd>
+												<dd>· 사용요금 : ( 100㎥ × 598원 ) + ( 초과20㎥ × 713원 )  =  74,060원 </dd>
+												<dt>하수도요금은 95,340원입니다. ( ※ 분류식 요율 적용시 )</dt>
+												<dd>· 사용요금 : ( 50㎥ × 660원 ) + ( 초과50㎥ × 848원 ) + ( 초과20㎥ × 997원 )  =  95,340원</dd>
+												<dt>물 이용 부담금은 20,400원입니다.</dt>
+												<dd>· 사용요금 :  ( 170원 × 120㎥ )  =  20,400원</dd>
+											</dl>
+										</div>
+									</div>
+								</li>
+							</ul>
+							
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,2,1);
+		changeTitle();
+	</script>
+</body>
+</html>

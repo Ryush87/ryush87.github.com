@@ -1,0 +1,50 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_info.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_gg_lifelong">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<div class="doubleDescBox">
+								<ul>
+									<li><p>즐기는 평생학습으로 더 잘 살고, 더 품격있고, 더 행복한 경기도민을 위한 평생교육진흥원</p></li>
+								</ul>
+							</div>
+							<ul class="ggLifelongBox">
+								<li><div class="ggLifeItem"><h5>소통</h5><p>행복한 동행</p></div></li>
+								<li><div class="ggLifeItem"><h5>나눔</h5><p>행복한 나눔</p></div></li>
+								<li><div class="ggLifeItem"><h5>새로움</h5><p>행복한 창조</p></div></li>
+								<li><div class="ggLifeItem"><h5>섬김</h5><p>행복한 섬김</p></div></li>
+							</ul>
+							<div class="ggLifelong_btn">
+								<a href="#none" target="_blank" title="새창으로열림"><img src="<?=$root?>/skin/images/sub/pc_gg_lifelong_btn_01.jpg" alt="평생교육진흥원 바로가기" /></a>
+								<p>※ 경기도 평생교육진흥원에서 다양한 정보를 만나보세요~!</p>
+							</div>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(2,4);
+		changeTitle();
+	</script>
+</body>
+</html>

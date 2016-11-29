@@ -1,0 +1,424 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_examine.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_guide_drink">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">수질검사 정보를 안내해 드립니다.</span>
+							</div>
+							<!-- contents s -->
+							
+							<ul class="tabBox">
+								<li><a href="#none">먹는 물 수질기준</a></li>
+								<li><a href="#none">용수 (생활, 농·공, 어업용수) 수질기준</a></li>
+								<li>&nbsp</li>
+							</ul>
+							<table class="viewTable2 mt10" summary="구분,항목,수돗물,지하수,약수터">
+								<caption>먹는 물 수질기준</caption>
+								<colgroup><col width="110px"/></colgroup>
+								<tr>
+									<th scope="col" colspan="2" rowspan="2">구분</th>
+									<th scope="col" colspan="2" rowspan="2">항목</th>
+									<th scope="col" class="bdB">수돗물</th>
+									<th scope="col" style="border-bottom:1px solid #d3dbe0;">지하수</th>
+									<th scope="col" style="border-bottom:1px solid #d3dbe0;">약수터</th>
+								</tr>
+								<tr>
+									<th scope="col">( 58항 )</th>
+									<th scope="col">( 46항 )</th>
+									<th scope="col">( 46항 )</th>
+								</tr>
+								<tr>
+									<td colspan="2" rowspan="5">미생물</td>
+									<td rowspan="2">일반세균</td>
+									<td>저온일반세균(21℃)</td>
+									<td rowspan="2">100CFU/mL</td>
+									<td rowspan="2">100CFU/mL</td>
+									<td rowspan="2">100CFU/mL</td>
+								</tr>
+								<tr>
+									<td class="bdR">중온일반세균(21℃)</td>
+								</tr>
+								<tr>
+									<td colspan="2">총대장균</td>
+									<td>불검출/100mL</td>
+									<td>불검출/100mL</td>
+									<td>불검출/100mL</td>
+								</tr>
+								<tr>
+									<td colspan="2">분원성대장균군/대장균</td>
+									<td>불검출/100mL</td>
+									<td>불검출/100mL</td>
+									<td>불검출/100mL</td>
+								</tr>
+								<tr>
+									<td colspan="2">여시니아균</td>
+									<td>-</td>
+									<td>-</td>
+									<td>불검출/2L</td>
+								</tr>
+								<tr>
+									<td colspan="2" rowspan="11">유해영향 무기물</td>
+									<td colspan="2">납</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">불소</td>
+									<td>1.5mg/L</td>
+									<td>1.5mg/L</td>
+									<td>1.5mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">비소</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">세레늄</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">수은</td>
+									<td>0.001mg/L</td>
+									<td>0.001mg/L</td>
+									<td>0.001mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">시안</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">크롬</td>
+									<td>0.05mg/L</td>
+									<td>0.05mg/L</td>
+									<td>0.05mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">암모니아성 질소</td>
+									<td>0.05mg/L</td>
+									<td>0.05mg/L</td>
+									<td>0.05mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">질산성 질소</td>
+									<td>10mg/L</td>
+									<td>10mg/L</td>
+									<td>10mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">카드뮴</td>
+									<td>0.005mg/L</td>
+									<td>0.005mg/L</td>
+									<td>0.005mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">보론</td>
+									<td>1.0mg/L</td>
+									<td>1.0mg/L</td>
+									<td>1.0mg/L</td>
+								</tr>
+								<tr>
+									<td rowspan="28">유해<br />영향<br />유기물</td>
+									<td rowspan="12">휘발<br />성유<br />유기물</td>
+									<td colspan="2">페놀</td>
+									<td>0.005mg/L</td>
+									<td>0.005mg/L</td>
+									<td>0.005mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">1.1.1-트리클로로에탄</td>
+									<td>0.1mg/L</td>
+									<td>0.1mg/L</td>
+									<td>0.1mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">테트라클로로 에틸렌</td>
+									<td>0.1mg/L</td>
+									<td>0.1mg/L</td>
+									<td>0.1mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">트리클로로 에틸렌</td>
+									<td>0.03mg/L</td>
+									<td>0.03mg/L</td>
+									<td>0.03mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">디클로로 메탄</td>
+									<td>0.02mg/L</td>
+									<td>0.02mg/L</td>
+									<td>0.02mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">벤젠</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+									<td>0.01mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">툴루엔</td>
+									<td>0.7mg/L</td>
+									<td>0.7mg/L</td>
+									<td>0.7mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">에틸벤젠</td>
+									<td>0.3mg/L</td>
+									<td>0.3mg/L</td>
+									<td>0.3mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">크실렌</td>
+									<td>0.5mg/L</td>
+									<td>0.5mg/L</td>
+									<td>0.5mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">1.1 디크롤롤로 에틸렌</td>
+									<td>0.03mg/L</td>
+									<td>0.03mg/L</td>
+									<td>0.03mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">사염화탄소</td>
+									<td>0.002mg/L</td>
+									<td>0.002mg/L</td>
+									<td>0.002mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">1.4-다이옥산</td>
+									<td>0.05mg/L</td>
+									<td>0.05mg/L</td>
+									<td>0.05mg/L</td>
+								</tr>
+								<tr>
+									<td rowspan="4">농약</td>
+									<td colspan="2">다이아지논</td>
+									<td>0.02mg/L</td>
+									<td>0.02mg/L</td>
+									<td>0.02mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">파라티온</td>
+									<td>0.06mg/L</td>
+									<td>0.06mg/L</td>
+									<td>0.06mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">페니트로티온</td>
+									<td>0.04mg/L</td>
+									<td>0.04mg/L</td>
+									<td>0.04mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">카바릴</td>
+									<td>0.07mg/L</td>
+									<td>0.07mg/L</td>
+									<td>0.07mg/L</td>
+								</tr>
+								<tr>
+									<td rowspan="12">소독<br />부산물</td>
+									<td colspan="2">1.2-디브로모-3-클로로프로판</td>
+									<td>0.003mg/L</td>
+									<td>0.003mg/L</td>
+									<td>0.003mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">잔류염소(유리잔류염소)</td>
+									<td>4.0mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">총트리할로메탄</td>
+									<td>0.1mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">클로르포름</td>
+									<td>0.08mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">클로랄하이드레이트</td>
+									<td>0.03mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">디브로모아세토니트릴</td>
+									<td>0.1mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">디클로로아세토니트릴</td>
+									<td>0.09mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">트리클로로아세토니트릴</td>
+									<td>0.004mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">할로아세틱에시드</td>
+									<td>0.1mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">브로모디클로로메탄</td>
+									<td>0.03mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">디브로모클로로메탄</td>
+									<td>0.1mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">포름알데히드</td>
+									<td>0.5mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2" rowspan="16">심미적<br />영향물질</td>
+									<td colspan="2">경도</td>
+									<td>300mg/L</td>
+									<td>1000mg/L</td>
+									<td>1000mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">과망간산칼륨소비량</td>
+									<td>10mg/L</td>
+									<td>10mg/L</td>
+									<td>10mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">냄새(소독외의 냄새)</td>
+									<td>없음</td>
+									<td>없음</td>
+									<td>없음</td>
+								</tr>
+								<tr>
+									<td colspan="2">맛(소독외의 맛)</td>
+									<td>없음</td>
+									<td>없음</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">구리</td>
+									<td>1.0mg/L</td>
+									<td>1.0mg/L</td>
+									<td>1.0mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">색도</td>
+									<td>5도</td>
+									<td>5도</td>
+									<td>5도</td>
+								</tr>
+								<tr>
+									<td colspan="2">세제</td>
+									<td>0.5mg/L</td>
+									<td>0.5mg/L</td>
+									<td>0.5mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">수소이온농도</td>
+									<td>5.8~8.5</td>
+									<td>5.8~8.5</td>
+									<td>4.8~9.5</td>
+								</tr>
+								<tr>
+									<td colspan="2">아연</td>
+									<td>3mg/L</td>
+									<td>3mg/L</td>
+									<td>3mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">염소이온</td>
+									<td>250mg/L</td>
+									<td>250mg/L</td>
+									<td>250mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">증발잔류물</td>
+									<td>500mg/L</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td colspan="2">철</td>
+									<td>0.3mg/L</td>
+									<td>0.3mg/L</td>
+									<td>0.3mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">망간</td>
+									<td>0.05mg/L</td>
+									<td>0.3mg/L</td>
+									<td>0.3mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">탁도</td>
+									<td>0.5 NTU</td>
+									<td>1.0 NTU</td>
+									<td>1.0 NTU</td>
+								</tr>
+								<tr>
+									<td colspan="2">황산이온</td>
+									<td>200mg/L</td>
+									<td>200mg/L</td>
+									<td>200mg/L</td>
+								</tr>
+								<tr>
+									<td colspan="2">알루미늄</td>
+									<td>0.2mg/L</td>
+									<td>0.2mg/L</td>
+									<td>0.2mg/L</td>
+								</tr>
+							</table>
+
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(4,1);
+		changeTitle();
+		currentTab(0);
+	</script>
+</body>
+</html>

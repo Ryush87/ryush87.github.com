@@ -1,0 +1,116 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="market_second_list" class="conWrap">
+					<div class="subPage_title">
+						<h2>주민장터</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="apt_searchBox sub_searchBox bdt2s333">
+						<div class="grid25 srch_title"><span class="pointC1">주민장터</span> 검색하기</div>
+						<div class="grid75 srch_val">
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">구 선택</button>
+								<ul class="aList">
+									<li><a href="#1">덕양구</a></li>
+									<li><a href="#2">일산동구</a></li>
+									<li><a href="#3">일산서구</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">동 선택</button>
+								<ul class="aList">
+									<li><a href="#1">백석동</a></li>
+									<li><a href="#2">마두동</a></li>
+									<li><a href="#3">주엽동</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_apt" style="width:130px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">아파트 선택</button>
+								<ul class="aList">
+									<li><a href="#1">백석동</a></li>
+									<li><a href="#2">마두동</a></li>
+									<li><a href="#3">주엽동</a></li>
+								</ul>
+							</div>
+							<label for="search_input" class="blind">검색어 입력</label>
+							<input type="text" id="search_input" class="mr10" style="width:150px;" placeholder="검색어 입력"/>
+							<a href="#none" class="btnS searchBtn"><i class="fa fa-search" aria-hidden="true"></i> 검색하기</a>
+						</div>
+					</div>
+					<div class="pageBtnBox">
+						<a href="market_second_write.html" class="btnS writeBtn">등록하기</a>
+					</div>
+					<table class="listTable1 bdt2s333 mt20" summary="이미지,지역아파트명,작성자연락처,상품명,중고상품설명">
+						<caption>주민장터 리스트</caption>
+						<colgroup><col width="10%"/><col width="25%"/><col width="12%"/><col width="18%"/><col width="35%"/></colgroup>
+						<tr>
+							<th scope="col">이미지</th>
+							<th scope="col">지역>아파트명</th>
+							<th scope="col">작성자/연락처</th>
+							<th scope="col">상품명</th>
+							<th scope="col">중고상품 설명</th>
+						</tr>
+						<tr>
+							<td><img src="<?=$root?>/skin/images/sub/no_image.jpg" alt="이미지없음" /></td>
+							<td class="taL">일산동구 > 정발산동 > 장항양지마을3단지</td>
+							<td>김**<br />010-3333-3333</td>
+							<td class="listSubject"><a href="market_second_view.html" class="tableSubject">나이키 에어 맥스 테일 윈드 8 NIKE 805941-005</a></td>
+							<td class="taL">구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. 구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. </td>
+						</tr>
+						<tr>
+							<td><img src="<?=$root?>/skin/images/sub/no_image.jpg" alt="이미지없음" /></td>
+							<td class="taL">일산동구 > 정발산동 > 장항양지마을3단지</td>
+							<td>김**<br />010-3333-3333</td>
+							<td class="listSubject"><a href="market_second_view.html" class="tableSubject">나이키 에어 맥스 테일 윈드 8 NIKE 805941-005</a></td>
+							<td class="taL">구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. 구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. </td>
+						</tr>
+						<tr>
+							<td><img src="<?=$root?>/skin/images/sub/no_image.jpg" alt="이미지없음" /></td>
+							<td class="taL">일산동구 > 정발산동 > 장항양지마을3단지</td>
+							<td>김**<br />010-3333-3333</td>
+							<td class="listSubject"><a href="market_second_view.html" class="tableSubject">나이키 에어 맥스 테일 윈드 8 NIKE 805941-005</a></td>
+							<td class="taL">구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. 구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. </td>
+						</tr>
+						<tr>
+							<td><img src="<?=$root?>/skin/images/sub/no_image.jpg" alt="이미지없음" /></td>
+							<td class="taL">일산동구 > 정발산동 > 장항양지마을3단지</td>
+							<td>김**<br />010-3333-3333</td>
+							<td class="listSubject"><a href="market_second_view.html" class="tableSubject">나이키 에어 맥스 테일 윈드 8 NIKE 805941-005</a></td>
+							<td class="taL">구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. 구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. </td>
+						</tr>
+						<tr>
+							<td><img src="<?=$root?>/skin/images/sub/no_image.jpg" alt="이미지없음" /></td>
+							<td class="taL">일산동구 > 정발산동 > 장항양지마을3단지</td>
+							<td>김**<br />010-3333-3333</td>
+							<td class="listSubject"><a href="market_second_view.html" class="tableSubject">나이키 에어 맥스 테일 윈드 8 NIKE 805941-005</a></td>
+							<td class="taL">구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. 구매한지 1개월 안된 한번도 사용하지 않은 운동화 중고거래 합니다. </td>
+						</tr>
+					</table>
+					<? include '../include/paging_box.php' ?>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(5);
+		changeLocation();
+	</script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi" />
+<title>국민생활체육회</title>
+<link rel="stylesheet" type="text/css" href="../../common/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../common/css/sub_common.css">
+<script type="text/javascript" src="../../common/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../../common/js/skin_common.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript">
+		document.createElement("header");
+		document.createElement("nav");
+		document.createElement("section");
+		document.createElement("article");
+		document.createElement("aside");
+		document.createElement("footer");
+	</script>
+<![endif]-->
+</head>
+
+<body>
+	
+	<!-- wrap start -->
+	<div id="wrap">
+		
+		<!-- header start -->
+		<header class="mainBgColor">
+			<div class="widthWrap">
+				<ul>
+					<li class="backBtn backMoveBtn"><img src="../../common/image/common/arrow_l_w.png" alt="뒤로가기" /></li>
+					<li class="pageTitle">대회행사 조회</li>
+					<li class="menuBtn"><a href="../menu.html"><img src="../../common/image/common/lnb_btn_b.png" alt="메뉴" /></a></li>
+				</ul>
+			</div>
+		</header>
+		<!-- // header end // -->
+
+		<!-- container start -->
+		<section id="container">
+
+			<!-- 대회행사조회 start -->
+			<div class="contents eventListBox">
+				<div class="widthWrap">
+					<div class="eventSearchCon">
+						<div class="grid30 searchConLine">
+							<select name="" id="">
+								<option value="">대회기간</option>
+							</select>
+						</div>
+						<div class="grid70 searchConLine">
+							<div class="grid45 bd1sDDD">
+								<input type="text" id="datePickStart" class="dateInput" name="eventTermStart" value=""/>
+								<img src="../../common/image/common/calendar_icon.png" alt="달력아이콘" class="fa-calendar"/>
+							</div>
+							<div class="midTxt"> - </div>
+							<div class="grid45 bd1sDDD" style="float:right;">
+								<input type="text" id="datePickEnd" class="dateInput" name="eventTermEnd" value=""/>
+								<img src="../../common/image/common/calendar_icon.png" alt="달력아이콘" class="fa-calendar"/>
+							</div>
+							<script type="text/javascript">
+								setDatePick("datePickStart");
+								setDatePick("datePickEnd");
+							</script>
+						</div>
+						<div class="grid30 searchConLine">
+							<select name="" id="">
+								<option value="">대회명</option>
+							</select>
+						</div>
+						<div class="grid70 searchConLine">
+							<div class="grid100 bd1sDDD"><input type="text" /></div>
+						</div>
+						<div class="grid100 searchConLine">
+							<div class="grid40"><div class="btnFull btnTcG bgColor_w borderColor_w" id="toggleDetail">상세조건조회 <i class="fa fa-angle-down btnTcMain"></i></div></div>
+							<div class="grid30" style="float:right;"><div class="btnFull btnTcFFF pointC1Bg pointC1Border">검색</div></div>
+						</div>
+						<div id="searchDetailBox">
+							<table class="tableStyle1" summary="대회구분,대회분류,출전단위,대회명칭구분,온라인신청,대회종목,개최지역">
+								<caption>상세조건조회</caption>
+								<tr>
+									<th scope="row">대회구분<span class="essential">*</span></th>
+									<td>
+										<ul class="checkUl">
+											<li><input type="checkbox" id="evtDiv1" class="hideInput"/><label for="evtDiv1" class="checkIcon">전국대회</label></li>
+											<li><input type="checkbox" id="evtDiv2" class="hideInput"/><label for="evtDiv2" class="checkIcon">시도대회</label></li>
+											<li><input type="checkbox" id="evtDiv3" class="hideInput"/><label for="evtDiv3" class="checkIcon">시군구대회</label></li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">대회분류<span class="essential">*</span></th>
+									<td>
+										<ul class="checkUl">
+											<li><input type="checkbox" id="evtCate1" class="hideInput"/><label for="evtCate1" class="checkIcon">종합대회</label></li>
+											<li><input type="checkbox" id="evtCate2" class="hideInput"/><label for="evtCate2" class="checkIcon">단일종목대회</label></li>
+											<li><input type="checkbox" id="evtCate3" class="hideInput"/><label for="evtCate3" class="checkIcon">시군구대회</label></li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">출전단위</label><span class="essential">*</span></th>
+									<td>
+										<select name="" id="">
+											<option value="">출전단위선택</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">대회명칭구분</label><span class="essential">*</span></th>
+									<td>
+										<select name="" id="">
+											<option value="">대회명칭구분전체</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">온라인신청</label><span class="essential">*</span></th>
+									<td>
+										<div class="grid100 pt10 pb10">
+											<input type="radio" id="onlineReceive1" name="onlineReceive" checked="checked" class="hideInput"/><label for="onlineReceive1" class="radioIcon mr10">전체</label>
+											<input type="radio" id="onlineReceive2" name="onlineReceive" class="hideInput"/><label for="onlineReceive2" class="radioIcon mr10">가능</label>
+											<input type="radio" id="onlineReceive3" name="onlineReceive" class="hideInput"/><label for="onlineReceive3" class="radioIcon">불가능</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">대회종목</label><span class="essential">*</span></th>
+									<td>
+										<div id="evtItem" class="selectItemBox">
+											<div class="selectItem">축구<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+											<div class="selectItem">태권도<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+											<div class="selectItem">배드민턴<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+											<div class="selectItem">배드민턴<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+										</div>
+										<div class="grid30"><div id="evtItemAdd" class="selectBtn" onclick="callPopup('#popEvtItemAdd');return false;">종목추가</div></div>
+										<div class="grid30" style="margin:0 5%;"><div id="evtItemFav" class="selectBtn">관심종목</div></div>
+										<div class="grid30"><div id="evtItemAllDel" class="selectBtn">전체삭제</div></div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="">개최지역</label><span class="essential">*</span></th>
+									<td>
+										<div id="evtArea" class="selectItemBox">
+											<div class="selectItem">서울<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+											<div class="selectItem">경기<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+											<div class="selectItem">인천 계양구<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+											<div class="selectItem">의정부<a href="#"><img src="../../common/image/common/bul_del.png" alt="" class="evtItemDel"/></a></div>
+										</div>
+										<div class="grid30"><div id="evtAreaAdd" class="selectBtn" onclick="callPopup('#popEvtAreaAdd');return false;">지역추가</div></div>
+										<div class="grid30" style="margin:0 5%;"><div id="evtAreaFav" class="selectBtn">관심지역</div></div>
+										<div class="grid30"><div id="evtAreaAllDel" class="selectBtn">전체삭제</div></div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="widthWrap">
+					<ul class="toggleListBox">
+						<li>
+							<div class="tListTitle">
+								<div class="grid70 evtL1"><p>제25회 문체부장관기 전국배드민턴대회</p></div>
+								<div class="grid20 evtL2"><div class="evtStatus2">접수마감</div></div>
+								<div class="grid10 evtL3"><i class="fa fa-angle-right btnTcG"></i></div>
+							</div>
+							<div class="tListCon">
+								<ul>
+									<li>대회기간:09.05(토) ~ 09.06(일)</li>
+									<li>참가신청:06.01(월) ~ 07.31(금)</li>
+									<li>대회장소:[대구]두류야외음악당외 10개소</li>
+									<li>접수단체:대구광역시생활체육회</li>
+									<li>문의전화:053-777-8888</li>
+								</ul>
+								<div class="btnBoxSmall">
+									<a href="event_view.html">
+										<div class="popBtn3 btnTcG bgColor_w borderColor_w">대회행사 상세조회 <i class="fa fa-chevron-circle-right"></i></div>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="tListTitle">
+								<div class="grid70 evtL1"><p>제25회 문체부장관기 전국배드민턴대회</p></div>
+								<div class="grid20 evtL2"><div class="evtStatus1">접수기간</div></div>
+								<div class="grid10 evtL3"><i class="fa fa-angle-right btnTcG"></i></div>
+							</div>
+							<div class="tListCon">
+								<ul>
+									<li>대회기간:09.05(토) ~ 09.06(일)</li>
+									<li>참가신청:06.01(월) ~ 07.31(금)</li>
+									<li>대회장소:[대구]두류야외음악당외 10개소</li>
+									<li>접수단체:대구광역시생활체육회</li>
+									<li>문의전화:053-777-8888</li>
+								</ul>
+								<div class="btnBoxSmall">
+									<a href="event_view.html">
+										<div class="popBtn3 btnTcG bgColor_w borderColor_w">대회행사 상세조회 <i class="fa fa-chevron-circle-right"></i></div>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="tListTitle">
+								<div class="grid70 evtL1"><p>제25회 문체부장관기 전국배드민턴대회</p></div>
+								<div class="grid20 evtL2"><div class="evtStatus2">접수마감</div></div>
+								<div class="grid10 evtL3"><i class="fa fa-angle-right btnTcG"></i></div>
+							</div>
+							<div class="tListCon">
+								<ul>
+									<li>대회기간:09.05(토) ~ 09.06(일)</li>
+									<li>참가신청:06.01(월) ~ 07.31(금)</li>
+									<li>대회장소:[대구]두류야외음악당외 10개소</li>
+									<li>접수단체:대구광역시생활체육회</li>
+									<li>문의전화:053-777-8888</li>
+								</ul>
+								<div class="btnBoxSmall">
+									<a href="event_view.html">
+										<div class="popBtn3 btnTcG bgColor_w borderColor_w">대회행사 상세조회 <i class="fa fa-chevron-circle-right"></i></div>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- // 대회행사조회 end //-->
+
+		</section>
+		<!-- // container end // -->
+
+	</div>
+	<!-- // wrap end // -->
+	
+	<!-- divPopup start -->
+	<div class="divPopupBg"></div>
+	
+	<div id="popEvtItemAdd" class="divPopupBox">
+		<div class="popHeader mainBgColor">
+			<div class="widthWrap">
+				<ul>
+					<li class="popTitle">종목추가</li>
+					<li class="closePopBtn"><img src="../../common/image/common/menu_xbtn.png" alt="닫기" class="closeIcon"/></li>
+				</ul>
+			</div>
+		</div>
+		<div class="popContent">
+			<div class="widthWrap">
+				<div class="grid100">
+					<div class="searchInputBox">
+						<input type="" id="" name="" placeholder="종목명칭"/>
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+				<div id="popEvtItemSearchList" class="searchListBox">
+					<ul>
+						<li><input type="checkbox" id="evtItem01" class="hideInput"/><label for="evtItem01" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem02" class="hideInput"/><label for="evtItem02" class="checkIcon">인라인하키</label></li>
+						<li><input type="checkbox" id="evtItem03" class="hideInput"/><label for="evtItem03" class="checkIcon">필드하키</label></li>
+						<li><input type="checkbox" id="evtItem04" class="hideInput"/><label for="evtItem04" class="checkIcon">하키</label></li>
+						<li><input type="checkbox" id="evtItem05" class="hideInput"/><label for="evtItem05" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem06" class="hideInput"/><label for="evtItem06" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem01" class="hideInput"/><label for="evtItem01" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem02" class="hideInput"/><label for="evtItem02" class="checkIcon">인라인하키</label></li>
+						<li><input type="checkbox" id="evtItem03" class="hideInput"/><label for="evtItem03" class="checkIcon">필드하키</label></li>
+						<li><input type="checkbox" id="evtItem04" class="hideInput"/><label for="evtItem04" class="checkIcon">하키</label></li>
+						<li><input type="checkbox" id="evtItem05" class="hideInput"/><label for="evtItem05" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem06" class="hideInput"/><label for="evtItem06" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem01" class="hideInput"/><label for="evtItem01" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem02" class="hideInput"/><label for="evtItem02" class="checkIcon">인라인하키</label></li>
+						<li><input type="checkbox" id="evtItem03" class="hideInput"/><label for="evtItem03" class="checkIcon">필드하키</label></li>
+						<li><input type="checkbox" id="evtItem04" class="hideInput"/><label for="evtItem04" class="checkIcon">하키</label></li>
+						<li><input type="checkbox" id="evtItem05" class="hideInput"/><label for="evtItem05" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem06" class="hideInput"/><label for="evtItem06" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem01" class="hideInput"/><label for="evtItem01" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem02" class="hideInput"/><label for="evtItem02" class="checkIcon">인라인하키</label></li>
+						<li><input type="checkbox" id="evtItem03" class="hideInput"/><label for="evtItem03" class="checkIcon">필드하키</label></li>
+						<li><input type="checkbox" id="evtItem04" class="hideInput"/><label for="evtItem04" class="checkIcon">하키</label></li>
+						<li><input type="checkbox" id="evtItem05" class="hideInput"/><label for="evtItem05" class="checkIcon">아이스하키</label></li>
+						<li><input type="checkbox" id="evtItem06" class="hideInput"/><label for="evtItem06" class="checkIcon">아이스하키</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="popBtnBox">
+				<div class="widthWrap">
+					<div class="popBtn btnTcFFF pointC1Bg pointC1Border crsrP closePopBtn">확인</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popEvtAreaAdd" class="divPopupBox">
+		<div class="popHeader mainBgColor">
+			<div class="widthWrap">
+				<ul>
+					<li class="popTitle">지역추가</li>
+					<li class="closePopBtn"><img src="../../common/image/common/menu_xbtn.png" alt="닫기" class="closeIcon"/></li>
+				</ul>
+			</div>
+		</div>
+		<div class="popContent">
+			<div class="widthWrap">
+				<div class="grid100">
+					<div class="searchInputBox">
+						<input type="" id="" name="" placeholder="시도 및 시군구 명칭"/>
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+				<div id="popEvtItemSearchList" class="searchListBox">
+					<ul>
+						<li><input type="checkbox" id="evtArea01" class="hideInput"/><label for="evtArea01" class="checkIcon">서울</label></li>
+						<li><input type="checkbox" id="evtArea02" class="hideInput"/><label for="evtArea02" class="checkIcon">서울 강남구</label></li>
+						<li><input type="checkbox" id="evtArea03" class="hideInput"/><label for="evtArea03" class="checkIcon">서울 강북구</label></li>
+						<li><input type="checkbox" id="evtArea04" class="hideInput"/><label for="evtArea04" class="checkIcon">서울 강서구</label></li>
+						<li><input type="checkbox" id="evtArea05" class="hideInput"/><label for="evtArea05" class="checkIcon">의정부</label></li>
+						<li><input type="checkbox" id="evtArea06" class="hideInput"/><label for="evtArea06" class="checkIcon">경기도 고양시</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="popBtnBox">
+				<div class="widthWrap">
+					<div class="popBtn btnTcFFF pointC1Bg pointC1Border crsrP closePopBtn">확인</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // divPopup end // -->
+
+</body>
+</html>

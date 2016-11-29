@@ -1,0 +1,59 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_introduce.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_map">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">고양시 상하수도 사업소를 찾아오시는 길을 안내해 드립니다.</span>
+							</div>
+							<!-- contents s -->
+							
+							<div class="mapBox">
+								<div class="mapPreview">
+									<img src="<?=$root?>/skin/images/temp/temp_map.jpg" alt="지도" />
+								</div>
+							</div>
+							<div class="subTitle2 mt30">
+								<div class="subTitle_t">타 지역에서 오시는 경우 <span>( 송정역은 김포공항 부근에 위치 )</span>
+							</div>
+							<div class="trafficInfoBox">
+								<dl>
+									<dt>마을버스</dt>
+									<dd>097, 098, 099 (원당역 → 고양시청 정문 방면) / 017, 018, 019 (원당역 → 고양시청 후문 방면)</dd>
+									<dt>도시형버스</dt>
+									<dd>85 (고양동 ↔ 김포공항) / 1082 (내유동 ↔ 영등포역) / 800 (내유동 ↔ 신촌) / 1900 (명성터미널 ↔ 서울역) / 9713 (대화동 ↔ 서울역) / 9703 (덕이동 ↔ 광화문) / 05 (고양동 ↔ 주엽역) / 11 (화정 ↔ GS마트) / 2 (탄현 ↔ 원당역) / 5 (탄현 ↔ 원당역) / 85-1 (고양동 ↔ 능곡) / 550 (내유동 ↔ 대화역) / 567 (탄현 ↔ 삼송동) / 919 (대화역 ↔ 원당역) / 7728 (탄현 ↔ 화전) / 7733 (교하 ↔ 삼송동)</dd>
+									<dt>직행버스</dt>
+									<dd>3700 (인천터미널 ↔ 의정부터미널)</dd>
+									<dt>지하철</dt>
+									<dd>원당역(3호선) ↔ 고양시청</dd>
+
+								</dl>
+							</div>
+
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(0,5);
+		changeTitle();
+		currentTab(0);
+	</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_communi.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="proud_view" class="conWrap">
+					<div class="subPage_title">
+						<h2>단지 자랑하기</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="viewWrap bdt2s333">
+						<h4>호수공원 옆에 있는 우리 단지를 소개합니다. <span class="docDate">2015-05-01</span></h4>
+						<table class="viewTable6" summary="작성자명,공감별점평균,지역선택,글내용,공감별점주기,첨부파일">
+							<caption>글보기</caption>
+							<colgroup><col width="13%"/><col width="13%"/><col width="13%"/><col width="15%"/><col width="13%"/><col width="33%"/></colgroup>
+							<tr>
+								<th scope="row">작성자 명</th>
+								<td class="taC">김**</td>
+								<th scope="row">공감 별점 평균</th>
+								<td class="taC"><div class="sPoint1"><span class="blind">별한개</span></div></td>
+								<th scope="row">지역선택</th>
+								<td class="taC">일반제안 | 덕양구 > 토당동 > 토당 SK뷰 아파트</td>
+							</tr>
+							<tr>
+								<td colspan="6" class="viewCon">
+									<p>
+										안녕하세요.? 호수 공원 옆에 있는 우리 단지를 소개합니다.<br/>
+										안녕하세요.? 호수 공원 옆에 있는 우리 단지를 소개합니다.<br/>
+										안녕하세요.? 호수 공원 옆에 있는 우리 단지를 소개합니다.<br/>
+										안녕하세요.? 호수 공원 옆에 있는 우리 단지를 소개합니다.<br/>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" colspan="2">공감 별점 주기</th>
+								<td colspan="4">
+									<span class="clr99 fs11e">이 글에 공감하시면 공감 별점을 선택해주세요.</span>
+									<ul class="radioPointBox mt5">
+										<li><input type="radio" id="chckP1" name="starP"/><label for="chckP1" class="rPoint1"><span class="blind">별한개</span></label></li>
+										<li><input type="radio" id="chckP2" name="starP"/><label for="chckP2" class="rPoint2"><span class="blind">별두개</span></label></li>
+										<li><input type="radio" id="chckP3" name="starP"/><label for="chckP3" class="rPoint3"><span class="blind">별세개</span></label></li>
+										<li><input type="radio" id="chckP4" name="starP"/><label for="chckP4" class="rPoint4"><span class="blind">별네개</span></label></li>
+										<li><input type="radio" id="chckP5" name="starP"/><label for="chckP5" class="rPoint5"><span class="blind">별다섯개</span></label></li>
+										<li><a href="#none" class="btnS pointBtn">확인</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row" colspan="2">첨부파일</th>
+								<td colspan="4"><a href="#none">adfeadf.zip</a></td>
+							</tr>
+						</table>
+						<table class="viewTable7 mt30" summary="이전글,다음글">
+							<caption>다른 글 목록</caption>
+							<colgroup><col width="26%"/><col width="74%"/></colgroup>
+							<tr>
+								<th scope="row">이전 글</th>
+								<td ><a href="#none">저도 호수공원 옆에 살고 있어요</a></td>
+							</tr>
+							<tr>
+								<th scope="row">다음 글</th>
+								<td><span class="clr99">다음 글이 없습니다.</span></td>
+							</tr>
+						</table>
+					</div>
+					<div class="pageBtnBox mt20">
+						<div class="grid50 taL">
+							<a href="javascript:history.back();" class="btnS blackBtn">목록</a>
+						</div>
+						<div class="grid50 taR">
+							<a href="#none" class="btnS blackBtn">등록하기</a>
+							<a href="#none" class="btnS grayBtn">취소</a>
+						</div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(2);
+		currentSnb(0);
+		changeLocation();
+	</script>
+</body>
+</html>

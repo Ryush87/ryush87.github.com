@@ -1,0 +1,68 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_edubiz.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_life_science">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<div class="life_scienceImg"><img src="<?=$root?>/skin/images/sub/pc_life_science_01.jpg" alt="생활과학교실 현장 사진" /></div>
+							<ul class="life_scienceTxt">
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">01</span>개요</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">흥미로운 과학실험과 체험을 통해 초등학생들에게 창의력을 키워주고 미래 과학기술인재로의 꿈을 키워주는 ‘생활과학교실’은 관내 28개 동 주민센터 47개 반과 사회복지시설 19개소 21개 반으로 운영</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">02</span>참여대상자</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">관내 초·중학생과 성인 대상</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">02</span>운영사항</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">생활과학교실은 미래창조과학부 산하 기관인 한국과학창의재단과 고양시가 공동으로 추진하는 사업으로 생활과학 및 항공우주 분야의 다양한 콘텐츠를 보유하고 있는 한국항공대학교가 운영함</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,5);
+		changeTitle();
+	</script>
+</body>
+</html>

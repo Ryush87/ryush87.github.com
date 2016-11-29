@@ -1,0 +1,54 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_communi.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="poll_ing_view" class="conWrap">
+					<div class="subPage_title">
+						<h2>온라인 설문</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<? include 'poll_tab_box.php' ?>
+					<h4>현재진행중인 온라인 설문입니다.<span class="pollTerm">설문기간 : 2016-05-01 ~ 2016-12-31</span></h4>
+					<div class="poll_ing_wrap">
+						<div class="pollTop"></div>
+						<div class="pollMiddle">
+							<h6>귀하가 고양시 주민자치 사업 중 가장 관심이 있는 것은 무엇인가요? 귀하가 고양시 주민자치 사업 중 가장 관심이 있는 것은 무엇인가요?</h6>
+							<ul class="pollAnswerBox">
+								<li><input type="radio" id="pasw1" name="mAv"/><label for="pasw1">주민자치 교육</label></li>
+								<li><input type="radio" id="pasw2" name="mAv"/><label for="pasw2">마을공동체 사업</label></li>
+								<li><input type="radio" id="pasw3" name="mAv"/><label for="pasw3">주민자치 박람회</label></li>
+								<li><input type="radio" id="pasw4" name="mAv"/><label for="pasw4">시정주민 참여위원회, 주민 참여단</label></li>
+								<li><input type="radio" id="pasw5" name="mAv"/><label for="pasw5">주민참여 예산위원회</label></li>
+								<li><input type="radio" id="pasw6" name="mAv"/><label for="pasw6">마을자원 조사</label></li>
+								<li><input type="radio" id="pasw7" name="mAv"/><label for="pasw7">관심없음</label></li>
+							</ul>
+							<div class="pageBtnBox">
+								<a href="#none" class="mVoteBtn">투표하기</a>
+								<a href="#none" class="mResultBtn">결과보기</a>
+							</div>
+						</div>
+						<div class="pollBottom"></div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(2);
+		currentSnb(3);
+		changeLocation();
+		currentTab(0);
+	</script>
+</body>
+</html>

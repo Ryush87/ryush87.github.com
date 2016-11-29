@@ -1,0 +1,209 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="complex_club_list" class="conWrap">
+					<div class="subPage_title">
+						<h2>단지동호회</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="apt_searchBox sub_searchBox bdt2s333">
+						<div class="grid25 srch_title">동호회 검색하기</div>
+						<div class="grid75 srch_val">
+							<div class="select open mr10" id="slct_cate" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">분야 선택</button>
+								<ul class="aList">
+									<li><a href="#1">덕양구</a></li>
+									<li><a href="#2">일산동구</a></li>
+									<li><a href="#3">일산서구</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">구 선택</button>
+								<ul class="aList">
+									<li><a href="#1">덕양구</a></li>
+									<li><a href="#2">일산동구</a></li>
+									<li><a href="#3">일산서구</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">동 선택</button>
+								<ul class="aList">
+									<li><a href="#1">백석동</a></li>
+									<li><a href="#2">마두동</a></li>
+									<li><a href="#3">주엽동</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_apt" style="width:130px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">아파트 선택</button>
+								<ul class="aList">
+									<li><a href="#1">백석동</a></li>
+									<li><a href="#2">마두동</a></li>
+									<li><a href="#3">주엽동</a></li>
+								</ul>
+							</div>
+							<label for="search_input" class="blind">검색어 입력</label>
+							<input type="text" id="search_input" class="mr10" style="width:150px;" placeholder="검색어 입력"/>
+							<a href="#none" class="btnS searchBtn"><i class="fa fa-search" aria-hidden="true"></i> 검색하기</a>
+						</div>
+					</div>
+					<div class="pageBtnBox">
+						<a href="complex_club_write.html" class="btnS writeBtn">등록하기</a>
+					</div>
+					<ul id="complex_club_list" class="galleryListBox mt20">
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/temp/main_img2.png" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 백석동</span></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/temp/main_img1.png" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 정발산동</span></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/temp/main_img3.png" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 정발산동</span></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/temp/main_img4.png" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 정발산동</span></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/temp/main_img5.png" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 정발산동</span></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/sub/club_no_img.gif" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 정발산동</span></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/sub/club_no_img.gif" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 정발산동</span></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="gallery_item">
+								<div class="gal_item_img">
+									<img src="<?=$root?>/skin/images/sub/club_no_img.gif" alt="단지 동호회" />
+								</div>
+								<div class="gal_item_text">
+									<h6><a href="complex_club_view.html" class="cardBtn">탁구 동호회</a></h6>
+									<span class="clubCate"><a href="#none">스포츠 > 생활체육</a></span>
+									<div class="clubPlus"><span class="blind">Plus</span></div>
+								</div>
+								<div class="gal_item_info">
+									<div class="grid30 blt_person">126</div>
+									<div class="grid70 taR"><span class="blt_addr">일산동구 정발산동</span></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<? include '../include/paging_box.php' ?>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(6);
+		changeLocation();
+	</script>
+</body>
+</html>

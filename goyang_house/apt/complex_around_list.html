@@ -1,0 +1,178 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="complex_around_list" class="conWrap">
+					<div class="subPage_title">
+						<h2>단지주변정보</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<ul id="subTap_complex_around" class="subTap">
+						<li><a href="#none">도서관</a></li>
+						<li><a href="#none">주민센터</a></li>
+						<li><a href="#none">체육시설</a></li>
+						<li><a href="#none">기타</a></li>
+					</ul>
+					<div class="apt_searchBox sub_searchBox bdt2s333">
+						<div class="grid25 srch_title">우리 아파트 주변 검색하기</div>
+						<div class="grid75 srch_val">
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">구 선택</button>
+								<ul class="aList">
+									<li><a href="#1">덕양구</a></li>
+									<li><a href="#2">일산동구</a></li>
+									<li><a href="#3">일산서구</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">동 선택</button>
+								<ul class="aList">
+									<li><a href="#1">백석동</a></li>
+									<li><a href="#2">마두동</a></li>
+									<li><a href="#3">주엽동</a></li>
+								</ul>
+							</div>
+							<label for="search_input" class="blind">검색어 입력</label>
+							<input type="text" id="search_input" class="mr20" placeholder="검색어 입력"/>
+							<a href="#none" class="btnS searchBtn"><i class="fa fa-search" aria-hidden="true"></i> 검색하기</a>
+						</div>
+					</div>
+					<div id="aroundMapBox">
+						<div id="around_map_list">
+							<div class="map_list_guide">·아파트 명을 클릭하면 지도에 위치가 표시됩니다</div>
+							<div class="map_list_title">아파트 명</div>
+							<ul class="map_list">
+								<li><a href="#none">가좌마을 벽산 블루밍 6단지</a></li>
+								<li><a href="#none">가좌마을 벽산 블루밍 6단지</a></li>
+								<li><a href="#none">가좌마을 벽산 블루밍 6단지</a></li>
+								<li><a href="#none">가좌마을 벽산 블루밍 6단지</a></li>
+								<li><a href="#none">가좌마을 벽산 블루밍 6단지</a></li>
+								<li><a href="#none">가좌마을 벽산 블루밍 6단지</a></li>
+								<li><a href="#none">가좌마을 벽산 블루밍 6단지</a></li>
+							</ul>
+							<div class="pagingBoxWrap2">
+								<ul class="pagingBox2">
+									<li class="angleBtn abLL"><a href="#none"><i class="fa fa-angle-double-left"><span class="blind">처음페이지</span></i></a></li>
+									<li class="angleBtn abL"><a href="#none"><i class="fa fa-angle-left" alt="이전페이지"><span class="blind">이전페이지</span></i></a></li>
+									<li class="numBtn actOn"><a href="#none">1</a></li>
+									<li class="numBtn"><a href="#none">2</a></li>
+									<li class="numBtn"><a href="#none">3</a></li>
+									<li class="numBtn"><a href="#none">4</a></li>
+									<li class="numBtn"><a href="#none">5</a></li>
+									<li class="angleBtn abR"><a href="#none"><i class="fa fa-angle-right" alt="다음페이지"><span class="blind">다음페이지</span></i></a></li>
+									<li class="angleBtn abRR"><a href="#none"><i class="fa fa-angle-double-right" alt="끝페이지"><span class="blind">끝페이지</span></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="around_map_preview">
+							<img src="<?=$root?>/skin/images/temp/around01.jpg" alt="지도 미리보기" />
+							<!-- popup s -->
+							<div class="map_popupBox">
+								<div class="popupTop"></div>
+								<div class="popupMid">
+									<div class="popupCon">
+										<h6>아람누리 도서관</h6>
+										<ul>
+											<li>
+												<div class="pcH">주소</div>
+												<div class="pcB">고양시 덕양구 원흥동 85</div>
+											</li>
+											<li>
+												<div class="pcH">홈페이지</div>
+												<div class="pcB"><a href="http://apt.goyang.go.kr/blue" target="_blank" title="새창열림">http://apt.goyang.go.kr/blue</a></div>
+											</li>
+											<li>
+												<div class="pcH2">아파트와의 거리</div>
+												<div class="pcB">150m</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popupBottom">
+									<a href="#none" class="popCloseBtn"><span class="blind">닫기</span></a>
+								</div>
+							</div>
+							<!-- popup e -->
+						</div>
+					</div>
+					<div class="table_title mt40">
+						<h5>우리 아파트 주변시설 정보</h5>
+						<span>(해당 아파트 기준으로 거리가 표기 됨)</span>
+					</div>
+					<table class="listTable3 bdt2s333" summary="시설이름,거리,위치보기">
+						<caption>우리 아파트 주변시설 정보</caption>
+						<colgroup><col width="25%"/><col width="10%"/><col width="15%"/><col width="25%"/><col width="10%"/><col width="15%"/></colgroup>
+						<tr>
+							<th scope="col">시설 이름</th>
+							<th scope="col">거리</th>
+							<th scope="col">위치보기</th>
+							<th scope="col">시설 이름</th>
+							<th scope="col">거리</th>
+							<th scope="col">위치보기</th>
+						</tr>
+						<tr>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+							<td>아람누리도서관</td>
+							<td class="td_point">100m</td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+					</table>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(4);
+		changeLocation();
+		$('#subTap_complex_around li').eq(1).addClass('actOn');
+	</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_edubiz.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_study_member">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<ul class="study_memberTxt">
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">01</span>학습정원사 목표</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">행복학습센터와 평생학습카페의 효과적 운영을 목적으로 함</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">02</span>학습정원사 역할</dt>
+										<dd>
+											<ul>
+												<li class="hyphen">지역별 평생교육 여론수렴</li>
+												<li class="hyphen">지역분석, 주제·대상 별 프로그램 개발·운영 지원</li>
+												<li class="hyphen">프로그램 강사관리</li>
+												<li class="hyphen">학습상담 활동 등 전문적 평생교육 서비스 제공</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,3,2);
+		changeTitle();
+	</script>
+</body>
+</html>

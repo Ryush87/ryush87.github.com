@@ -1,0 +1,55 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_longlife.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_educity">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<dl class="p_edu_dl_1">
+								<dt>비전</dt>
+								<dd>"피어나는 학습, 만개하는 인생"<br /><span>100세 시대 100만 시민의 행복한 학습정원, 고양</span></dd>
+							</dl>
+							<dl class="p_edu_dl_2">
+								<dt>목표</dt>
+								<dd>
+									<ul>
+										<li>풀뿌리 학습공동체 조성으로<br />사회적 통합 증진</li>
+										<li>평생학습 참여 확대로<br />개인의 자아실현</li>
+										<li>평생학습문화 정착으로<br />주민 행복도 향상</li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="p_edu_dl_3">
+								<dt>전략</dt>
+								<dd>
+									<img src="<?=$root?>/skin/images/sub/pc_educity_02.jpg" alt="시민 중심의 평생학습 생태계 조성 : 시민정원사되기, 학습마을꽃피우기, 학습향기퍼뜨리기" />
+								</dd>
+							</dl>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(0,1,0);
+		changeTitle();
+	</script>
+</body>
+</html>

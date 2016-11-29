@@ -1,0 +1,68 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_fee.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_paykind">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">자동이체에 대해서 안내해 드립니다.</span>
+							</div>
+							<!-- contents s -->
+
+							<div class="subTitle3 mt20">
+								<span class="subTitle_t">자동이체 안내</span>
+							</div>
+							<div class="descT mt20">
+								<dl>
+									<dd><span class="pointC4">- “자동이체” 신청 후 매월 말일(공휴일인 경우 익일)에 수도요금이 출금되며, 반드시 수도요금 청구금액 만큼의 통장잔액이 있어야 정상적으로 출금됩니다.</span><br />(※통장잔액 부족시 요금은 이월되어 다음달 요금과 통합청구)</dd>
+									<dd><span class="pointC4">- 수도요금이 3개월 이상 체납된 경우 자동이체가 일시 해지</span>되어 일반고지서로 발부되오니 주의하시기 바랍니다. <br />(※체납완납 시 그 다음달부터 자동이체 재생성)</dd>
+									<dd><span class="pointC4">- 이사할 때(전출시) 반드시 “자동이체 해지” 신청</span>을 하셔야 계좌에서 오출금되는 사고를 미연에 방지할 수 있습니다.</dd>
+									<dd>- 자동이체 해지 및 변경할 경우 즉시 해지처리가 되어 출금이 안될 수 있으니 다른 방법(가상계좌)으로 요금을 납부하시기 바랍니다.</dd>
+									<dd>-  자동이체 신청을 하셨더라도 자동이체 고지서를 받기전까지는 자동이체가 반영된 것이 아니므로 종전대로 금융기관에 일반고지서(지로용지)로 납부하시기 바랍니다.</dd>
+									<dd>-  자동이체 신청, 변경, 해지는 수용가가 직접 금융기관을 방문하여 신청하시거나 인터넷 지로사이트에서 신청하셔야 합니다.</dd>
+								</dl>
+							</div>
+							<div class="subTitle3 mt40">
+								<span class="subTitle_t">자동이체(신청, 변경, 해지) 방법 안내</span>
+							</div>
+							<div class="descT mt20">
+								<dl>
+									<dt style="margin-top:0;">1. 금융기관 방문 신청</dt>
+									<dd>-  거래하시는 각 금융기관(은행, 우체국)에 직접 방문하시어 신청 <br /><span class="pointC4">※ 수도요금 고지서 지참 필수 → 수용가번호(14자리), 지로번호(6102449)</span></dd>
+									<dt>2. 인터넷 지로사이트(www.giro.or.kr) 접속 신청</dt>
+									<dd>-  회원가입(공인인증서 발급)후 이용가능 → mygiro(최상단중앙) → 자동이체 신청/관리 →  자동이체 신청(신규/해지) → 요금신청(지방세/상하수도) → 지로번호(6102449) → 등록하기 → 지로번호(수용가번호) <br />(※ 수용가번호 14자리는 고지서 참조 → ex)“0-00-00-000-000000”)</dd>
+									<dt>3. 자동이체는 신청하신 달의 그 다음달부터 적용되오니 이점 착오 없으시기 바랍니다.</dt>
+								</dl>
+							</div>
+							<div class="subTitle3 mt40">
+								<span class="subTitle_t">상하수도 사용요금 고지서의 수용가번호 위치, 지로번호(6102449)</span>
+							</div>
+							<div class="descImg mt20">
+								<img src="<?=$root?>/skin/images/sub/sub_paykind_img_01.jpg" alt="지로용지" />
+							</div>
+							
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,1,0);
+		changeTitle();
+	</script>
+</body>
+</html>

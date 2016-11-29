@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/*
+===============================================================================================
+1.	버    전 : simple.css
+2.	작 성 자 : Ryu
+3.	참    고 : Simple CSS
+===============================================================================================
+*/
+
+/* position */
+.pstS {position:static;}
+.pstR {position:relative;}
+.pstA {position:absolute;}
+.pstF {position:fixed;}
+
+/* float */
+.fL {float:left;}
+.fR {float:right;}
+.fN {float:none;}
+.cB {clear:both;}
+
+/* display */
+.dN {display:none;}
+.dB {display:block;}
+.dIB {display:inline-block;}
+.dI {display:inline;}
+
+/* margin */
+.m0 {margin:0;}
+.m5 {margin:5px;}
+.m10 {margin:10px;}
+.m15 {margin:15px;}
+.m20 {margin:20px;}
+.m25 {margin:25px;}
+.m30 {margin:30px;}
+
+.mt0 {margin-top:0;}
+.mt5 {margin-top:5px;}
+.mt10 {margin-top:10px;}
+.mt15 {margin-top:15px;}
+.mt20 {margin-top:20px;}
+.mt25 {margin-top:25px;}
+.mt30 {margin-top:30px;}
+.mt40 {margin-top:40px;}
+
+.mr0 {margin-right:0;}
+.mr5 {margin-right:5px;}
+.mr10 {margin-right:10px;}
+.mr15 {margin-right:15px;}
+.mr20 {margin-right:20px;}
+.mr25 {margin-right:25px;}
+.mr30 {margin-right:30px;}
+
+.mb0 {margin-bottom:0;}
+.mb5 {margin-bottom:5px;}
+.mb10 {margin-bottom:10px;}
+.mb15 {margin-bottom:15px;}
+.mb20 {margin-bottom:20px;}
+.mb25 {margin-bottom:25px;}
+.mb30 {margin-bottom:30px;}
+
+.ml0 {margin-left:0;}
+.ml5 {margin-left:5px;}
+.ml10 {margin-left:10px;}
+.ml15 {margin-left:15px;}
+.ml20 {margin-left:20px;}
+.ml25 {margin-left:25px;}
+.ml30 {margin-left:30px;}
+
+/* padding */
+.p0 {padding:0;}
+.p5 {padding:5px;}
+.p10 {padding:10px;}
+.p15 {padding:15px;}
+.p20 {padding:20px;}
+.p25 {padding:25px;}
+.p30 {padding:30px;}
+
+.pt0 {padding-top:0;}
+.pt5 {padding-top:5px;}
+.pt10 {padding-top:10px;}
+.pt15 {padding-top:15px;}
+.pt20 {padding-top:20px;}
+.pt25 {padding-top:25px;}
+.pt30 {padding-top:30px;}
+
+.pr0 {padding-right:0;}
+.pr5 {padding-right:5px;}
+.pr10 {padding-right:10px;}
+.pr15 {padding-right:15px;}
+.pr20 {padding-right:20px;}
+.pr25 {padding-right:25px;}
+.pr30 {padding-right:30px;}
+
+.pb0 {padding-bottom:0;}
+.pb5 {padding-bottom:5px;}
+.pb10 {padding-bottom:10px;}
+.pb15 {padding-bottom:15px;}
+.pb20 {padding-bottom:20px;}
+.pb25 {padding-bottom:25px;}
+.pb30 {padding-bottom:30px;}
+
+.pl0 {padding-left:0;}
+.pl5 {padding-left:5px;}
+.pl10 {padding-left:10px;}
+.pl15 {padding-left:15px;}
+.pl20 {padding-left:20px;}
+.pl25 {padding-left:25px;}
+.pl30 {padding-left:30px;}
+
+/* border */
+.testBorer {border:1px solid red;}
+.bd0 {border:0;}
+.bd1s333 {border:1px solid #333;}
+.bd1s666 {border:1px solid #666;}
+.bd1s999 {border:1px solid #999;}
+.bd1s888 {border:1px solid #888;}
+.bd1sAAA {border:1px solid #aaa;}
+.bd1sBBB {border:1px solid #bbb;}
+.bd1sCCC {border:1px solid #ccc;}
+.bd1sDDD {border:1px solid #ddd;}
+.bd1sEEE {border:1px solid #eee;}
+.bd1sFFF {border:1px solid #fff;}
+
+/* font */
+.fs08e {font-size:0.8em;}
+.fs09e {font-size:0.9em;}
+.fs10e {font-size:1em;}
+.fs11e {font-size:1.1em;}
+.fs12e {font-size:1.2em;}
+.fs13e {font-size:1.3em;}
+.fs14e {font-size:1.4em;}
+.fs15e {font-size:1.5em;}
+.fs16e {font-size:1.6em;}
+.fs17e {font-size:1.7em;}
+.fs18e {font-size:1.8em;}
+.fs19e {font-size:1.9em;}
+.fs20e {font-size:2em;}
+
+.fs10x {font-size:10px;}
+.fs12x {font-size:12px;}
+.fs14x {font-size:14px;}
+.fs16x {font-size:16px;}
+.fs18x {font-size:18px;}
+.fs20x {font-size:20px;}
+
+.taL {text-align:left;}
+.taC {text-align:center;}
+.taR {text-align:right;}
+
+.fwN {font-weight:normal;}
+.fwB {font-weight:bold;}
+
+.clr33 {color:#333;}
+.clr66 {color:#666;}
+.clr77 {color:#777;}
+.clr88 {color:#888;}
+.clr99 {color:#999;}
+.clrAA {color:#aaa;}
+.clrBB {color:#bbb;}
+.clrCC {color:#ccc;}
+.clrDD {color:#ddd;}
+.clrEE {color:#eee;}
+.clrFF {color:#fff;}
+.clr7B {color:#7b7b7b;}
+
+/* cursor */
+.crsrC {cursor:crosshair;}
+.crsrP {cursor:pointer;}
+.crsrM {cursor:move;}
+.crsrW {cursor:wait;}
+.crsrD {cursor:default;}
+.crsrT {cursor:text;}
+
+/* overflow */
+.ofV {overflow:visible;}
+.ofH {overflow:hidden;}
+.ofS {overflow:scroll;}
+.ofA {overflow:auto;}
+.tofC {text-overflow:clip;}
+.tofE {text-overflow:ellipsis;}
+
+/* grid */
+.grid5 {float:left;width:5%;}
+.grid10 {float:left;width:10%;}
+.grid15 {float:left;width:15%;}
+.grid20 {float:left;width:20%;}
+.grid25 {float:left;width:25%;}
+.grid30 {float:left;width:30%;}
+.grid35 {float:left;width:35%;}
+.grid40 {float:left;width:40%;}
+.grid45 {float:left;width:45%;}
+.grid50 {float:left;width:50%;}
+.grid55 {float:left;width:55%;}
+.grid60 {float:left;width:60%;}
+.grid65 {float:left;width:65%;}
+.grid70 {float:left;width:70%;}
+.grid75 {float:left;width:75%;}
+.grid80 {float:left;width:80%;}
+.grid85 {float:left;width:85%;}
+.grid90 {float:left;width:90%;}
+.grid95 {float:left;width:95%;}
+.grid100 {float:left;width:100%;}

@@ -1,0 +1,119 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_introduce.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_general">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">해당 연도를 선택하시면 현황을 보실 수 있습니다.</span>
+							</div>
+							<!-- contents s -->
+							
+							<div class="subTitle1">
+								<label for="selectYear" class="subTitle_t">연도선택&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</label>
+								<div class="select open" id="selectYear">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">2016년</button>
+									<ul class="aList">
+										<li><a href="#1">2016년</a></li>
+										<li><a href="#2">2015년</a></li>
+										<li><a href="#3">2014년</a></li>
+									</ul>
+								</div>
+							</div>
+							<table class="viewTable mt10" summary="상수도현황,연도,일반현황,요금수준">
+								<caption>상수도현황</caption>
+								<colgroup><col width="180px"/><col width="130px"/></colgroup>
+								<tr>
+									<th scope="row" rowspan="5">상수도 현황</th>
+									<th scope="row">연도</th>
+									<td colspan="4">2016년</td>
+								</tr>
+								<tr class="dotLine">
+									<th scope="row" rowspan="2">일반현황</th>
+									<td>보급율</td>
+									<td>1인 1일 급수량</td>
+									<td>시설용량</td>
+									<td>유수율</td>
+								</tr>
+								<tr>
+									<td>99.55 %</td>
+									<td>286 L</td>
+									<td>492 천톤/일</td>
+									<td>90.31 %</td>
+								</tr>
+								<tr class="dotLine">
+									<th scope="row" rowspan="2">요금수준</th>
+									<td>톤당 총 원가</td>
+									<td>톤당 평균요금</td>
+									<td>현실화 율</td>
+									<td>&nbsp;</td>
+								</tr>
+								<tr>
+									<td>622.10 원</td>
+									<td>583.77 원</td>
+									<td>93.84 %</td>
+									<td>&nbsp;</td>
+								</tr>
+							</table>
+							<table class="viewTable mt40" summary="하수도현황,연도,일반현황,요금수준">
+								<caption>하수도현황</caption>
+								<colgroup><col width="180px"/><col width="130px"/></colgroup>
+								<tr>
+									<th scope="row" rowspan="5">하수도 현황</th>
+									<th scope="row">연도</th>
+									<td colspan="3">2016년</td>
+								</tr>
+								<tr class="dotLine">
+									<th scope="row" rowspan="2">일반현황</th>
+									<td>보급율</td>
+									<td>하수처리 시설 용량 (1일)</td>
+									<td>하수관 거연장</td>
+								</tr>
+								<tr>
+									<td>91 %</td>
+									<td>492 천톤/일</td>
+									<td>1,707 km</td>
+								</tr>
+								<tr class="dotLine">
+									<th scope="row" rowspan="2">요금수준</th>
+									<td>톤당 총 원가</td>
+									<td>톤당 평균요금</td>
+									<td>현실화 율</td>
+								</tr>
+								<tr>
+									<td>1,030.02 원</td>
+									<td>400.25 원</td>
+									<td>38.86 %</td>
+								</tr>
+							</table>
+							<div class="subTitle1 mt30">
+								<span class="subTitle_t">위치 : </span>
+								<span class="subTitle_t2">경기도 고양시 덕양구 고양시청로 11 (주교동)<span class="gubun">&nbsp;</span>전화번호 : 031 - 909 - 9000</span>
+							</div>
+
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(0,0);
+		changeTitle();
+	</script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_fee.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_fee_check">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+
+							<div class="guideBox">
+								<ul class="guideBox_white">
+									<li>상하수도 요금 조회를 하시려면 고지서상의 <span class="pointC3">수용가 번호 14자리</span>와 <span class="pointC3">성명</span>을 입력하시면 확인이 가능합니다</li>
+								</ul>
+							</div>
+							<div class="subTitle3 mt50">
+								<span class="subTitle_t">검색조건</span>
+							</div>
+							<table class="viewTable3 mt20" summary="수용가번호,성명,기간">
+								<caption>검색조건</caption>
+								<colgroup><col width="190px"/></colgroup>
+								<tr>
+									<th scope="row">수용가번호</th>
+									<td class="td_tal">
+										<input type="text" style="width:30px;" /> ─
+										<input type="text" style="width:40px;" /> ─
+										<input type="text" style="width:40px;" /> ─
+										<input type="text" style="width:50px;" /> ─
+										<input type="text" style="width:80px;" />
+										<span class="tableDesc">&nbsp;&nbsp;예) 1-11-11-111-111111 (한자리-두자리-두자리-세자리-여섯자리)</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">성 명</th>
+									<td class="td_tal">
+										<input type="text" style="width:220px;" />
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">기 간</th>
+									<td class="td_tal td_select">
+										<div class="select open" id="slct_item">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">선택</button>
+											<ul class="aList">
+												<li><a href="#1">2016년</a></li>
+												<li><a href="#2">2015년</a></li>
+												<li><a href="#3">2014년</a></li>
+											</ul>
+										</div>
+										<div class="select open" id="slct_item">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">선택</button>
+											<ul class="aList">
+												<li><a href="#1">12월</a></li>
+												<li><a href="#2">11월</a></li>
+												<li><a href="#3">10월</a></li>
+											</ul>
+										</div>
+										<span class="fL ml10 mr10">─</span>
+										<div class="select open" id="slct_item">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">선택</button>
+											<ul class="aList">
+												<li><a href="#1">2016년</a></li>
+												<li><a href="#2">2015년</a></li>
+												<li><a href="#3">2014년</a></li>
+											</ul>
+										</div>
+										<div class="select open" id="slct_item">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">선택</button>
+											<ul class="aList">
+												<li><a href="#1">2016년</a></li>
+												<li><a href="#2">2015년</a></li>
+												<li><a href="#3">2014년</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<a href="#none" class="btnS1 blue2Btn">검색</a>
+							</div>
+							<div class="subTitle3">
+								<span class="subTitle_t">기본정보</span>
+							</div>
+							<table class="viewTable3 mt20" summary="성명,업종,주소,고객지정계좌,전자수용가번호">
+								<caption>기본정보</caption>
+								<colgroup><col width="190px"/><col /><col width="190px"/><col /></colgroup>
+								<tr>
+									<th scope="row">성명</th>
+									<td class="td_tal">홍길동</td>
+									<th scope="row">업종</th>
+									<td class="td_tal">가정용</td>
+								</tr>
+								<tr>
+									<th scope="row">주소</th>
+									<td class="td_tal" colspan="3">고양시 일산동구 정발산동 고양시 일산동구 정발산동 ...</td>
+								</tr>
+								<tr>
+									<th scope="row">고객지정계좌</th>
+									<td class="td_tal">농협은행 111-222-3333</td>
+									<th scope="row">전자수용가번호</th>
+									<td class="td_tal">41280-0000254-4</td>
+								</tr>
+							</table>
+							<table class="viewTable detailTable mt50" summary="납기,지침,사용량,총액,상수도,하수도,물이용부담금,상세">
+								<caption>상세정보</caption>
+								<tr>
+									<th scope="row">납기</th>
+									<th scope="row">지침</th>
+									<th scope="row">사용량</th>
+									<th scope="row">총액</th>
+									<th scope="row">상수도</th>
+									<th scope="row">하수도</th>
+									<th scope="row">물이용부담금</th>
+									<th scope="row">상세</th>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td>999량</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td><a href="#none" class="btnS1 blue3Btn" onclick="callPopup('#popDetail');return false;">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td>999량</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td>999량</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td>999량</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td>999량</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td>1,835,315원</td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr><tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+								<tr>
+									<td>2016년 09월</td>
+									<td>4443량</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><a href="#none" class="btnS1 blue3Btn">보기</a></td>
+								</tr>
+							</table>
+
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+
+	<!-- divPopup s -->
+	<div class="divPopupBg"></div>
+	
+	<div id="popDetail" class="divPopupBox">
+		<div class="popHeader ">
+			<ul>
+				<li class="popTitle"></li>
+				<li class="closePopBtn"><img src="<?=$root?>/skin/images/common/btn_close.png" alt="닫기" class="closeIcon"/></li>
+			</ul>
+		</div>
+		<div class="popContent">
+			<div class="subTitle3">
+				<span class="subTitle_t">상세보기</span>
+			</div>
+			<table class="viewTable3 popT1 mt10" summary="상수도,하수도,조정,세대수,사용기간,구경,다아월지침,전월지침,인정조정">
+				<caption>상세보기</caption>
+				<colgroup><col width="120px"/><col /><col width="120px"/><col width="260px"/><col width="120px"/><col /></colgroup>
+				<tr>
+					<th scope="row">상수도</th>
+					<td class="td_tal">일반용</td>
+					<th scope="row">하수도</th>
+					<td class="td_tal">일반용합류식</td>
+					<th scope="row">조정</th>
+					<td class="td_tal">정상조정</td>
+				</tr>
+				<tr>
+					<th scope="row">세대수</th>
+					<td class="td_tal">1세대</td>
+					<th scope="row">사용기간</th>
+					<td class="td_tal">2016년 01월 01일 ~ 2016년 02월 01일</td>
+					<th scope="row">구경</th>
+					<td class="td_tal">200m/m</td>
+				</tr>
+				<tr>
+					<th scope="row">당월지침</th>
+					<td class="td_tal">4443량</td>
+					<th scope="row">전월지침</th>
+					<td class="td_tal">4348량</td>
+					<th scope="row">인정조정</th>
+					<td class="td_tal">정상조정</td>
+				</tr>
+			</table>
+			<table class="viewTable3 popT2 mt30" summary="사용료,정액료,가감액,연체료,인정액,정산액,납기내금액">
+				<caption>상세보기2</caption>
+				<colgroup><col width="140px"/><col /></colgroup>
+				<tr>
+					<th scope="col">&nbsp;</th>
+					<th scope="col">사용료</th>
+					<th scope="col">정액료</th>
+					<th scope="col">가감액</th>
+					<th scope="col">연체료</th>
+					<th scope="col">인정액</th>
+					<th scope="col">정산액</th>
+					<th scope="col">납기내금액</th>
+				</tr>
+				<tr>
+					<th scope="row">상수도</th>
+					<td>138,310원</td>
+					<td>138,310원</td>
+					<td>138,310원</td>
+					<td>56,810원</td>
+					<td>65,310원</td>
+					<td>16,310원</td>
+					<td>58,310원</td>
+				</tr>
+				<tr>
+					<th scope="row">하수도</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<th scope="row">물이용부담금</th>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<th scope="row">소계</th>
+					<td>113,312원</td>
+					<td>113,312원</td>
+					<td>113,312원</td>
+					<td>56,371원</td>
+					<td>3,312원</td>
+					<td>63,312원</td>
+					<td>213,312원</td>
+				</tr>
+			</table>
+			<table class="viewTable3 popT3 mt30" summary="사용료,정액료,가감액,연체료,인정액,정산액,납기내금액">
+				<caption>상세보기3</caption>
+				<colgroup><col width="220px"/><col /></colgroup>
+				<tr>
+					<th scope="col">상수도 계량기 대금</th>
+					<td class="td_tal">10,000원</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- divPopup e -->
+
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,0);
+		changeTitle();
+	</script>
+</body>
+</html>

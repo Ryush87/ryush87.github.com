@@ -1,0 +1,113 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="map_apt_list" class="conWrap">
+					<div class="subPage_title">
+						<h2>지도로 보는 아파트</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="apt_searchBox sub_searchBox bdt2s333">
+						<div class="grid25 srch_title">우리 아파트 한 눈에 보기</div>
+						<div class="grid75 srch_val">
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">구 선택</button>
+								<ul class="aList">
+									<li><a href="#1">덕양구</a></li>
+									<li><a href="#2">일산동구</a></li>
+									<li><a href="#3">일산서구</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">동 선택</button>
+								<ul class="aList">
+									<li><a href="#1">백석동</a></li>
+									<li><a href="#2">마두동</a></li>
+									<li><a href="#3">주엽동</a></li>
+								</ul>
+							</div>
+							<label for="search_input" class="blind">검색어 입력</label>
+							<input type="text" id="search_input" class="mr20" placeholder="검색어 입력"/>
+							<a href="#none" class="btnS searchBtn"><i class="fa fa-search" aria-hidden="true"></i> 검색하기</a>
+						</div>
+					</div>
+					<div id="apt_map_preview">
+						<img src="<?=$root?>/skin/images/temp/map01.jpg" alt="지도 미리보기" />
+					</div>
+					<table class="listTable1 bdt2s333 mt30" summary="번호,구,동,아파트명,홈페이지,위치보기">
+						<caption>지도로 보는 아파트 리스트</caption>
+						<colgroup><col width="5%"/><col width="10%"/><col width="10%"/><col width="30%"/><col width="35%"/><col width="10%"/></colgroup>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">구</th>
+							<th scope="col">동</th>
+							<th scope="col">아파트 명</th>
+							<th scope="col">홈페이지</th>
+							<th scope="col">위치보기</th>
+						</tr>
+						<tr>
+							<td><span class="fs09e clr77">55</span></td>
+							<td><span class="clr77">일산서구</span></td>
+							<td><span class="clr77">가좌동</span></td>
+							<td><a href="map_apt_view.html" class="tableSubject">가좌마을 벽산블루밍 6단지</a></td>
+							<td><a href="http://apt.goyang.go.kr/ilsanblooming6" target="_blank" title="새창으로 열림">http://apt.goyang.go.kr/ilsanblooming6</a></td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td>일산서구</td>
+							<td>가좌동</td>
+							<td><a href="map_apt_view.html" class="tableSubject">가좌마을 벽산블루밍 6단지</a></td>
+							<td><a href="http://apt.goyang.go.kr/ilsanblooming6" target="_blank" title="새창으로 열림">http://apt.goyang.go.kr/ilsanblooming6</a></td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td>일산서구</td>
+							<td>가좌동</td>
+							<td><a href="map_apt_view.html" class="tableSubject">가좌마을 벽산블루밍 6단지</a></td>
+							<td><a href="http://apt.goyang.go.kr/ilsanblooming6" target="_blank" title="새창으로 열림">http://apt.goyang.go.kr/ilsanblooming6</a></td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td>일산서구</td>
+							<td>가좌동</td>
+							<td><a href="map_apt_view.html" class="tableSubject">가좌마을 벽산블루밍 6단지</a></td>
+							<td><a href="http://apt.goyang.go.kr/ilsanblooming6" target="_blank" title="새창으로 열림">http://apt.goyang.go.kr/ilsanblooming6</a></td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td>일산서구</td>
+							<td>가좌동</td>
+							<td><a href="map_apt_view.html" class="tableSubject">가좌마을 벽산블루밍 6단지</a></td>
+							<td><a href="http://apt.goyang.go.kr/ilsanblooming6" target="_blank" title="새창으로 열림">http://apt.goyang.go.kr/ilsanblooming6</a></td>
+							<td><a href="#none" class="btnS mapBtn">위치보기</a></td>
+						</tr>
+					</table>
+					<? include '../include/paging_box.php' ?>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(0);
+		changeLocation();
+	</script>
+</body>
+</html>

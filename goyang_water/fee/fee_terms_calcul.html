@@ -1,0 +1,282 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_fee.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_fee_terms">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">상하수도요금 산정기준에  따른 조건별 모의 계산입니다.</span>
+							</div>
+							<!-- contents s -->
+
+							<table class="viewTable3 th_h mt20" summary="상수도업종,구경,하수도업종,가구수,사용량">
+								<caption>요금계산조건</caption>
+								<colgroup><col width="180px"/><col /><col width="180px"/><col /></colgroup>
+								<tr>
+									<th scope="row">상수도 업종</th>
+									<td class="td_tal td_select">
+										<div class="select open ml20" id="slct_item">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">가정용</button>
+											<ul class="aList">
+												<li><a href="#1">업소용</a></li>
+											</ul>
+										</div>
+									</td>
+									<th scope="row">구경</th>
+									<td class="td_tal td_select">
+										<div class="select open ml20" id="slct_item">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">13</button>
+											<ul class="aList">
+												<li><a href="#1">14</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">하수도 업종</th>
+									<td class="td_tal td_select">
+										<div class="select open ml20" id="slct_item">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">가정분류식</button>
+											<ul class="aList">
+												<li><a href="#1">업소분류식</a></li>
+											</ul>
+										</div>
+									</td>
+									<th scope="row">가구 수</th>
+									<td class="td_tal">
+										<input type="text" class="ml20" style="width:180px;" />
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">사용량</th>
+									<td class="td_tal" colspan="3">
+										<input type="text" class="ml20" style="width:180px;" />
+									</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<div class="txtBox">※ 모의계산 요금은 일반적인 경우의 요금입니다. 감면세대, 연체료 등은 포함하지 않습니다.</div>
+								<a href="#none" class="btnS1 blue2Btn">요금계산</a>
+							</div>
+							<table class="viewTable3 th_h mt20 summaryT" summary="전체합계">
+								<caption>모의계산합계</caption>
+								<colgroup><col width="180px"/><col /></colgroup>
+								<tr>
+									<th scope="row">전체합계</th>
+									<td class="td_tal"><span class="ml20">26,430 원</span></td>
+								</tr>
+							</table>
+							<div class="gridL mt50">
+								<div class="subTitle3">
+									<span class="subTitle_t">상수도 요금산정 기준</span>
+								</div>
+								<table class="viewTable3 th_w mt20" summary="구경,요금,합계">
+									<caption>구경별정액료</caption>
+									<colgroup><col width="180px"/></colgroup>
+									<tr>
+										<th scope="col" colspan="3">구경별 정액료</th>
+									</tr>
+									<tr>
+										<th scope="col">구경 (m/m)</th>
+										<th scope="col">요금</th>
+										<th scope="col">합계</th>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>1,090</td>
+										<td>1,090</td>
+									</tr>
+								</table>
+								<table class="viewTable3 th_w mt50" summary="적용단계,적용량,적용단가,금액,합계">
+									<caption>상수도료</caption>
+									<colgroup><col width="180px"/></colgroup>
+									<tr>
+										<th scope="col" colspan="5">상수도료</th>
+									</tr>
+									<tr>
+										<th scope="col">적용단계 (톤)</th>
+										<th scope="col">작용량 (톤)</th>
+										<th scope="col">적용단가 (원)</th>
+										<th scope="col">금액</th>
+										<th scope="col">합계</th>
+									</tr>
+									<tr>
+										<td>0 ~ 20</td>
+										<td>20</td>
+										<td>495</td>
+										<td>9,900</td>
+										<td rowspan="2" class="brdL">12,240</td>
+									</tr>
+									<tr>
+										<td>21 ~20</td>
+										<td>4</td>
+										<td>587</td>
+										<td>2,340</td>
+									</tr>
+								</table>
+								<table class="viewTable3 th_w mt50" summary="적용단계,적용량,적용단가,금액,합계">
+									<caption>하수도료</caption>
+									<colgroup><col width="180px"/></colgroup>
+									<tr>
+										<th scope="col" colspan="5">하수도료</th>
+									</tr>
+									<tr>
+										<th scope="col">적용단계 (톤)</th>
+										<th scope="col">작용량 (톤)</th>
+										<th scope="col">적용단가 (원)</th>
+										<th scope="col">금액</th>
+										<th scope="col">합계</th>
+									</tr>
+									<tr>
+										<td>0 ~ 20</td>
+										<td>20</td>
+										<td>338</td>
+										<td>6,760</td>
+										<td rowspan="2" class="brdL">9,020</td>
+									</tr>
+									<tr>
+										<td>21 ~20</td>
+										<td>4</td>
+										<td>565</td>
+										<td>2,260</td>
+									</tr>
+								</table>
+								<table class="viewTable3 th_w mt50" summary="적용량,적용단가,금액,합계">
+									<caption>물이용부담금</caption>
+									<colgroup><col width="180px"/></colgroup>
+									<tr>
+										<th scope="col" colspan="4">물 이용 부담금</th>
+									</tr>
+									<tr>
+										<th scope="col">작용량 (톤)</th>
+										<th scope="col">적용단가 (원)</th>
+										<th scope="col">금액</th>
+										<th scope="col">합계</th>
+									</tr>
+									<tr>
+										<td>24</td>
+										<td>170</td>
+										<td>4,080</td>
+										<td>4,080</td>
+									</tr>
+								</table>
+							</div>
+							<div class="gridR">
+								<div class="subTitle3 mt50">
+									<span class="subTitle_t">구경별 요금산정 기준</span>
+								</div>
+								<table class="viewTable3 gridR_t mt20" summary="구경,요금">
+									<caption>구경별정액료</caption>
+									<colgroup><col width="50%"/></colgroup>
+									<tr>
+										<th scope="col">구경 (mm)</th>
+										<th scope="col">요금 (원)</th>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>1,090</td>
+									</tr>
+									<tr>
+										<td>20</td>
+										<td>1,470</td>
+									</tr>
+									<tr>
+										<td>25</td>
+										<td>1,990</td>
+									</tr>
+									<tr>
+										<td>32</td>
+										<td>3,020</td>
+									</tr>
+									<tr>
+										<td>40</td>
+										<td>4,450</td>
+									</tr>
+									<tr>
+										<td>50</td>
+										<td>11,830</td>
+									</tr>
+									<tr>
+										<td>75</td>
+										<td>17,620</td>
+									</tr>
+									<tr>
+										<td>100</td>
+										<td>50,270</td>
+									</tr>
+									<tr>
+										<td>150</td>
+										<td>82,440</td>
+									</tr>
+									<tr>
+										<td>200</td>
+										<td>97,190</td>
+									</tr>
+									<tr>
+										<td>250</td>
+										<td>198,430</td>
+									</tr>
+								</table>
+								<div class="subTitle3 mt40">
+									<span class="subTitle_t">가정용 상수도 요금산정 기준</span>
+								</div>
+								<table class="viewTable3 mt20" summary="사용량,요금">
+									<caption>가정용 상수도</caption>
+									<colgroup><col width="50%"/></colgroup>
+									<tr>
+										<th scope="col">사용량(톤)</th>
+										<th scope="col">요금 (원)</th>
+									</tr>
+									<tr>
+										<td><div class="mt10 mb10">1 ~ 20<br />21 ~ 30<br />31 이상</div></td>
+										<td>495<br />587<br />794</td>
+									</tr>
+									<tr>
+										<td colspan="2">※ 10돈 이하 : 253원</td>
+									</tr>
+								</table>
+								<div class="subTitle3 mt40">
+									<span class="subTitle_t">가정용 분류식 하수도 요금산정 기준</span>
+								</div>
+								<table class="viewTable3 mt20" summary="사용량,요금">
+									<caption>가정용 분류식 </caption>
+									<colgroup><col width="50%"/></colgroup>
+									<tr>
+										<th scope="col">사용량(톤)</th>
+										<th scope="col">요금 (원)</th>
+									</tr>
+									<tr>
+										<td><div class="mt10 mb10">1 ~ 20<br />21 ~ 30<br />31 이상</div></td>
+										<td>338<br />565<br />679</td>
+									</tr>
+								</table>
+							</div>
+
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,2,2);
+		changeTitle();
+	</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_info_water.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_mineral_info">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">고양시의 안심하고 마실 수 있는 약수터 정보를 안내해 드립니다.</span>
+							</div>
+							<!-- contents s -->
+
+							<ul class="tabBox">
+								<li><a href="mineral_info_t1.html">지정 약수터 현황</a></li>
+								<li><a href="#none">약수터 198개소 현황</a></li>
+								<li>&nbsp;</li>
+							</ul>
+							<div class="subTitle3 mt20">
+								<span class="subTitle_t">지정 약수터 현황</span>
+							</div>
+							<div class="mineralSpotBox mt20">
+								<!-- mineralSpot_Map_s -->
+								<div id="fbg">
+									<ul>
+										<li>
+											<img src="<?=$root?>/skin/images/sub/subP_mineral_spot_map.png" usemap="#Map" border="0">
+											<map name="Map">
+												<area shape="circle" coords="469,139,11" href="/water/nsangsu/sangsuinfo_2_3.jsp" alt="골안 약수터" title="골안 약수터">
+												<area shape="circle" coords="353,314,10" href="/water/nsangsu/sangsuinfo_2_4.jsp" alt="국사봉 약수터" title="국사봉 약수터">
+												<area shape="circle" coords="373,334,10" href="/water/nsangsu/sangsuinfo_2_5.jsp" alt="꽃마을 약수터" title="꽃마을 약수터">
+												<area shape="circle" coords="419,155,11" href="/water/nsangsu/sangsuinfo_2_6.jsp" alt="넘마을 약수터" title="넘마을 약수터">
+												<area shape="circle" coords="319,220,11" href="/water/nsangsu/sangsuinfo_2_7.jsp" alt="능안골 약수터" title="능안골 약수터">
+												<area shape="circle" coords="340,255,9" href="/water/nsangsu/sangsuinfo_2_8.jsp" alt="대궐고개 약수터" title="대궐고개 약수터">
+												<area shape="circle" coords="654,290,10" href="/water/nsangsu/sangsuinfo_2_9.jsp" alt="대동사 약수터" title="대동사 약수터">
+												<area shape="circle" coords="485,424,9" href="/water/nsangsu/sangsuinfo_2_10.jsp" alt="덕산 약수터" title="덕산 약수터">
+												<area shape="circle" coords="556,232,7" href="/water/nsangsu/sangsuinfo_2_11.jsp" alt="돌산 약수터" title="돌산 약수터">
+												<area shape="circle" coords="398,76,11" href="/water/nsangsu/sangsuinfo_2_12.jsp" alt="명봉 약수터" title="명봉 약수터">
+												<area shape="circle" coords="220,133,8" href="/water/nsangsu/sangsuinfo_2_13.jsp" alt="범룡골 약수터" title="범룡골 약수터">
+												<area shape="circle" coords="378,262,6" href="/water/nsangsu/sangsuinfo_2_14.jsp" alt="성라공원1 약수터" title="성라공원1 약수터">
+												<area shape="circle" coords="362,264,8" href="/water/nsangsu/sangsuinfo_2_15.jsp" alt="성라공원2 약수터" title="성라공원2 약수터">
+												<area shape="circle" coords="497,403,6" href="/water/nsangsu/sangsuinfo_2_16.jsp" alt="성불사 약수터" title="성불사 약수터">
+												<area shape="circle" coords="287,169,10" href="/water/nsangsu/sangsuinfo_2_17.jsp" alt="수연 약수터" title="수연 약수터">
+												<area shape="circle" coords="250,291,9" href="/water/nsangsu/sangsuinfo_2_18.jsp" alt="열병합 약수터" title="열병합 약수터">
+												<area shape="circle" coords="549,249,6" href="/water/nsangsu/sangsuinfo_2_20.jsp" alt="유곽골(지축) 약수터" title="유곽골(지축) 약수터">
+												<area shape="circle" coords="435,463,9" href="/water/nsangsu/sangsuinfo_2_21.jsp" alt="유곽골(화전) 약수터" title="유곽골(화전) 약수터">
+												<area shape="circle" coords="251,168,9" href="/water/nsangsu/sangsuinfo_2_23.jsp" alt="중산마을 약수터" title="중산마을 약수터">
+												<area shape="circle" coords="428,334,9" href="/water/nsangsu/sangsuinfo_2_24.jsp" alt="천일 약수터" title="천일 약수터">
+												<area shape="circle" coords="495,224,11" href="/water/nsangsu/sangsuinfo_2_25.jsp" alt="큰골 약수터" title="큰골 약수터">
+												<area shape="circle" coords="249,260,7" href="/water/nsangsu/sangsuinfo_2_26.jsp" alt="마두 약수터" title="마두 약수터">
+											</map>
+										</li>
+									</ul>
+								</div>
+								<div class="descBox">해당지도의 지역명에 위치한 <img src="<?=$root?>/skin/images/sub/blt_drop_water.png" alt="약수터기호" /> 약수터표시를 클릭하시면 <br />각 지역의 약수터 상세정보를 보실 수 있습니다.</div>
+								<!-- mineralSpot_Map_e -->
+							</div>
+							<div class="mineralSpot_InfoBox">
+								<table class="viewTable mt50" summary="약수터명,약도및사진정보,위치,찾아가는길,1일편균이용자,특기사항,관리부서,바로가기">
+									<caption>약수터상세정보</caption>
+									<colgroup><col width="180px" /></colgroup>
+									<tr>
+										<th scope="row">약수터 명</th>
+										<td>범룡골 약수터</td>
+									</tr>
+									<tr>
+										<th scope="row">약도 및 사진 정보</th>
+										<td class="td_tal">
+											<ul class="spotInfoBox">
+												<li><img src="<?=$root?>/skin/images/temp/temp_mineral_1.jpg" alt="임시이미지"/></li>
+												<li><img src="<?=$root?>/skin/images/temp/temp_mineral_1.jpg" alt="임시이미지"/></li>
+												<li class="mt15"><img src="<?=$root?>/skin/images/temp/temp_mineral_2.jpg" alt="임시이미지"/></li>
+												<li class="mt15"><img src="<?=$root?>/skin/images/temp/temp_mineral_2.jpg" alt="임시이미지"/></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">위치 (소재지)</th>
+										<td class="td_tal">일산서구 탄현동 산 15-13</td>
+									</tr>
+									<tr>
+										<th scope="row">찾아가는 길</th>
+										<td class="td_tal">탄현 홀트학교 → 일산동고등학교앞(우회전)</td>
+									</tr>
+									<tr>
+										<th scope="row">1일 평균 이용자</th>
+										<td class="td_tal">100명</td>
+									</tr>
+									<tr>
+										<th scope="row">특기사항 (인근 약수터)</th>
+										<td class="td_tal">1.중산마을(중산동 138-14)  /   2.꽃샘(중산동 1800)</td>
+									</tr>
+									<tr>
+										<th scope="row">관리부서</th>
+										<td class="td_tal">상하수도사업소 수도시설과</td>
+									</tr>
+									<tr>
+										<th scope="row">바로가기</th>
+										<td class="td_tal"><span class="star_red">약수터 수질검사 결과보기</span><a href="#none"><img src="<?=$root?>/skin/images/common/btn_go.png" alt="바로가기" class="goBtn ml10"/></a></td>
+									</tr>
+								</table>
+							</div>
+							
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(2,1);
+		changeTitle();
+		currentTab(0);
+	</script>
+</body>
+</html>

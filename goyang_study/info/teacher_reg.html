@@ -1,0 +1,148 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_info.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_teacher_reg">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<table class="writeTable bdt2sblue" summary="이름,전화번호,핸드폰번호,E-메일,주소,자격증,프로필,기타사항">
+								<caption>강사등록</caption>
+								<colgroup><col width="230px"/><col /></colgroup>
+								<tr>
+									<th scope="row"><label for="teacher_name">이 름</label></th>
+									<td>
+										<input type="text" id="teacher_name" class="mr10" style="width:240px;"/>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="tel1">전화번호</label></th>
+									<td>
+										<div class="select open mr5" id="tel1" style="width:12%;">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">02</button>
+											<ul class="aList">
+												<li><a href="#1">010</a></li>
+												<li><a href="#2">010</a></li>
+												<li><a href="#3">010</a></li>
+											</ul>
+										</div>
+										<span class="mr5">-</span>
+										<label for="tel2" class="blind">가운데 전화번호</label>
+										<input type="text" id="tel2" class="mr5 taC" style="width:10%;"/>
+										<span class="mr5">-</span>
+										<label for="tel3" class="blind">마지막 전화번호</label>
+										<input type="text" id="tel3" class="taC" style="width:10%;"/>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="phone1">핸드폰번호</label></th>
+									<td>
+										<div class="select open mr5" id="phone1" style="width:12%;">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">010</button>
+											<ul class="aList">
+												<li><a href="#1">010</a></li>
+												<li><a href="#2">010</a></li>
+												<li><a href="#3">010</a></li>
+											</ul>
+										</div>
+										<span class="mr5">-</span>
+										<label for="phone2" class="blind">가운데 핸드폰번호</label>
+										<input type="text" id="phone2" class="mr5 taC" style="width:10%;"/>
+										<span class="mr5">-</span>
+										<label for="phone3" class="blind">마지막 핸드폰번호</label>
+										<input type="text" id="phone3" class="taC" style="width:10%;"/>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="mail1">E-메일</label></th>
+									<td>
+										<input type="text" id="mail1" class="mr5 taC" style="width:250px;"/>
+										<span class="mr5">@</span>
+										<label for="mail2" class="blind">메일 도메인</label>
+										<input type="text" id="mail2" class="mr10 taC" style="width:160px;"/>
+										<label for="mail3" class="blind">도메인 선택</label>
+										<div class="select open mr5" id="mail3" style="width:160px;">
+											<span class="ctrl"><span class="arrow"></span></span>
+											<button type="button" class="myValue">직접입력</button>
+											<ul class="aList">
+												<li><a href="#1">naver.com</a></li>
+												<li><a href="#2">hanmail.net</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" rowspan="3"><label for="club_name">주소</label></th>
+									<td>
+										<label for="zip1" class="blind">우편번호1</label>
+										<input type="text" id="zip1" class="mr5 taC" style="width:100px;"/>
+										<span class="mr5">-</span>
+										<label for="zip2" class="blind">우편번호2</label>
+										<input type="text" id="zip2" class="mr10 taC" style="width:100px;"/>
+										<a href="#none" class="btnS2 blue3Btn">우편번호</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="addr1" class="blind">주소</label>
+										<input type="text" id="addr1" style="width:100%;"/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="addr2" class="blind">상세주소</label>
+										<input type="text" id="addr2" style="width:100%;"/>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="teacher_license">자격증</label></th>
+									<td>
+										<textarea name="" id="teacher_license" rows="1" style="width:100%;"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="teacher_profile">프로필</label></th>
+									<td>
+										<textarea name="" id="teacher_profile" rows="1" style="width:100%;"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="teacher_etc">기타사항</label></th>
+									<td>
+										<textarea name="" id="teacher_etc" rows="1" style="width:100%;"></textarea>
+									</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<a href="#none" class="btnS1 blueBtn">등록</a>
+								<a href="javascript:history.back();" class="btnS1 blue2Btn">취소</a>
+							</div>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(2,0,1);
+		changeTitle();
+	</script>
+</body>
+</html>

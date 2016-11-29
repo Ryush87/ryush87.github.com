@@ -1,0 +1,44 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_sitemap.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_certify">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<div id="certifyBox">
+								<div class="certify_wBox">
+									<div class="certiBtnBox">
+										<h3>I-PIN(아이피)인증</h3>
+										<a href="#none" class="certiBtn">인증하기</a>
+									</div>
+									<span class="certiGuide">I-pin 또는 G-pin으로 인증 받으신 후 가입을 완료 할 수 있습니다</span>
+								</div>
+							</div>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation('null',1);
+		changeTitle();
+	</script>
+</body>
+</html>

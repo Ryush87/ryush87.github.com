@@ -1,0 +1,124 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_info_sewer.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_public_sewer">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">공공하수처리 시설관련 정보를 안내해 드립니다.</span>
+							</div>
+							<!-- contents s -->
+
+							<table class="viewTable th_w mt30" summary="구분,처리명칭,위치,시설용량,사업기간,사업비,민간위탁사">
+								<caption>공공하수처리시설현황표</caption>
+								<colgroup><col /></colgroup>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">처리명칭</th>
+									<th scope="col">위치</th>
+									<th scope="col">시설용량<br />(천톤/일)</th>
+									<th scope="col">사업기간</th>
+									<th scope="col">사업비<br />(백만원)</th>
+									<th scope="col">민간위탁사 / (위탁기간)</th>
+								</tr>
+								<tr>
+									<td class="col1" rowspan="6">운영중</td>
+									<td class="col2">계</td>
+									<td>-</td>
+									<td>420</td>
+									<td>-</td>
+									<td>259,455</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td class="col2">일산</td>
+									<td>고양대로 112번길 64(법곳동)</td>
+									<td>270</td>
+									<td>1990.12 ~ 1999.04</td>
+									<td>87,314</td>
+									<td>아이비환경(주) / (06.10 ~ 20년간)</td>
+								</tr>
+								<tr>
+									<td class="col2">원능</td>
+									<td>신평길 76(토당동)</td>
+									<td>80</td>
+									<td>2002.02 ~ 2008.05</td>
+									<td>61,835</td>
+									<td>(주)티에스케이워터 / (2014.6 ~ 3년간)</td>
+								</tr>
+								<tr>
+									<td class="col2">벽제</td>
+									<td>통일로 1267번길 100-53(지영동)</td>
+									<td>30</td>
+									<td>2000.07 ~ 2007.04</td>
+									<td>58,560</td>
+									<td>아이비환경(주) / (06.10 ~ 20년간)</td>
+								</tr>
+								<tr>
+									<td class="col2">삼송</td>
+									<td>고양대로 1804-30(용두동)</td>
+									<td>16</td>
+									<td>2009.12 ~ 2014.03</td>
+									<td>51,746</td>
+									<td>(주)티에스케이워터</td>
+								</tr>
+								<tr>
+									<td class="col2">난지</td>
+									<td>대덕로 426(현천동)</td>
+									<td>24</td>
+									<td>-</td>
+									<td>-</td>
+									<td>서울시 소유 (위탁처리 중)</td>
+								</tr>
+								<tr>
+									<td class="col1" rowspan="3">신/증설</td>
+									<td class="col2">계</td>
+									<td>-</td>
+									<td>24</td>
+									<td>-</td>
+									<td>71,000</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td class="col2">삼송2</td>
+									<td>삼송택지내</td>
+									<td>16</td>
+									<td>2014 ~ 2016</td>
+									<td>50,000</td>
+									<td>LH (공사 시행 중)</td>
+								</tr>
+								<tr>
+									<td class="col2">벽제처리장 증설</td>
+									<td>통일로 1267번길 100-53(지영동)</td>
+									<td>8</td>
+									<td>2014.6 ~ 2017.11</td>
+									<td>21,000</td>
+									<td>공사시행 중</td>
+								</tr>
+							</table>
+							
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(3,1);
+		changeTitle();
+	</script>
+</body>
+</html>

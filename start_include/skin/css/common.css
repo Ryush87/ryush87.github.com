@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "reset.css";
+@import "simple.css";
+@import "layout.css";
+
+/*
+===============================================================================================
+1.	버    전 : common.css
+2.	작 성 자 : Ryu
+3.	참    고 : Common
+===============================================================================================
+*/
+
+/* common */
+.blind {position:absolute;width:0;height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden;}
+.ellipsis {text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+
+.tc_O {color:#ff3300;;font-size:inherit;font-weight:normal;}
+.tc_r {color:#cc3333;font-size:inherit;}
+.tc_b {color:#0099cc;font-size:inherit;}
+

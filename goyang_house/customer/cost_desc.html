@@ -1,0 +1,234 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_customer.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="cost_desc_box" class="conWrap">
+					<div class="subPage_title">
+						<h2>관리비항목설명</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="viewWrap">
+						<table class="viewTable8" summary="고양시회계기준상분류,국토부관리비계정과목분류체계">
+							<caption>관리비항목설명</caption>
+							<colgroup><col width="25%"/><col width="25%"/><col width="25%"/><col width="25%"/></colgroup>
+							<tr>
+								<th scope="col" colspan="2">고양시 회계기준상 분류</th>
+								<th scope="col" colspan="2">국토부 관리비 계정과목 분류체계</th>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="4">관리기구운영비</th>
+								<td class="rb">인건비, 일반관리비</td>
+								<td>일반관리비</td>
+								<th scope="row" rowspan="2">공용관리비</th>
+							</tr>
+							<tr>
+								<td class="rb">위탁관리수수료</td>
+								<td>위탁관리수수료</td>
+							</tr>
+							<tr>
+								<td class="rb">입주자대표회의운영비</td>
+								<td>입주자대표회의운영비</td>
+								<th scope="row" rowspan="2">개별사용료</th>
+							</tr>
+							<tr>
+								<td class="rb">선거관리위원회운영비</td>
+								<td>선거관리위원회운영비</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="12">공동주택관리비</th>
+								<td class="rb">청소비</td>
+								<td>청소비</td>
+								<th scope="row" rowspan="6">공용관리비</th>
+							</tr>
+							<tr>
+								<td class="rb">경비비</td>
+								<td>경비비</td>
+							</tr>
+							<tr>
+								<td class="rb">소독비</td>
+								<td>소독비</td>
+							</tr>
+							<tr>
+								<td class="rb">승강기유지비</td>
+								<td>승강기유지비</td>
+							</tr>
+							<tr>
+								<td class="rb">홈네트워크설비유지비</td>
+								<td>지능형홈네트워크설비유지비</td>
+							</tr>
+							<tr>
+								<td class="rb">수선유지비</td>
+								<td>수선유지비</td>
+							</tr>
+							<tr>
+								<td class="rb">정화조오물수수료</td>
+								<td>정화조오물수수료</td>
+								<th scope="row" rowspan="2">개별사용료</th>
+							</tr>
+							<tr>
+								<td class="rb">음식물처리비</td>
+								<td>생활폐기물수수료</td>
+							</tr>
+							<tr>
+								<td class="rb">장기수선비</td>
+								<td>장기수선충당금</td>
+								<th scope="row">장기수선충당금</th>
+							</tr>
+							<tr>
+								<td class="rb">안전진단실시비</td>
+								<td>수선유지비</td>
+								<th scope="row" rowspan="3">공용관리비</th>
+							</tr>
+							<tr>
+								<td class="rb">시설보수비</td>
+								<td>수선유지비</td>
+							</tr>
+							<tr>
+								<td class="rb">보험료</td>
+								<td>건물보험료</td>
+							</tr>
+							<tr>
+								<th scope="row" rowspan="5">개별세대사용료(공용,세대)</th>
+								<td class="rb">전기료</td>
+								<td>전기료</td>
+								<th scope="row" rowspan="5">개별사용료</th>
+							</tr>
+							<tr>
+								<td class="rb">수도료</td>
+								<td>수도료</td>
+							</tr>
+							<tr>
+								<td class="rb">가스사용료</td>
+								<td>가스사용료</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="rb">난방비와급탕비</td>
+								<td>난방비</td>
+							</tr>
+							<tr>
+								<td>급탕비</td>
+							</tr>
+						</table>
+						<table class="viewTable9 mt40" summary="관리기구운영비란,인건비,일반관리비,위탁관리수수료,입주자대표회의운영비,선거관리위원회운영비,공동주택관리비란,청소비,경비비,소독비,승강기유지비,홈네트워크설비유지비,수선유지비,정화조관리비,음식물처리비,장기수선비,안전진단실시비,시설보수비,보험료,개별세대사용료,전기료,수도료,가스사용료,난방비와급탕비">
+							<caption>관리비항목별 설명</caption>
+							<colgroup><col width="20%"/><col width="80%"/></colgroup>
+							<tr>
+								<th scope="row"><span>관리기구 운영비란?</span></th>
+								<td>관리기구 운영비는 공동주택관리기구의 운영과 직접 관련되는 비용을 말합니다.</td>
+							</tr>
+							<tr>
+								<th scope="row"><span>인건비</span></th>
+								<td>공동주택관리기구에 근무하는 직원에 대한 급여, 상여금, 특별상여, 수당, 복리후생비, 퇴직급여 등을 의미한다. 단, 직원을 별도로 두지 않고 전기안전검사, 소방안전점검, 경리업무 등을 대행함으로써 발생하는 전기안전관리비, 소방안전관리비, 회계관리비 등이 존재하는 경우 해당 비용은 인건비에 포함하여 별도 표시한다.</td>
+							</tr>
+							<tr>
+								<th scope="row"><span>일반관리비</span></th>
+								<td>공동주택관리기구 사무실 운영과 관련된 비용으로 수도 광열비, 교육비, 교통비, 도서인쇄비, 감가상각비, 사무용품비,소모품비, 세금과공과, 회계감사비 등을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>위탁관리수수료</span></th>
+								<td>공동주택관리 업무를 전문적으로 수행하는 업체에게 공동주택관리 업무를 위탁하는 경우 해당 업체가 부과하는 수수료를 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>입주자대표회의운영비</span></th>
+								<td>입주자대표회의 운영과 관련한 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>선거관리위원회운영비</span></th>
+								<td>선거관리위원회 운영과 관련한 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>공동주택관리비란?</span></th>
+								<td>공동주택 관리비는 관리주체가 공동주택관리서비스를 제공함에 따라 발생하는 비용을 말합니다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>청소비</span></th>
+								<td>공동주택단지안의 건물, 부속시설 등에 대한 청소와 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>결비비</span></th>
+								<td>보안, 경비 등의 활동과 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>소독비</span></th>
+								<td>소독활동과 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>승강기유지비</span></th>
+								<td>승강기에 대한 검사, 수선, 유지 등과 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>홈네트워크설비유지비</span></th>
+								<td>홈네트워크설비에 대한 검사, 수선, 유지 등과 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>수선유지비</span></th>
+								<td>공동주택단지안의 건물, 부속시설 등에 대한 수선 및 유지와 관련된 비용을 의미한다. 단, 승강기와 관련 된 비용은 제외한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>정화조관리비</span></th>
+								<td>정화조 오물 수거와 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>음식물처리비</span></th>
+								<td>음식물 쓰레기 수거와 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>장기수선비</span></th>
+								<td>주택법시행령 제58조 제2항과 관련하여 장래에 발생가능성이 높은 대대적인 수선유지비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>안전진단실시비</span></th>
+								<td>주택법시행령 제58조 제2항과 관련하여 공동주택건물에 대한 안전진단과 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>시설보수비</span></th>
+								<td>주택법시행령 제58조 제5항과 관련하여 2세대 이상의 공동사용에 제공되는 시설에 대한 교체 또는 추가설치와 관련된 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>보험료</span></th>
+								<td>공동주택단지안의 건물 전체를 대상으로 하는 보험료를 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>개별세대사용료</span></th>
+								<td>개별세대가 납부할 사요룔를 관리주체가 징수를 대행하는 비용을 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>전기료</span></th>
+								<td>전력 공급업체에서 공동주택단지에 고지한 전기료를 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>수도료</span></th>
+								<td>상하수도 공급업체에서 공동주택단지에 고지한 상ㆍ하수도료를 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>가스사용료</span></th>
+								<td>가스 공급업체에서 공동주택단지에 고지한 가스사용료를 의미한다. </td>
+							</tr>
+							<tr>
+								<th scope="row"><span>난방비와 급탕비</span></th>
+								<td>난방 및 급탕 공급업체에서 공동주택단지에 고지한 난방비와 급탕비를 의미한다. 단, 중앙집중방식으로 운영되는 경우 관리주체가 난방 및 급탕을 공급하는데 소비된 유류원가를 의미한다.</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(3);
+		currentSnb(2);
+		changeLocation();
+	</script>
+</body>
+</html>

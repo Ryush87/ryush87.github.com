@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*
+===============================================================================================
+1.	버    전 : homepage.css
+2.	작 성 자 : Ryu
+3.	참    고 : Main
+===============================================================================================
+*/
+
+#homepageLogo {float:left;margin-top:32px;}
+	#homepageLogo a {font-family:"Nanum Barun Gothic";font-size:2.4em;letter-spacing:-0.01em;font-weight:bold;color:#333;}
+
+#mainBgArea {float:left;width:100%;height:380px;background:url('../images/homepage/homepage_main_bg1.jpg') no-repeat 50%;border-bottom:1px solid #ddd;}
+
+#contents {min-height:350px;}
+.mainContents {padding-top:40px;background:url('../images/main/main_bg2.png')}
+	.boardBox {position:relative;float:left;padding:5px 30px;width:520px;height:250px;box-shadow:1px 3px 5px #ddd;border-radius:10px;}
+	.boardBox1 {margin-right:60px;background:url('../images/homepage/boardBg1.png') no-repeat}
+	.boardBox2 {background:url('../images/homepage/boardBg2.png') no-repeat;}
+		.bTitle {line-height:80px;font-family:"Nanum Barun Gothic";font-size:2em;letter-spacing:-0.01em;font-weight:bold;}
+		.boardBox1 .bTitle {color:#3369bc;}
+		.boardBox2 .bTitle {color:#7b8aa2;}
+		.boardBox ul {margin-top:10px;}
+			.boardBox ul li {float:left;width:100%;line-height:32px;background:url('../images/main/blt_dot.png') no-repeat 0 50%;}
+			.bSubject {float:left;padding-left:20px;width:80%;font-size:1.3em;letter-spacing:-0.025em;color:#333;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+			.bDate {float:left;width:20%;text-align:right;font-family:"tahoma";font-size:1.2em;color:#999;}
+			.icon_new {display:inline-block;margin-left:10px;width:13px;height:15px;background:url('../images/main/blt_new.png') no-repeat 0 2px;}
+		.bPlus {position:absolute;top:28px;right:28px;width:28px;height:28px;}
+		.boardBox1 .bPlus {background:url('../images/homepage/boardPlus1.png') no-repeat;}
+		.boardBox2 .bPlus {background:url('../images/homepage/boardPlus2.png') no-repeat;}
+
+#footer {margin-top:0;}

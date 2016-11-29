@@ -1,0 +1,128 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_info.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="bid_view" class="conWrap">
+					<div class="subPage_title">
+						<h2>입찰정보</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<table class="viewTable4 mb20" summary="아파트명,관리사무소주소,담당자,전화번호,팩스번호,동수,세대수">
+						<caption>입찰 아파트 상세정보</caption>
+						<colgroup><col width="22%"/><col width="39%"/><col width="8%"/><col width="10%"/><col width="10%"/><col width="5%"/><col width="8%"/></colgroup>
+						<tr>
+							<th scope="col" class="th_point">아파트명</th>
+							<th scope="col">관리사무소 주소</th>
+							<th scope="col">담당자</th>
+							<th scope="col">전화번호</th>
+							<th scope="col">팩스번호</th>
+							<th scope="col">동수</th>
+							<th scope="col">세대수</th>
+						</tr>
+						<tr>
+							<td><span class="pointC2 fwB">백석 백송마을 9단지 두산</span></td>
+							<td>경기 고양시 일산동구 강촌로 166 (백송9단지 두산아파트)</td>
+							<td>홍길동</td>
+							<td>031-903-5959</td>
+							<td>031-903-5959</td>
+							<td>6</td>
+							<td>462</td>
+						</tr>
+					</table>
+					<table class="viewTable3 mt30" summary="입찰번호,입찰방법,입찰서제출마감일,입찰제목,긴급입찰여부,입찰종류,낙찰방법,입찰분류,신용평가등급확인서제출여부,현장설명,관리(공사용역)실적증명서제출여부,현장설명일시,현장설명장소,구비서류,서류제출마감일,입찰보증보험증권,지급조건,내용,첨부파일">
+						<caption>입찰 상세정보</caption>
+						<colgroup><col width="15%"/><col width="34%"/><col width="20%"/><col width="30%"/></colgroup>
+						<tr>
+							<th scope="row" class="th_point">입찰 번호</th>
+							<td colspan="3">20151116113740472</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">입찰 방법</th>
+							<td>전자입찰</td>
+							<th scope="row">입찰서 제출 마감일</th>
+							<td>2015-11-21 17:00:00</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">입찰 제목</th>
+							<td>주택관리업자 선정 정정 공고(긴급)</td>
+							<th scope="row" class="th_point">긴급입찰여부</th>
+							<td>●긴급 ○일반</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">입찰 종류</th>
+							<td>제한경쟁</td>
+							<th scope="row" class="th_point">낙찰방법</th>
+							<td>최저(고) 낙찰</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">입찰 분류</th>
+							<td>주택관리업자 - 공동주택위탁관리</td>
+							<th scope="row" class="th_point">신용평가등급 확인서 제출여부</th>
+							<td>미제출</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">현장설명</th>
+							<td>
+								현장설명회 있음 (●필수 ○임의) <br />
+								<span class="pointC3">* 현장설명이 있을 시, 불참업체는 낙찰 선정에 불이익을 받으실 수 있습니다.</span>
+							</td>
+							<th scope="row" class="th_point">관리(공사용역)<br />실적증명서 제출여부</th>
+							<td>제출</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">현장설명 일시</th>
+							<td>2016-05-01</td>
+							<th scope="row" class="th_point">현장설명장소</th>
+							<td>아파트 회의실</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">구비서류</th>
+							<td colspan="3">●있음 ○없음 (공문참조) <span class="pointC3">* 구비서류 미 제출 업체는 낙찰 선정에 불이익을 받으실 수 있습니다.</span></td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">서류제출 마감일</th>
+							<td>2016-05-30</td>
+							<th scope="row" class="th_point">입찰보증보험 증권</th>
+							<td>입찰가격의 [5]% 이상 제출</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">지급조건</th>
+							<td colspan="3">&nbsp;</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">내용</th>
+							<td colspan="3">입찰내용</td>
+						</tr>
+						<tr>
+							<th scope="row" class="th_point">첨부파일</th>
+							<td colspan="3"><a href="#none">sdirsg.zip</a></td>
+						</tr>
+					</table>
+					<div class="pageBtnBox mt30">
+						<div class="grid50 taL">
+							<a href="javascript:history.back();" class="btnS blackBtn">목록</a>
+						</div>
+						<div class="grid50 taR">&nbsp;</div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(1);
+		currentSnb(1);
+		changeLocation();
+	</script>
+</body>
+</html>

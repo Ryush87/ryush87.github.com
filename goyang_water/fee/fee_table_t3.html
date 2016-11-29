@@ -1,0 +1,66 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<? include '../include/location_box.php' ?>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_fee.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<div id="p_fee_table">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+								<span class="subPage_title_desc">업종과 구경별에 따른 수도요금 요율 표를 안내해드립니다.</span>
+							</div>
+							<!-- contents s -->
+
+							<ul class="tabBox">
+								<li><a href="fee_table_t1.html">상수도 요금 산정기준</a></li>
+								<li><a href="#none">하수도 요금 산정기준</a></li>
+								<li><a href="fee_table_t3.html">물 이용 부담금 산정기준</a></li>
+							</ul>
+							<table class="viewTable fee_table_3 mt30" summary="사용량,단가">
+								<caption>물 이용 부담금 산정기준</caption>
+								<colgroup><col width="200px"/></colgroup>
+								<tr>
+									<th scope="col">사용량</th>
+									<th scope="col" colspan="5">㎥당 단가(원)</th>
+								</tr>
+								<tr class="row2">
+									<th rowspan="2">상수도 사용량 ㎥당<br />( ※상수도 사용량에 비례 )</th>
+									<td>2005 사용분</td>
+									<td>2006 사용분</td>
+									<td>2007 사용분</td>
+									<td>2008 사용분</td>
+									<td>2009 사용분</td>
+								</tr>
+								<tr>
+									<td>130</td>
+									<td>140</td>
+									<td>150</td>
+									<td>160</td>
+									<td>170</td>
+								</tr>
+							</table>
+							
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(1,2,0);
+		changeTitle();
+		currentTab(2);
+	</script>
+</body>
+</html>

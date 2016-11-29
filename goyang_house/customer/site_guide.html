@@ -1,0 +1,40 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_customer.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="cost_desc_box" class="conWrap">
+					<div class="subPage_title">
+						<h2>사이트안내</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="viewWrap">
+						<p class="site_guide_text">고양시는 공동주택 입주민의 권익을 향상하고자 공동주택 정보 마당을 개발하여 2014년부터 모든 고양시민에게 개방합니다. 고양시 공동주택 정보 마당은 공동 주택관리에 있어 입주민이 중심이 되는 것을 지향하며 관리비 등의 <span>회계 투명성을 강화</span>하고 <span>비리, 분쟁을 예방/해소</span>하며 <span>입주민간의 관심과 친목을 활성화</span>하는 것을 목표로 하고 있습니다. 
+						</p>
+						<ul class="site_guide_desc mt30">
+							<li class="sgDesc1">공동주택 관련 정보 제공<br />관리비 비교, 회계 자료 공개 등 서비스<br />구청, 시청과 의사 소통</li>
+							<li class="sgDesc2">입주민에게 관리비 및 회계 정보 제공<br />입주민에게 반드시 제공해야 하는 의무 공개 정보 제공<br />아파트 내 공동체 활성화</li>
+							<li class="sgDesc3">고양시 공동주택관리 회계 처리 기준을 적용한<br />회계 프로그램 사용</li>
+						</ul>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(3);
+		currentSnb(3);
+		changeLocation();
+	</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_communi.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="poll_end_view" class="conWrap">
+					<div class="subPage_title">
+						<h2>온라인 설문</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<? include 'poll_tab_box.php' ?>
+					<div class="viewWrap bdt2s333">
+						<h4>귀하가 고양시 주민자치 사업 중 가장 관심이 있는 것은 무엇인가요?</h4>
+						<table class="viewTable6" summary="작성자명,공감별점평균,지역선택,글내용,공감별점주기,첨부파일">
+							<caption>완료된 설문 결과보기</caption>
+							<colgroup><col width="13%"/><col width="37%"/><col width="13%"/><col width="37%"/></colgroup>
+							<tr>
+								<th scope="row">설문기간</th>
+								<td class="taC">2016-03-05 ~ 2016-12-31</td>
+								<th scope="row">등록일</th>
+								<td class="taC">2016-12-31</td>
+							</tr>
+							<tr>
+								<td colspan="6" class="viewCon">
+									<ul class="poll_resultBox">
+										<li>
+											<div class="pollSubject"><i class="fa fa-check" aria-hidden="true"></i>주민자치 교육</div>
+											<div class="pollGraph pointC1">(<span class="prNum">100</span>%) </div>
+											<div class="pollBarWrap"><div class="pollBar"></div></div>
+										</li>
+										<li>
+											<div class="pollSubject"><i class="fa fa-check" aria-hidden="true"></i>마을공동체 사업</div>
+											<div class="pollGraph pointC1">(<span class="prNum">80</span>%) </div>
+											<div class="pollBarWrap"><div class="pollBar"></div></div>
+										</li>
+										<li>
+											<div class="pollSubject"><i class="fa fa-check" aria-hidden="true"></i>주민자치 박람회</div>
+											<div class="pollGraph pointC1">(<span class="prNum">23</span>%) </div>
+											<div class="pollBarWrap"><div class="pollBar"></div></div>
+										</li>
+										<li>
+											<div class="pollSubject"><i class="fa fa-check" aria-hidden="true"></i>시정주민 참여위원회, 주민 참여단</div>
+											<div class="pollGraph pointC1">(<span class="prNum">57</span>%) </div>
+											<div class="pollBarWrap"><div class="pollBar"></div></div>
+										</li>
+										<li>
+											<div class="pollSubject"><i class="fa fa-check" aria-hidden="true"></i>주민참여 예산위원회</div>
+											<div class="pollGraph pointC1">(<span class="prNum">91</span>%) </div>
+											<div class="pollBarWrap"><div class="pollBar"></div></div>
+										</li>
+										<li>
+											<div class="pollSubject"><i class="fa fa-check" aria-hidden="true"></i>마을자원 조사</div>
+											<div class="pollGraph pointC1">(<span class="prNum">0</span>%) </div>
+											<div class="pollBarWrap"><div class="pollBar"></div></div>
+										</li>
+										<li>
+											<div class="pollSubject"><i class="fa fa-check" aria-hidden="true"></i>관심없음</div>
+											<div class="pollGraph pointC1">(<span class="prNum">2</span>%) </div>
+											<div class="pollBarWrap"><div class="pollBar"></div></div>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="pageBtnBox mt20">
+						<div class="grid50 taL">&nbsp;</div>
+						<div class="grid50 taR">
+							<a href="javascript:history.back();" class="btnS blackBtn">목록</a>
+						</div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(2);
+		currentSnb(3);
+		changeLocation();
+		currentTab(1);
+		//그래프
+		drawGarph();
+	</script>
+</body>
+</html>

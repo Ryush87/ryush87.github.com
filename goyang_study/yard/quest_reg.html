@@ -1,0 +1,69 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_yard.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_quest_reg">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<table class="writeTable bdt2sblue" summary="제목,작성자,글내용,첨부파일">
+								<caption>문의등록</caption>
+								<colgroup><col width="170px"/><col /></colgroup>
+								<tr>
+									<th scope="row"><label for="group_name">제목</label></th>
+									<td>
+										<input type="text" id="group_name" style="width:86%;"/>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">작성자</th>
+									<td><div class="wirterBox">홍길동 (<span>mrhong1004</span>)</div></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="padding:0;">
+										<div class="webEditorBox">
+											<img src="<?=$root?>/skin/images/temp/pc_quest_reg_01.jpg" alt="삭제예정" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="teacher_etc">첨부파일</label></th>
+									<td>
+										<div class="attachBox">
+											<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음"/>
+											<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="pageBtnBox taR">
+								<a href="#none" class="btnS1 blueBtn">등록</a>
+							</div>
+							<!-- contents e -->
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(3,3,0);
+		changeTitle();
+	</script>
+</body>
+</html>

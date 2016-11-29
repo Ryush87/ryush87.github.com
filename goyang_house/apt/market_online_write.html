@@ -1,0 +1,110 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div class="subPage_title">
+					<h2>주민장터</h2>
+					<? include '../include/location_box.php' ?>
+				</div>
+				<? include 'market_tab_box.php' ?>
+				<div id="market_online_write">
+					<div class="writeGuideT">
+						<div class="star"><span class="blind">필수입력</span></div> 표시는 필수 입력 사항입니다.
+					</div>
+					<table class="writeTable" summary="상품명,작성자명,비밀번호,장소주소등록,판매처명,문의처,가격,거래방식,홈페이지,지역선택,대표이미지,상품이미지">
+						<caption>글쓰기</caption>
+						<colgroup><col width="18%"/><col width="32%"/><col width="18%"/><col width="32%"/></colgroup>
+						<tr>
+							<th scope="row"><label for="goods_name">상품명</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3"><input type="text" id="goods_name" /></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="goods_name">작성자명</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td><input type="text" id="goods_name" /></td>
+							<th scope="row"><label for="goods_name">비밀번호</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td><input type="text" id="goods_name" /></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="goods_name">장소 주소 등록</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3"><input type="text" id="goods_name" /></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="goods_name">판매처명</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td><input type="text" id="goods_name" /></td>
+							<th scope="row"><label for="goods_name">문의처</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td><input type="text" id="goods_name" /></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="goods_name">가격</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td><input type="text" id="goods_name" /></td>
+							<th scope="row"><label for="goods_name">거래방식</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td><input type="text" id="goods_name" /></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="goods_name">홈페이지</label></th>
+							<td><input type="text" id="goods_name" /></td>
+							<th scope="row"><label for="goods_name">지역선택</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td>
+								<label for="slct_gu" class="blind">구 선택</label>
+								<select name="" id="slct_gu" class="mr20">
+									<option value="">구 선택</option>
+									<option value="">덕양구</option>
+									<option value="">일산동구</option>
+									<option value="">일산서구</option>
+								</select>
+								<label for="slct_dong" class="blind">동 선택</label>
+								<select name="" id="slct_dong" class="mr20">
+									<option value="">동 선택</option>
+									<option value="">백석동</option>
+									<option value="">마두동</option>
+									<option value="">주엽동</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="td_child">
+								<img src="<?=$root?>/skin/images/temp/web_editer.jpg" alt="웹에디터영역" />
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="goods_name">대표 이미지</label><div class="star"><span class="blind">필수입력</span></div></th>
+							<td colspan="3">
+								<div class="attach_line">
+									<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음">
+									<div class="uploadFile">찾아보기<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="pageBtnBox mt20">
+					<div class="grid50 taL">
+						<a href="#none" class="btnS blackBtn">목록</a>
+					</div>
+					<div class="grid50 taR">
+						<a href="#none" class="btnS blackBtn">등록하기</a>
+						<a href="#none" class="btnS grayBtn">취소</a>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(5);
+		changeLocation();
+		currentTab(0);
+	</script>
+</body>
+</html>

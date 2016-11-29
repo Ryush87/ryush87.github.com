@@ -1,0 +1,101 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_longlife.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_map">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<div class="mapImg"><img src="<?=$root?>/skin/images/sub/pc_map_01.jpg" alt="찾아오시는 길 지도" /></div>
+							<dl class="p_map_dl_1">
+								<dt>마을버스</dt>
+								<dd>
+									- 097(구33), 098(구33-1), 099(구33-2) : 원당역 => 고양시청 <span>정문</span> 방면<br />
+									- 017 (구9-1), 018(구8), 019(구9) : 원당역 => 고양시청 <span>후문</span> 방면
+								</dd>
+							</dl>
+							<dl class="p_map_dl_2">
+								<dt>도시형버스</dt>
+								<dd>
+									<ul>
+										<li><span class="busNum">05</span><span class="busStop">고양동 ↔ 주엽역</span></li>
+										<li><span class="busNum">11</span><span class="busStop">화정 ↔ 롯데마트(구GS마트)</span></li>
+										<li><span class="busNum">2</span><span class="busStop">탄현 ↔ 원당역</span></li>
+										<li><span class="busNum">5</span><span class="busStop">탄현 ↔ 원당역</span></li>
+										<li><span class="busNum">85-1</span><span class="busStop">고양동 ↔ 능곡</span></li>
+										<li><span class="busNum">550</span><span class="busStop">내유동 ↔ 대화역</span></li>
+										<li><span class="busNum">567</span><span class="busStop">탄현 ↔ 삼송동</span></li>
+										<li><span class="busNum">919</span><span class="busStop">대화역 ↔ 원당역</span></li>
+										<li><span class="busNum">7728</span><span class="busStop">탄현 ↔ 화전</span></li>
+										<li><span class="busNum">7733</span><span class="busStop">교하 ↔ 삼송동</span></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="p_map_dl_3">
+								<dt>좌석버스</dt>
+								<dd>
+									<ul>
+										<li><span class="busNum">82</span><span class="busStop">내유동 ↔ 능곡</span></li>
+										<li><span class="busNum">85</span><span class="busStop">고양동 ↔ 김포공항</span></li>
+										<li><span class="busNum">1082</span><span class="busStop">내유동 ↔ 영등포역</span></li>
+										<li><span class="busNum">800</span><span class="busStop">내유동 ↔ 신촌</span></li>
+										<li><span class="busNum">1900</span><span class="busStop">명성터미널 ↔ 서울역</span></li>
+										<li><span class="busNum">9713</span><span class="busStop">대화동 ↔ 서울역</span></li>
+										<li><span class="busNum">9703</span><span class="busStop">덕이동 ↔ 광화문</span></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="p_map_dl_4">
+								<dt>직행버스</dt>
+								<dd>
+									<ul>
+										<li><span class="busNum">3700</span><span class="busStop">인천터미널 ↔ 의정부터미널</span></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="p_map_dl_5">
+								<dt>지하철</dt>
+								<dd>
+									<ul>
+										<li><span class="busNum">원당역(3호선) ↔ 고양시청</span></li>
+										<li>
+											<span class="busNum">마을버스</span>
+											<span class="busStop">
+												097(구33)<br />
+												098(구33-1)<br />
+												099(구33-2)<br />
+												017(구9-1)<br />
+												018(구8)<br />
+												019(구9)
+											</span>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(0,4);
+		changeTitle();
+	</script>
+</body>
+</html>

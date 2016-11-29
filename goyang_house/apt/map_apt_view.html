@@ -1,0 +1,78 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="map_apt_view" class="conWrap">
+					<div class="subPage_title">
+						<h2>지도로 보는 아파트</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<table class="viewTable1 bdt2s333" summary="아파트명">
+						<caption>지도로 보는 아파트 상세보기</caption>
+						<colgroup><col width="18%"/><col width="82%"/></colgroup>
+						<tr>
+							<th scope="col">아파트 명</th>
+							<td class="fwB">강선 마을 19단지 우성아파트</td>
+						</tr>
+					</table>
+					<div class="table_title mt30">
+						<h4>일반현황</h4>
+					</div>
+					<table class="viewTable2" summary="우리아파트주소,홈페이지주소전화번호,팩스번호,연면적,관리비부과면적,세대수,동수">
+						<caption>지도로 보는 아파트 일반현황</caption>
+						<colgroup><col width="18%"/><col width="32%"/><col width="18%"/><col width="32%"/></colgroup>
+						<tr>
+							<th scope="row">우리아파트 주소</th>
+							<td>경기도 고양시 일산서구 주엽동 98번지</td>
+							<th scope="row">홈페이지 주소</th>
+							<td>
+								<a href="http://apt.goyang.go.kr/ilsanblooming6" target="_blank" title="새창으로 열림">http://apt.goyang.go.kr/ilsanblooming6</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">전화번호</th>
+							<td>031-2999-8888</td>
+							<th scope="row">팩스번호</th>
+							<td>031-2999-8888</td>
+						</tr>
+						<tr>
+							<th scope="row">연면적</th>
+							<td>77560.0㎥</td>
+							<th scope="row">관리비 부과 면적</th>
+							<td>64562.025㎥</td>
+						</tr>
+						<tr>
+							<th scope="row">세대수</th>
+							<td>412 세대</td>
+							<th scope="row">동수</th>
+							<td>7개동</td>
+						</tr>
+					</table>
+					<div class="pageBtnBox mt20">
+						<div class="grid50 taL">&nbsp;</div>
+						<div class="grid50 taR">
+							<a href="javascript:history.back();" class="btnS blackBtn">목록</a>
+						</div>
+					</div>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(0);
+		changeLocation();
+	</script>
+</body>
+</html>

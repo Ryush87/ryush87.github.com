@@ -1,0 +1,73 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_info.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_public_facilities">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<div class="public_facilitiesImg"><img src="<?=$root?>/skin/images/sub/pc_public_facilities_01.jpg" alt="경기도 공공시설 시민개방 예약서비스" /></div>
+							<ul class="public_facilitiesTxt">
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">01</span>개요</dt>
+										<dd>
+											<ul>
+												<li class="noBlt">관내 예약시설을 통합하여 관리하는 사이트로 다양한 관내 공공시설, 지역센터 등 정보를 제공하며 이용자가 편하게 이용할 수 있는 곳으로 한 눈에 볼 수 있는 고양시 통합 예약시스템</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">02</span>참여대상자</dt>
+										<dd style="height:130px;">
+											<ul>
+												<li class="noBlt">관내 모든 시민 사용</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl class="descBox">
+										<dt><span class="descNum">03</span>주요 서비스</dt>
+										<dd>
+											<ul>
+												<li>체육 및 체육관시설 예약 서비스</li>
+												<li>원스톱 예약서비스</li>
+												<li>관내 대관 시설 정보 제공</li>
+											</ul>
+										</dd>
+									</dl>
+								</li>
+								<li class="public_facilities_btn">
+									<a href="#none"><img src="<?=$root?>/skin/images/sub/pc_public_facilities_btn_01.jpg" alt="공공시설 대관 바로가기" /></a>
+								</li>
+							</ul>
+							<!-- contents e -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation(2,5);
+		changeTitle();
+	</script>
+</body>
+</html>

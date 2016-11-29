@@ -1,0 +1,142 @@
+<? include '../include/top.php' ?>
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경이미지</span></div>
+		<div class="wWrap">
+			<? include 'snb_apt.php' ?>
+		</div>
+		<div id="contents">
+			<div class="wWrap">
+				<!-- contents s -->
+				<div id="complex_event_list" class="conWrap">
+					<div class="subPage_title">
+						<h2>단지행사</h2>
+						<? include '../include/location_box.php' ?>
+					</div>
+					<div class="apt_searchBox sub_searchBox bdt2s333">
+						<div class="grid25 srch_title">문화행사 정보 검색하기</div>
+						<div class="grid75 srch_val">
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">구 선택</button>
+								<ul class="aList">
+									<li><a href="#1">덕양구</a></li>
+									<li><a href="#2">일산동구</a></li>
+									<li><a href="#3">일산서구</a></li>
+								</ul>
+							</div>
+							<div class="select open mr10" id="slct_gu" style="width:100px;">
+								<span class="ctrl"><span class="arrow"></span></span>
+								<button type="button" class="myValue">동 선택</button>
+								<ul class="aList">
+									<li><a href="#1">백석동</a></li>
+									<li><a href="#2">마두동</a></li>
+									<li><a href="#3">주엽동</a></li>
+								</ul>
+							</div>
+							<label for="search_input" class="blind">검색어 입력</label>
+							<input type="text" id="search_input" class="mr20" placeholder="검색어 입력"/>
+							<a href="#none" class="btnS searchBtn"><i class="fa fa-search" aria-hidden="true"></i> 검색하기</a>
+						</div>
+					</div>
+					<div class="table_title">
+						<h4>아파트 정보</h4>
+					</div>
+					<div class="slideListBox bdt2s333">
+						<ul class="slideListHead">
+							<li class="tl_1">번호</li>
+							<li class="tl_2">행사명</li>
+							<li class="tl_3">행사기간</li>
+							<li class="tl_4">행사주최</li>
+							<li class="tl_5">자세히보기</li>
+						</ul>
+						<ul class="slideListBody">
+							<li>
+								<ul class="titleLine">
+									<li class="tl_1">99</li>
+									<li class="tl_2"><a href="#none">원흥 초등학교 학부모 바자회</a></li>
+									<li class="tl_3">2016.01.12 ~ 2022.12.31</li>
+									<li class="tl_4">원흥경로당</li>
+									<li class="tl_5"><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								</ul>
+								<div class="conLine">
+									<!-- 단지정보 s -->
+									<? include 'complex_event_child.php' ?>
+									<!-- 단지정보 e -->
+								</div>
+							</li>
+							<li>
+								<ul class="titleLine">
+									<li class="tl_1">99</li>
+									<li class="tl_2"><a href="#none">원흥 초등학교 학부모 바자회</a></li>
+									<li class="tl_3">2016.01.12 ~ 2022.12.31</li>
+									<li class="tl_4">원흥경로당</li>
+									<li class="tl_5"><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								</ul>
+								<div class="conLine">
+									<!-- 단지정보 s -->
+									<? include 'complex_event_child.php' ?>
+									<!-- 단지정보 e -->
+								</div>
+							</li>
+							<li>
+								<ul class="titleLine">
+									<li class="tl_1">99</li>
+									<li class="tl_2"><a href="#none">원흥 초등학교 학부모 바자회</a></li>
+									<li class="tl_3">2016.01.12 ~ 2022.12.31</li>
+									<li class="tl_4">원흥경로당</li>
+									<li class="tl_5"><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								</ul>
+								<div class="conLine">
+									<!-- 단지정보 s -->
+									<? include 'complex_event_child.php' ?>
+									<!-- 단지정보 e -->
+								</div>
+							</li>
+							<li>
+								<ul class="titleLine">
+									<li class="tl_1">99</li>
+									<li class="tl_2"><a href="#none">원흥 초등학교 학부모 바자회</a></li>
+									<li class="tl_3">2016.01.12 ~ 2022.12.31</li>
+									<li class="tl_4">원흥경로당</li>
+									<li class="tl_5"><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								</ul>
+								<div class="conLine">
+									<!-- 단지정보 s -->
+									<? include 'complex_event_child.php' ?>
+									<!-- 단지정보 e -->
+								</div>
+							</li>
+							<li>
+								<ul class="titleLine">
+									<li class="tl_1">99</li>
+									<li class="tl_2"><a href="#none">원흥 초등학교 학부모 바자회</a></li>
+									<li class="tl_3">2016.01.12 ~ 2022.12.31</li>
+									<li class="tl_4">원흥경로당</li>
+									<li class="tl_5"><i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+								</ul>
+								<div class="conLine">
+									<!-- 단지정보 s -->
+									<? include 'complex_event_child.php' ?>
+									<!-- 단지정보 e -->
+								</div>
+							</li>
+						</ul>
+					</div>
+					<? include '../include/paging_box.php' ?>
+				</div>
+				<!-- contents e -->
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLnb(0);
+		currentSnb(3);
+		changeLocation();
+	</script>
+</body>
+</html>

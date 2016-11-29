@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*
+===============================================================================================
+1.	버    전 : layout.css
+2.	작 성 자 : Ryu
+3.	참    고 : Layout
+===============================================================================================
+*/
+
+#wrap {float:left;width:100%;}
+	.wWrap {margin:0 auto;width:1200px;}
+#skipBox {position:absolute;top:0;left:0;z-index:1000;}
+	#skipBox a {position:absolute;top:-9999px;width:120px;}
+	#skipBox a:hover,
+	#skipBox a:focus {top:0;}
+#header {float:left;width:100%;}
+	#gnb {float:left;width:100%;background:url('../images/common/gnb_bg.gif') 50% 50%;}
+	#tnb {float:left;width:100%;height:90px;border-bottom:1px solid #e2e8ed;}
+	#lnb {position:relative;float:left;width:100%;border-bottom:1px solid #c6d1dc;}
+#subBgArea {float:left;padding-top:60px;width:100%;height:140px;font-size:2.2em;letter-spacing:-0.05em;font-weight:400;color:#015087;text-align:center;background:url('../images/common/sub_top_bg.jpg') 50% 0;}
+#subPageTop {float:left;width:100%;height:40px;text-align:right;background:#fcfcfc;border-bottom:1px solid #ddd }
+.subPage {float:left;width:100%;border-left:1px solid #e5e5e5;}
+	#leftBox {float:left;margin-top:-70px;width:230px;border-right:1px solid #ccc;}
+	#rightBox {float:left;margin-left:-1px;padding-top:45px;padding-bottom:80px;width:970px;padding-left:69px;background:#fff;border-left:1px solid #e5e5e5;}
+		#contents {float:left;width:100%;min-height:340px;}
+			.mainContents {padding-top:40px;padding-bottom:60px;background:url('../images/main/main_bg2.gif');}
+			.gridMainBox {float:left;width:900px;}
+#footer {float:left;margin-top:0px;padding-top:30px;width:100%;height:140px;background:#545863;border-top:2px solid #606060;}
+
+/* media */
+@media only screen and (max-width:319px){
+
+}
+
+@media only screen and (min-width:320px) and (max-width:639px){
+
+}
+
+@media only screen and (min-width:640px) and (max-width:999px){
+
+}
+
+@media only screen and (min-width:1000px){
+
+}
+
+
+
+
+

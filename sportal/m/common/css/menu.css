@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "common.css";
+@import "layout.css";
+
+/*
+===============================================================================================
+1.	버    전 : menu.css
+2.	작 성 자 : 류승현
+3.	참    고 : 메뉴
+===============================================================================================
+*/
+.menuHeader {position:relative;width:100%;background:#f6f6f6;}
+
+/* user_profile */
+.menuHeader #user_profile {float:left;width:100%;padding:15px 0;background:#48c1c8;border-bottom:1px solid #52adb9;}
+.menuHeader #user_profile .user_photo {float:left;width:40px;height:40px;}
+.menuHeader #user_profile img {width:100%;}
+.menuHeader #user_profile dl {float:left;margin:2px 0 0 15px;}
+.menuHeader #user_profile dl dt {font-size:1.25em;color:#ffffff;}
+.menuHeader #user_profile dl dd {font-size:1em;color:#ffffff;}
+.menuHeader #user_profile .homeBtn {float:right;margin-top:4px;margin-right:8px;width:32px;height:32px;}
+.menuHeader #user_profile .menu_x {float:right;margin-top:4px;width:32px;height:32px;}
+
+/* current_state */
+.menuHeader .current_state {overflow:hidden;width:100%;padding:10px 0;background:#ffffff;border-bottom:1px solid #e8e8e8;}
+.menuHeader .current_state .current_num01 {float:left;width:49%;border-right:1px solid #e8e8e8;}
+.menuHeader .current_state .current_num02 {float:left;width:50%;border-left:1px solid #e8e8e8;}
+.menuHeader .current_state .current_alignC {width:152px;padding:0 10px;}
+.menuHeader .current_state .current_title {font-size:1.1em;font-weight:bold;color:#bbbbbb;}
+.menuHeader .current_state .value_number {width:100%;margin-top:5px;}
+.menuHeader .current_state .value_number dl {display:inline-block;overflow:hidden;vertical-align:middle;}
+.menuHeader .current_state .value_number dl dt {float:left;padding:4px 8px;font-weight:bold;font-size:1em;color:#ffffff;text-align:center;line-height:1.125em;}
+.menuHeader .current_state .value_number dl dd {float:left;margin-top:-1px;padding:4px 4px 4px 4px;font-size:1.4em;font-weight:bold;color:#000000;}
+.menuHeader .current_state .value_number .my_class01 dt {background:#646464;border-radius:15px;}
+.menuHeader .current_state .value_number .my_class02 dt {background:#e99a25;border-radius:15px;}
+.menuHeader .current_state .value_number .slash {padding:0 0px;font-size:1.4em;color:#dddddd;}
+
+/* lnb */
+#lnb, #wrap #lnb ul, #wrap #lnb li {width:100%;}
+#lnb .lDepth1 {float:left;}
+#lnb .lDepth1 > li {float:left;color:#42C5D2;background:#f6f6f6;}
+#lnb .lDepth1 > li > div > span {float:left;display:inline-block;margin:12px 0 8px 0;font-size:1.1em;font-weight:bold;}
+#lnb .lDepth2 {float:left;}
+#lnb .lDepth2 > li {float:left;border-bottom:1px solid #e8e8e8;background:#fff;}
+#lnb .lDepth2 > li:first-child {border-top:1px solid #e8e8e8;background:#fff;}
+#lnb .lDepth2 > li > a {float:left;padding:15px 0 12px 0;width:100%;}
+#lnb .lDepth2 > li > a span {font-size:1.3em;font-weight:bold;color:#444;}
+/* #lnb .lDepth2 > li > a .list_bul_right {float:right;margin:0px 15px 0 0;width:9px;height:16px;background:url(../image/bg/bul/bul_btn02.png) no-repeat right 50%;} */
+/* #lnb .lDepth2 > li > a .fa-chevron-right {float:right;font-size:1.4em;font-weight:bold;color:#c6c6c6;} */
+#lnb .lDepth2 > li > a .arrow_r_g {float:right;width:9px;height:16px;background:url(../image/common/arrow_r_g.png) no-repeat;background-size:9px; }
+@media screen and (max-width:360px) {
+	
+}

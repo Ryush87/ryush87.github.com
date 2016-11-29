@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import "common.css";
+@import "layout.css";
+
+/*
+===============================================================================================
+1.	버    전 : main.css
+2.	작 성 자 : 류승현
+3.	참    고 : 메인
+===============================================================================================
+*/
+
+/* [main 단일] header */
+.mainHeader {overflow:hidden;padding:15px 15px;position:relative;background:#f6f4f5;}
+.mainHeader h1 {float:left;width:120px}
+.mainHeader h1 img {width:100%}
+.mainHeader .lnb_btn {position:absolute;width:20px;right:15px;top:50%;margin-top:-9px;}
+.mainHeader .lnb_btn img {width:100%;}
+
+/* [main01_TYPE 단일] main 본문 */
+#wrap #container {width:100%;}
+#wrap #container .slider {overflow:hidden;width:100%;margin-bottom:0;position:relative;background:#ffffff;}
+#wrap #container .slider .slider_list {float:left;width:100%;}
+#wrap #container .slider .slider_list > img {width:100%;}
+#wrap #container .slider .slider_list .text_form {text-align:center;}
+#wrap #container .slider .slider_list .text_form .group_name {margin-top:28px;font-size:18px;font-weight:600;color:#ffffff;}
+#wrap #container .slider .slider_list .text_form .banner_title {margin-top:14px;font-size:24px;font-weight:600;color:#34b0c0;}
+#wrap #container .slider .slider_list .text_form .event_date {margin-top:19px;font-size:16px;font-weight:600;color:#ffffff;}
+#wrap #container .slider .slick-prev {width:15px;height:26px;left:30%;bottom:5px;z-index:2010;background: url("../image/main/rolling_left.png") no-repeat left top;}
+#wrap #container .slider .slick-next {width:15px;height:26px;right:30%;bottom:5px;z-index:2010;background: url("../image/main/rolling_right.png") no-repeat left top;}
+#wrap #container .slider .slick-dots {width:100%;bottom:20px;z-index:2000;text-align:center;}
+#wrap #container .slider .slick-dots li {width:10px;height:10px;}
+#wrap #container .slider .slick-dots li button {width:10px;height:10px;background: url("../image/main/dot_off.png") no-repeat left top;}
+#wrap #container .slider .slick-dots li.slick-active button {width:10px;height:10px;background: url("../image/main/dot_on.png") no-repeat left top;}
+#wrap #container .contents {width:100%;}
+#wrap #container .contents .visual_menu {overflow:hidden;width:100%;}
+#wrap #container .contents .visual_menu li {float:left;width:20%;}
+#wrap #container .contents .visual_menu li a {display:block;color:#cdcfcf;}
+#wrap #container .contents .visual_menu li a img {width:100%;}
+#wrap .contents .contents_board {overflow:hidden;width:100%;position:relative;}
+#wrap .contents .contents_board h3 {padding:10px 15px;font-size:1.4em;color:#343434;}
+#wrap .contents .contents_board h3 img {width:12px;margin:-2px 5px 0 0;}
+#wrap .contents .contents_board ul li {float:left;width:100%;border-top:1px dashed #d8d8d8;}
+#wrap .contents .contents_board ul li a {float:left;padding:10px 30px 10px 35px;width:88%;font-size:1.2em;font-weight:bold;color:#787878;background: url("../image/main/bul_board.gif") no-repeat 20px 50%;background-size:4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+#wrap .contents .contents_board .more_btn {position:absolute;width:12px;right:15px;top:10px;}
+#wrap .contents .contents_board .more_btn img {width:100%;}
+
+/* [main02_TYPE 단일] main 본문 */
+#wrap #container02 {padding:0 15px;background:#f6f4f5;}
+#wrap #container02 .silder_menugroup {overflow:hidden;}
+#wrap #container02 .silder_menugroup .slider {overflow:hidden;float:left;width:66%;margin-bottom:0;position:relative;}
+#wrap #container02 .silder_menugroup .slider .slider_list {float:left;}
+#wrap #container02 .silder_menugroup .slider .slider_list > img {width:100%;}
+#wrap #container02 .silder_menugroup .slider .slider_list .text_form {text-align:center;}
+#wrap #container02 .silder_menugroup .slider .slider_list .text_form .group_name {margin-top:28px;font-size:18px;font-weight:600;color:#ffffff;}
+#wrap #container02 .silder_menugroup .slider .slider_list .text_form .banner_title {margin-top:14px;font-size:24px;font-weight:600;color:#34b0c0;}
+#wrap #container02 .silder_menugroup .slider .slider_list .text_form .event_date {margin-top:19px;font-size:16px;font-weight:600;color:#ffffff;}
+#wrap #container02 .silder_menugroup .slider .slick-prev {width:15px;height:26px;left:20%;bottom:-5px;z-index:2010;background: url("../image/main/rolling_left.png") no-repeat left 50%;background-size:70%;}
+#wrap #container02 .silder_menugroup .slider .slick-next {width:15px;height:26px;right:20%;bottom:-5px;z-index:2010;background: url("../image/main/rolling_right.png") no-repeat left 50%;background-size:70%;}
+#wrap #container02 .silder_menugroup .slider .slick-dots {width:100%;bottom:10px;z-index:2000;text-align:center;}
+#wrap #container02 .silder_menugroup .slider .slick-dots li {width:10px;height:10px;}
+#wrap #container02 .silder_menugroup .slider .slick-dots li button {width:10px;height:10px;background: url("../image/main/dot_off.png") no-repeat left top;}
+#wrap #container02 .silder_menugroup .slider .slick-dots li.slick-active button {width:10px;height:10px;background: url("../image/main/dot_on.png") no-repeat left top;}
+#wrap #container02 .silder_menugroup .visual_menu02 {float:left;width:32%;margin-left:2%;}
+#wrap #container02 .silder_menugroup .visual_menu02 li a img {width:100%;}
+#wrap #container02 .silder_menugroup .visual_menu02 li.two_menu {margin-top:6.5%;}
+#wrap #container02 .contents {width:100%;margin-top:2%;}
+#wrap #container02 .contents .visual_menu03 {overflow:hidden;width:100%;}
+#wrap #container02 .contents .visual_menu03 li {float:left;width:32%;margin-right:2%;}
+#wrap #container02 .contents .visual_menu03 li.last_menu {margin:0;}
+#wrap #container02 .contents .visual_menu03 li a {display:block;color:#cdcfcf;}
+#wrap #container02 .contents .visual_menu03 li a img {width:100%;}
+
+/* [main 단일] footer */
+#wrap footer {width:100%;padding:23px 0 30px;background:#f0f1f1;border-top:1px solid #d8d8d8;}
+#wrap footer .foot_menu {overflow:hidden;padding-left:15px;}
+#wrap footer .foot_menu li {float:left;padding:0 5px;background: url("../image/bg/bul/bul_foot.gif") no-repeat left 5px;background-size:1px 10px;}
+#wrap footer .foot_menu li a {font-size:0.9em;font-weight:bold;color:#959595;}
+#wrap footer .foot_menu li.first_li {background:none;padding-left:0;} 
+#wrap footer .copyright {padding-left:15px;font-size:0.8em;color:#959595;}
+
+@media screen and (max-width:768px) {
+
+}

@@ -1,0 +1,113 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/sub.css">
+</head>
+<body>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="subBgArea"><span class="blind">서브페이지 배경</span></div>
+		<div class="wWrap">
+			<div class="subPage">
+				<div id="leftBox">
+					<? include '../include/snb_mypage.php' ?>
+				</div>
+				<div id="rightBox">
+					<div id="contents">
+						<? include '../include/location_box.php' ?>
+						<div id="p_my_quest_list">
+							<div class="subPage_title">
+								<h2>페이지제목</h2>
+							</div>
+							<!-- contents s -->
+							<div class="listSearchBox3">
+								<div class="select open" id="slct_item">
+									<span class="ctrl"><span class="arrow"></span></span>
+									<button type="button" class="myValue">검색조건 선택하기</button>
+									<ul class="aList">
+										<li><a href="#1">제목</a></li>
+									</ul>
+								</div>
+								<div class="searchWrap">
+									<label for="list_search_input" class="blind">검색어 입력</label>
+									<input type="text" id="list_search_input" placeholder="검색어를 입력하세요"/>
+									<a href="#none" class="listSearchBtn">검색하기</a>
+								</div>
+							</div>
+							<table id="my_questTable" class="listTable2" summary="번호,내가쓴글,답변여부,등록일">
+								<caption>글목록</caption>
+								<colgroup><col width="60px"/><col width="590px"/><col width="120px"/><col width="130px"/></colgroup>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">내가 쓴 글</th>
+										<th scope="col">답변 여부</th>
+										<th scope="col">등록일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts1">미답변</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts2">답변완료</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts1">미답변</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts2">답변완료</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts2">답변완료</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts2">답변완료</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts2">답변완료</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+									<tr>
+										<td class="col1">99</td>
+										<td class="col2"><a href="#none" class="listSubject">이용에 대해서 문의드립니다.</a></td>
+										<td class="col3"><span class="answ_sts2">답변완료</span></td>
+										<td class="col4">2016-12-31</td>
+									</tr>
+								</tbody>
+							</table>
+							<? include '../include/paging_box2.php' ?>
+							<!-- contents e -->
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//현재페이지
+		currentLocation('null',2);
+		changeTitle();
+	</script>
+</body>
+</html>

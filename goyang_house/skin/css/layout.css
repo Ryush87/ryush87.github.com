@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*
+===============================================================================================
+1.	버    전 : layout.css
+2.	작 성 자 : Ryu
+3.	참    고 : Layout
+===============================================================================================
+*/
+
+#wrap {float:left;width:100%;}
+	.wWrap {margin:0 auto;width:1100px;}
+#skipBox {position:absolute;top:0;left:0;z-index:1000;}
+	#skipBox a {position:absolute;top:-9999px;width:120px;}
+	#skipBox a:hover,
+	#skipBox a:focus {top:0;}
+#header {float:left;width:100%;}
+	#gnb {float:left;width:100%;background:#313131;}
+	#lnb {float:left;width:100%;border-bottom:1px solid #dbdbdb;}
+#mainBgArea {float:left;width:100%;height:340px;background:url('../images/main/main_bg1.gif') no-repeat 50%;border-bottom:1px solid #ddd;}
+.mainContents {padding-top:30px;background:url('../images/main/main_bg2.png')}
+	#main_leftBox {float:left;margin-right:40px;width:760px;}
+	#main_rightBox {float:left;width:300px;}
+#subBgArea {float:left;width:100%;height:130px;background:url('../images/sub/sub_bg.gif') no-repeat 50%;border-bottom:1px solid #ddd;}
+#contents {float:left;width:100%;min-height:340px;}
+	.conWrap {float:left;width:100%;}
+#footer {float:left;margin-top:80px;padding-top:30px;width:100%;height:150px;background:#292c31;}
+
+/* common */
+
+@media only screen and (max-width:319px){
+
+}
+
+@media only screen and (min-width:320px) and (max-width:639px){
+
+}
+
+@media only screen and (min-width:640px) and (max-width:999px){
+
+}
+
+@media only screen and (min-width:1000px){
+
+}
+
+
+
+
+
